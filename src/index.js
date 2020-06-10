@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './sass/index.scss';
-import Function from './component/sample/sampleFunctionComponent.js';
-import Class from './component/sample/sampleClassComponent.js';
+import Function from './component/sample/sampleFunctionComponent';
+import Class from './component/sample/sampleClassComponent';
+import Const from './component/sample/sampleConstComponent';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Function />
-	<Class />
+    <Function comment="Function" />
+	<Class comment="Class" />
+	<Const comment="Const" />
   </React.StrictMode>,
   document.getElementById('root')
 );

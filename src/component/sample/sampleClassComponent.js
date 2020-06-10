@@ -30,7 +30,7 @@ class SampleClassComponent extends React.Component {
 				<header className="App-header">
 					<img src={logo} className="App-logo" alt="logo" />
 					<p>
-						Sample Page (<code>sampleClassComponent.js</code>)
+						Sample Page (<code>made  by {this.props.comment}</code>)
 					</p>
 					<a
 						className="App-link"

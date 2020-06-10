@@ -1,8 +1,9 @@
-import React from './../../../node_modules/react';
+import React from 'react';
 import logo from './../../images/logo.svg';
 import './../../sass/App.scss';
 
-function SampleFunctionComponent({comment}) {
+const SampleConstComponent = ({comment}) => {
+
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -23,4 +24,4 @@ function SampleFunctionComponent({comment}) {
 	);
 }
 
-export default SampleFunctionComponent;
+export default SampleConstComponent;
