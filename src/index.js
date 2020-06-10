@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './sass/index.scss';
-import App from './component/App';
+import Function from './component/sample/sampleFunctionComponent.js';
+import Class from './component/sample/sampleClassComponent.js';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Function />
+	<Class />
   </React.StrictMode>,
   document.getElementById('root')
 );
