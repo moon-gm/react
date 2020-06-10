@@ -1,12 +1,12 @@
-import React from './../../../node_modules/react';
+import React from 'react';
 import logo from './../../images/logo.svg';
-import './../../sass/App.scss';
+import './../../sass/Sample.scss';
 
-function SampleFunctionComponent({comment}) {
+function FunctionComponent({comment}) {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+				<img src={logo} className="App-logo App-logo0" alt="logo" />
 				<p>
 					Sample Page (<code>made  by {comment}</code>)
 				</p>
@@ -23,4 +23,4 @@ function SampleFunctionComponent({comment}) {
 	);
 }
 
-export default SampleFunctionComponent;
+export default FunctionComponent;

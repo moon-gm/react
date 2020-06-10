@@ -1,8 +1,8 @@
-import React from './../../../node_modules/react';
+import React from 'react';
 import logo from './../../images/logo.svg';
-import './../../sass/App.scss';
+import './../../sass/Sample.scss';
 
-class SampleClassComponent extends React.Component {
+class ClassComponent extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -28,7 +28,7 @@ class SampleClassComponent extends React.Component {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<img src={logo} className="App-logo" alt="logo" />
+					<img src={logo} className="App-logo App-logo1" alt="logo" />
 					<p>
 						Sample Page (<code>made  by {this.props.comment}</code>)
 					</p>
@@ -41,12 +41,6 @@ class SampleClassComponent extends React.Component {
 						{this.state.x === 0 && "Learn React"}
 						{this.state.x === 1 && "Try React"}
 					</a>
-					<p
-						className="App-link"
-						onClick={this.bindFunc}
-					>
-						STATE CHANGE
-					</p>
 				</header>
 			</div>
 		);
@@ -54,4 +48,4 @@ class SampleClassComponent extends React.Component {
 
 }
 
-export default SampleClassComponent;
+export default ClassComponent;

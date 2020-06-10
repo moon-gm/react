@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './../../images/logo.svg';
-import './../../sass/App.scss';
+import './../../sass/Sample.scss';
 
-const SampleConstComponent = ({comment}) => {
+const ConstComponent = ({comment}) => {
 
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
+				<img src={logo} className="App-logo App-logo2" alt="logo" />
 				<p>
 					Sample Page (<code>made  by {comment}</code>)
 				</p>
@@ -24,4 +24,4 @@ const SampleConstComponent = ({comment}) => {
 	);
 }
 
-export default SampleConstComponent;
+export default ConstComponent;
