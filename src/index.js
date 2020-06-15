@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './sass/index.scss';
-import Router from './component/sample/router';
+import Router from './component/router';
 import * as serviceWorker from './serviceWorker';
+import './globalSetting';
 
 ReactDOM.render(
   <React.StrictMode>
