@@ -1,1 +1,9 @@
 /** 共通設定 **/
+// フレックス設定
+.flex-box {
+	display: flex;
+	justify-content: space-around;
+	&--space-between {
+		justify-content: space-between;
+	}
+}
