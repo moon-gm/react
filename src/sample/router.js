@@ -2,7 +2,7 @@ import React from 'react';
 import Function from './functionComponent';
 import Const from './constComponent';
 import Class from './classComponent';
-import './../../sass/Sample.scss';
+import './Sample.scss';
 
 class Router extends React.Component {
 

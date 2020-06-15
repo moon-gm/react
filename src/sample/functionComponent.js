@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './../../images/logo.svg';
-import './../../sass/Sample.scss';
+import logo from './../images/logo.svg';
+import './Sample.scss';
 
 function FunctionComponent({comment}) {
 	return (
