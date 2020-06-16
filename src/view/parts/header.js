@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './../../images/logo.svg';
 import Styles from './../../sass/parts/header.module.scss'
 
-const Header = ({func}) => {
+const Header = ({states, pages, func}) => {
 	return (
 		<header className="header">
 			<ul className={Styles.headerList}>
@@ -14,7 +14,9 @@ const Header = ({func}) => {
 					/>
 				</li>
 				<li className={Styles.headerTitle}>
-					React Learning
+					{states.page === 0 && "React Learning"}
+					{states.page === 1 && pages[1].name }
+					{states.page === 2 && pages[2].name }
 				</li>
 				<li
 					className={Styles.menuBtn}

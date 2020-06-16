@@ -1,7 +1,7 @@
 import React from 'react';
-import Top from './pages/top';
 import Aside from './parts/aside'
 import Header from './parts/header'
+import Router from './pageRouter'
 import Menu from '../function/showMenu.js';
 
 class Layout extends React.Component {
@@ -57,14 +57,19 @@ class Layout extends React.Component {
 				<div className="contents">
 
 					{/* ヘッダーエリア */}
-					<Header func={this.bindMenu} />
+					<Header
+						states={this.state}
+						pages={this.pages}
+						func={this.bindMenu}
+					/>
 
 					{/* メインエリア */}
 					<main className="main">
-						{/* コンテンツ切替設定 */}
-						{this.state.page === 0 && <Top comment={this.pages[0].name} />}
-						{this.state.page === 1 && <Top comment={this.pages[1].name} />}
-						{this.state.page === 2 && <Top comment={this.pages[2].name} />}
+						{/* コンテンツ切替ルーター設定 */}
+						<Router
+							states={this.state}
+							pages={this.pages}
+						/>
 					</main>
 
 				</div>
