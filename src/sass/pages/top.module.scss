@@ -13,7 +13,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .AppLogo {
-    animation: spin infinite 20s linear;
+    animation: fade infinite 10s linear;
   }
 }
 
@@ -30,5 +30,12 @@
 
 .AppLink {
   color: $light-blue;
+}
+.mainTitle {
+  color: $light-blue;
+  font-size: 50px;
+  @media screen and (max-width: $sp-max-width) {
+	font-size: 30px;
+}
 }
 

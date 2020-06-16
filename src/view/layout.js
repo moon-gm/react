@@ -23,9 +23,9 @@ class Layout extends React.Component {
 
 		// 設定値定義
 		this.pages = [
-			{"name": "Top", "func": this.bindPage0, "state": 0},
-			{"name": "環境構築", "func": this.bindPage1, "state": 1},
-			{"name": "Stateの使い方", "func": this.bindPage2, "state": 2},
+			{"name": "React Learning", "func": this.bindPage0, "state": 0},
+			{"name": "1. 環境構築", "func": this.bindPage1, "state": 1},
+			{"name": "2. Stateの使い方", "func": this.bindPage2, "state": 2},
 		];
 	}
 

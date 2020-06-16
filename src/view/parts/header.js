@@ -14,7 +14,7 @@ const Header = ({states, pages, func}) => {
 					/>
 				</li>
 				<li className={Styles.headerTitle}>
-					{states.page === 0 && "React Learning"}
+					{states.page === 0 && pages[0].name}
 					{states.page === 1 && pages[1].name }
 					{states.page === 2 && pages[2].name }
 				</li>

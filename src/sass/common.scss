@@ -20,37 +20,62 @@
 	padding: 20px;
 	.h1 {
 		font-size: 30px;
-		color: $light-blue;
-		border-bottom: 2px solid $light-blue;
-		margin-bottom: 10px;
+		color: $white;
+		border-bottom: 2px solid $white;
+		margin-bottom: 20px;
 		@media screen and (max-width: $sp-max-width) {
-			font-size: 24px;
+			font-size: 20px;
 		}
 	}
 	.h2 {
 		font-size: 25px;
-		border-bottom: 1px solid $white;
-		margin-bottom: 10px;
+		color: $light-blue;
+		border-bottom: 1px solid $light-blue;
+		margin-bottom: 20px;
 		margin-left: 20px;
 		@media screen and (max-width: $sp-max-width) {
-			font-size: 20px;
+			font-size: 16px;
 			margin-left: 0;
 		}
 	}
 	.h3 {
 		font-size: 20px;
-		color: $light-blue;
 		margin-left: 40px;
+		margin-bottom: 20px;
 		@media screen and (max-width: $sp-max-width) {
-			font-size: 16px;
+			font-size: 14px;
 			margin-left: 0;
 		}
 	}
 	.p {
 		padding: 5px;
 		margin-left: 40px;
+		margin-bottom: 20px;
 		@media screen and (max-width: $sp-max-width) {
 			margin-left: 0;
+		}
+	}
+	.code {
+		background: $white-skelton;
+		color: $red;
+		font-weight: bold;
+		padding: 2px 5px;
+		border-radius: 4px;
+	}
+	.img-box {
+		margin-bottom: 20px;
+		margin-left: 40px;
+		@media screen and (max-width: $sp-max-width) {
+			margin-left: 0;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			max-width: $sp-max-width;
+			border: 1px solid $white;
+			@media screen and (max-width: $sp-max-width) {
+				max-width: 300px;
+			}
 		}
 	}
 }
