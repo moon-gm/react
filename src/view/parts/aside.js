@@ -13,7 +13,9 @@ const Aside = ({pages}) => {
 								onClick={page.func}
 								id={page.state}
 							>
-								{page.name}
+								<span className={Styles.sideListText}>
+									{page.name}
+								</span>
 							</li>
 						);
 					})

@@ -9,3 +9,11 @@
 		font-size: 15px;
 	}
 }
+
+.sideListText {
+	display: inline;
+	padding: 5px;
+	&:hover {
+		background: $white-skelton;
+	}
+}
