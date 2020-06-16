@@ -2,9 +2,14 @@
 // サイズ定義
 $sp-max-width: 768px;
 
+$header-height: 50px;
+
 // カラー定義
 $light-blue: #61dafb;
 $white: white;
+$black: black;
+$dark-grey: #282c34;
+$white-skelton: rgba(255, 255, 255, 0.5);
 
 // アニメーション定義
 @keyframes spin {

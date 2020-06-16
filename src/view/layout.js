@@ -1,7 +1,7 @@
 import React from 'react';
-import Top from './pages/topImage';
+import Top from './pages/top';
 import Aside from './parts/aside'
-import './../sass/App.scss';
+import Header from './parts/header'
 import Menu from '../function/showMenu.js';
 
 class Layout extends React.Component {
@@ -16,81 +16,55 @@ class Layout extends React.Component {
 		};
 
 		// Functionの定義
-		this.bindFunc0 = this.func0.bind(this);
-		this.bindFunc1 = this.func1.bind(this);
-		this.bindFunc2 = this.func2.bind(this);
+		this.bindPage0 = this.page0.bind(this);
+		this.bindPage1 = this.page1.bind(this);
+		this.bindPage2 = this.page2.bind(this);
 		this.bindMenu = Menu.bind(this);
-		// this.bindGangePages = this.changePages.bind(this);
 
 		// 設定値定義
-		this.pages = ["Top", "page1", "page2"];
-		this.pageNums = [0, 1, 2];
-		this.funcs = [this.bindFunc0, this.bindFunc1, this.bindFunc2];
+		this.pages = [
+			{"name": "Top", "func": this.bindPage0, "state": 0},
+			{"name": "環境構築", "func": this.bindPage1, "state": 1},
+			{"name": "Stateの使い方", "func": this.bindPage2, "state": 2},
+		];
 	}
 
-	func0() {
+	page0() {
 		this.setState({page: 0});
+		this.setState({menu: 'hide'});
 		console.log(this.state);
 	}
-	func1() {
+	page1() {
 		this.setState({page: 1});
+		this.setState({menu: 'hide'});
 		console.log(this.state);
 	}
-	func2() {
+	page2() {
 		this.setState({page: 2});
+		this.setState({menu: 'hide'});
 		console.log(this.state);
 	}
-	// changePages() {
-	// 	let name = this.pages;
-	// 	var id = document.getElementById(this.state.page).textContent;
-
-	// 		if (id === name[0]){
-	// 			this.setState({page: 0});
-	// 			console.log(this.state);
-	// 		}
-	// 		if (id === name[1]){
-	// 			this.setState({page: 1});
-	// 			console.log(this.state);
-	// 		}
-	// 		if (id === name[2]){
-	// 			this.setState({page: 1});
-	// 			console.log(this.state);
-	// 		}
-	// }
-
 
 	render() {
 		return (
 			<div className="flex-box">
 
 				{/* サイドエリア */}
-				{this.state.menu === 'show' && <Aside lists={this.pages} func={this.funcs} />}
+				{this.state.menu === 'show' && <Aside pages={this.pages} />}
 				{this.state.menu === 'hide'}
 
 				{/* コンテンツエリア */}
 				<div className="contents">
 
 					{/* ヘッダーエリア */}
-					<header className="header">
-						<ul className="flex-box flex-box--space-between">
-							<li>
-								<img src="" alt="" />
-							</li>
-							<li
-								className="App-link"
-								onClick={this.bindMenu}
-							>
-								≡
-							</li>
-						</ul>
-					</header>
+					<Header func={this.bindMenu} />
 
 					{/* メインエリア */}
 					<main className="main">
 						{/* コンテンツ切替設定 */}
-						{this.state.page === 0 && <Top comment={this.pages[0]} />}
-						{this.state.page === 1 && <Top comment={this.pages[1]} />}
-						{this.state.page === 2 && <Top comment={this.pages[2]} />}
+						{this.state.page === 0 && <Top comment={this.pages[0].name} />}
+						{this.state.page === 1 && <Top comment={this.pages[1].name} />}
+						{this.state.page === 2 && <Top comment={this.pages[2].name} />}
 					</main>
 
 				</div>

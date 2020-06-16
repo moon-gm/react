@@ -1,30 +1,23 @@
 import React from 'react';
+import Styles from './../../sass/parts/aside.module.scss'
 
-const Aside = ({lists, func}) => {
+const Aside = ({pages}) => {
 	return (
 		<aside className="aside">
 			<ul>
-				<li
-					className="App-link"
-					onClick={func[0]}
-					id="0"
-				>
-					{lists[0]}
-				</li>
-				<li
-					className="App-link"
-					onClick={func[1]}
-					id="1"
-				>
-					{lists[1]}
-				</li>
-				<li
-					className="App-link"
-					onClick={func[2]}
-					id="2"
-				>
-					{lists[2]}
-				</li>
+				{ //サイドメニュー一覧をループで作成
+					pages.map(page => {
+						return (
+							<li
+								className={Styles.sideList}
+								onClick={page.func}
+								id={page.state}
+							>
+								{page.name}
+							</li>
+						);
+					})
+				}
 			</ul>
 		</aside>
 	);

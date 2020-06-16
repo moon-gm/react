@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './../../images/logo.svg';
 import Styles from './../../sass/parts/logo.module.scss';
 
-const TopImage = ({comment}) => {
+const Top = ({comment}) => {
 
 	return (
 		<div className={Styles.App}>
@@ -28,4 +28,4 @@ const TopImage = ({comment}) => {
 	);
 }
 
-export default TopImage;
+export default Top;

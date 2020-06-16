@@ -1,0 +1,11 @@
+/** サイドエリア設定 **/
+// 変数設定
+@import '../variable';
+
+.sideList {
+	font-size: 18px;
+	margin-bottom: 5px;
+	@media screen and (max-width: $sp-max-width) {
+		font-size: 15px;
+	}
+}

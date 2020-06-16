@@ -1,0 +1,38 @@
+/** ヘッダーエリア設定 **/
+// 変数設定
+@import '../variable';
+
+.headerList {
+	li {
+		display:inline;
+	}
+}
+
+.menuBtn {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	font-size: 30px;
+}
+
+.headerLogo {
+	position: relative;
+	top: 6px;
+	left: 0px;
+	img {
+		width: 100%;
+		height: auto;
+		max-width: 50px;
+	}
+}
+
+.headerTitle {
+	font-size: 20px;
+	position: relative;
+	top: -4px;
+	left: 0px;
+}
+
+.animation {
+	animation: spin infinite 20s linear;
+}
