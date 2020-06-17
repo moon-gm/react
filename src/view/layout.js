@@ -3,7 +3,7 @@ import Aside from './parts/aside'
 import Header from './parts/header'
 import Router from './router/pageRouter'
 import Pages from './../config/pages';
-import Menu from '../function/showMenu';
+import Functions from './../config/functions';
 
 class Layout extends React.Component {
 
@@ -20,18 +20,18 @@ class Layout extends React.Component {
 		// function設定
 		this.funcs = [
 			{
-				"Top": this.page0.bind(this),
-				"Menu": Menu.bind(this),
+				"Top": Functions.PageTop.bind(this),
+				"Menu": Functions.Menu.bind(this),
 			},
 			{
-				"page1": {
-					"s0": this.page1.bind(this),
-					"s1": this.page1sec1.bind(this),
-					"s2": this.page1sec2.bind(this),
+				"Page1": {
+					"List1": Functions.Page1.List.bind(this),
+					"S1": Functions.Page1.S1.bind(this),
+					"S2": Functions.Page1.S2.bind(this),
 				},
 			},
 			{
-				"page2": this.page2.bind(this),
+				"Page2": this.page2.bind(this),
 			},
 		];
 
@@ -39,29 +39,6 @@ class Layout extends React.Component {
 		this.pages = Pages(this.funcs);
 	}
 
-	page0() {
-		this.setState({page: 0});
-		this.setState({menu: 'hide'});
-		console.log(this.state);
-	}
-	page1() {
-		if (this.state.list === "hide") {
-			this.setState({list: 'show'});
-		} else {
-			this.setState({list: 'hide'});
-		}
-		console.log(this.state);
-	}
-	page1sec1() {
-		this.setState({page: '1sec1'});
-		this.setState({menu: 'hide'});
-		console.log(this.state);
-	}
-	page1sec2() {
-		this.setState({page: '1sec2'});
-		this.setState({menu: 'hide'});
-		console.log(this.state);
-	}
 	page2() {
 		this.setState({page: 2});
 		this.setState({menu: 'hide'});

@@ -12,8 +12,8 @@ const Aside = ({pages, states}) => {
 								<li
 									className={Styles.sideList}
 									onClick={page.func}
-									id={page.state}
-									key={page.state}
+									id={page.state.page}
+									key={page.state.page}
 								>
 									<span className={Styles.sideListText}>
 										{page.name}
@@ -26,7 +26,7 @@ const Aside = ({pages, states}) => {
 									<li
 										className={Styles.sideList}
 										onClick={page.func}
-										id={page.state}
+										id={page.state.page}
 									>
 										<span className={Styles.sideListText}>
 											{page.name}
@@ -42,8 +42,8 @@ const Aside = ({pages, states}) => {
 														<li
 															className={`${Styles.sideList} ${Styles.sideListChildren}`}
 															onClick={item.func}
-															id={item.state[1]}
-															key={item.state[1]}
+															id={item.state.page}
+															key={item.state.page}
 														>
 															<span className={Styles.sideListText}>
 																{item.name}
