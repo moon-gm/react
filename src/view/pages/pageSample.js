@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PageSample = ({comment}) => {
+const PageSample = () => {
 	return (
 		<div　className="page-layout">
 			<h1 className="h1">＊＊＊＊＊＊h1＊＊＊＊＊＊</h1>

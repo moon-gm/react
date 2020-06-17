@@ -2,12 +2,14 @@
 // 変数設定
 @import '../variable';
 
+// ヘッダーの各パーツ設定
 .headerList {
 	li {
 		display:inline;
 	}
 }
 
+// メニューボタン（≡）設定
 .menuBtn {
 	position: absolute;
 	top: 0px;
@@ -15,6 +17,7 @@
 	font-size: 30px;
 }
 
+// Reactヘッダーロゴ設定
 .headerLogo {
 	position: relative;
 	top: 6px;
@@ -26,6 +29,7 @@
 	}
 }
 
+// ヘッダータイトル設定
 .headerTitle {
 	font-size: 20px;
 	position: relative;
@@ -33,6 +37,7 @@
 	left: 0px;
 }
 
+// アニメーション設定
 .animation {
 	animation: spin infinite 20s linear;
 }

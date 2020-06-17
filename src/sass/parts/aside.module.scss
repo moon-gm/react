@@ -8,6 +8,9 @@
 	@media screen and (max-width: $sp-max-width) {
 		font-size: 15px;
 	}
+	&Children {
+		margin-left: 1em;
+	}
 }
 
 .sideListText {

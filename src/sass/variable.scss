@@ -1,18 +1,20 @@
 /** 変数設定 **/
-// サイズ定義
+// width定義
 $sp-max-width: 768px;
+
+// height定義
 $header-height: 50px;
 
 // カラー定義
 $light-blue: #61dafb;
 $white: white;
 $black: black;
-$red: rgb(169, 5, 150);
+$red-purple: rgb(169, 5, 150);
 $dark-grey: #282c34;
 $dark-grey-skelton: rgba(40, 44, 52, 0.5);
 $white-skelton: rgba(255, 255, 255, 0.5);
 
-// z-index設定
+// z-index定義
 $z-index-aside: 10;
 $z-index-header: 10;
 

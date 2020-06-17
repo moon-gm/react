@@ -1,8 +1,8 @@
 import React from 'react';
 import Aside from './parts/aside'
 import Header from './parts/header'
-import Router from './pageRouter'
-import Menu from '../function/showMenu.js';
+import Router from './router/pageRouter'
+import Menu from '../function/showMenu';
 
 class Layout extends React.Component {
 
@@ -12,20 +12,58 @@ class Layout extends React.Component {
 		// Stateの初期値設定
 		this.state={
 			page: 0,
-			menu: 'hide'
+			menu: 'hide',
+			list: 'hide',
 		};
 
 		// Functionの定義
 		this.bindPage0 = this.page0.bind(this);
 		this.bindPage1 = this.page1.bind(this);
+		this.bindPage1sec1 = this.page1sec1.bind(this);
+		this.bindPage1sec2 = this.page1sec2.bind(this);
 		this.bindPage2 = this.page2.bind(this);
 		this.bindMenu = Menu.bind(this);
 
 		// 設定値定義
+
+		this.funcs = [{
+			"Top": this.bindPage0,
+			"page1": {
+				"s0": this.bindPage1,
+				"s1": this.bindPage1sec1,
+				"s2": this.bindPage1sec2,
+			},
+			"page2": this.bindPage2,
+		}];
+
 		this.pages = [
-			{"name": "React Learning", "func": this.bindPage0, "state": 0},
-			{"name": "1. 環境構築", "func": this.bindPage1, "state": 1},
-			{"name": "2. Stateの使い方", "func": this.bindPage2, "state": 2},
+			{
+				"name": "React Learning",
+				"func": this.funcs[0].Top,
+				"state": 0,
+			},
+			{
+				"name": "1. 環境構築",
+				"func": this.funcs[0].page1.s0,
+				"state": 1,
+				"children": [
+					{
+						"name": "1-1. create-react-appを使用",
+						"func": this.funcs[0].page1.s1,
+						"state": ['show', '1sec1'],
+					},
+					{
+						"name": "1-2. 手動で設定",
+						"func": this.funcs[0].page1.s2,
+						"state": ['show', '1sec2'],
+					},
+				],
+			},
+			{
+				"name": "2. Stateの使い方",
+				"func": this.funcs[0].page2,
+				"state": 2,
+			},
 		];
 	}
 
@@ -35,7 +73,20 @@ class Layout extends React.Component {
 		console.log(this.state);
 	}
 	page1() {
-		this.setState({page: 1});
+		if (this.state.list === "hide") {
+			this.setState({list: 'show'});
+		} else {
+			this.setState({list: 'hide'});
+		}
+		console.log(this.state);
+	}
+	page1sec1() {
+		this.setState({page: '1sec1'});
+		this.setState({menu: 'hide'});
+		console.log(this.state);
+	}
+	page1sec2() {
+		this.setState({page: '1sec2'});
 		this.setState({menu: 'hide'});
 		console.log(this.state);
 	}
@@ -50,25 +101,30 @@ class Layout extends React.Component {
 			<div className="flex-box">
 
 				{/* サイドエリア */}
-				{this.state.menu === 'show' && <Aside pages={this.pages} />}
 				{this.state.menu === 'hide'}
+				{this.state.menu === 'show' && (
+					<Aside
+						pages={this.pages}
+						states ={this.state}
+					/>
+				)}
 
 				{/* コンテンツエリア */}
 				<div className="contents">
 
 					{/* ヘッダーエリア */}
 					<Header
-						states={this.state}
 						pages={this.pages}
+						states={this.state}
 						func={this.bindMenu}
 					/>
 
 					{/* メインエリア */}
 					<main className="main">
-						{/* コンテンツ切替ルーター設定 */}
+						{/* コンテンツ(ページ)切替 */}
 						<Router
-							states={this.state}
 							pages={this.pages}
+							states={this.state}
 						/>
 					</main>
 

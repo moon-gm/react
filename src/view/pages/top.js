@@ -6,7 +6,7 @@ const Top = ({name}) => {
 
 	return (
 		<div className={Styles.App}>
-			<header className={Styles.AppHeader}>
+			<div className={Styles.AppHeader}>
 				<p className={Styles.mainTitle}>
 					{name}
 				</p>
@@ -23,7 +23,7 @@ const Top = ({name}) => {
 				>
 					> Go to Support
 				</a>
-			</header>
+			</div>
 		</div>
 	);
 }

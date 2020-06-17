@@ -6,7 +6,7 @@ const createEnvironment = ({title}) => {
 		<div className="page-layout">
 
 			<h1 className="h1">
-					{title}
+				{title}
 			</h1>
 
 				<h2 className="h2">
