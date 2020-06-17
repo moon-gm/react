@@ -2,6 +2,7 @@ import React from 'react';
 import Aside from './parts/aside'
 import Header from './parts/header'
 import Router from './router/pageRouter'
+import Pages from './../config/pages';
 import Menu from '../function/showMenu';
 
 class Layout extends React.Component {
@@ -11,60 +12,31 @@ class Layout extends React.Component {
 
 		// Stateの初期値設定
 		this.state={
-			page: 0,
-			menu: 'hide',
-			list: 'hide',
+			page: 0, // Top画面表示
+			menu: 'hide', // サイドメニュー非表示
+			list: 'hide', // サイドメニューの子リスト非表示
 		};
 
-		// Functionの定義
-		this.bindPage0 = this.page0.bind(this);
-		this.bindPage1 = this.page1.bind(this);
-		this.bindPage1sec1 = this.page1sec1.bind(this);
-		this.bindPage1sec2 = this.page1sec2.bind(this);
-		this.bindPage2 = this.page2.bind(this);
-		this.bindMenu = Menu.bind(this);
-
-		// 設定値定義
-
-		this.funcs = [{
-			"Top": this.bindPage0,
-			"page1": {
-				"s0": this.bindPage1,
-				"s1": this.bindPage1sec1,
-				"s2": this.bindPage1sec2,
-			},
-			"page2": this.bindPage2,
-		}];
-
-		this.pages = [
+		// function設定
+		this.funcs = [
 			{
-				"name": "React Learning",
-				"func": this.funcs[0].Top,
-				"state": 0,
+				"Top": this.page0.bind(this),
+				"Menu": Menu.bind(this),
 			},
 			{
-				"name": "1. 環境構築",
-				"func": this.funcs[0].page1.s0,
-				"state": 1,
-				"children": [
-					{
-						"name": "1-1. create-react-appを使用",
-						"func": this.funcs[0].page1.s1,
-						"state": ['show', '1sec1'],
-					},
-					{
-						"name": "1-2. 手動で設定",
-						"func": this.funcs[0].page1.s2,
-						"state": ['show', '1sec2'],
-					},
-				],
+				"page1": {
+					"s0": this.page1.bind(this),
+					"s1": this.page1sec1.bind(this),
+					"s2": this.page1sec2.bind(this),
+				},
 			},
 			{
-				"name": "2. Stateの使い方",
-				"func": this.funcs[0].page2,
-				"state": 2,
+				"page2": this.page2.bind(this),
 			},
 		];
+
+		// ページ設定
+		this.pages = Pages(this.funcs);
 	}
 
 	page0() {
@@ -116,7 +88,7 @@ class Layout extends React.Component {
 					<Header
 						pages={this.pages}
 						states={this.state}
-						func={this.bindMenu}
+						func={this.funcs[0].Menu}
 					/>
 
 					{/* メインエリア */}
