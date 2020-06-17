@@ -1,14 +1,22 @@
 import React from 'react';
-import Styles from './../../sass/parts/aside.module.scss'
+import Styles from './../../sass/parts/aside.module.scss';
+import LittleListRouter from './../router/littleListRouter';
 
 const Aside = ({pages, states}) => {
+
+	// 変数初期値定義
+	var listNeeds = {};
+
 	return (
 		<aside className="aside">
 			<ul>
 				{ //サイドメニュー一覧をループで作成
 					pages.map(page => {
+
+						// 子リストがなければ以下で作成
 						if (page.children === undefined || page.children === null) {
 							return (
+								// 親リスト
 								<li
 									className={Styles.sideList}
 									onClick={page.func}
@@ -20,9 +28,13 @@ const Aside = ({pages, states}) => {
 									</span>
 								</li>
 							);
-						} else {
+						}
+
+						// 子リストがあれば以下で作成
+						else {
 							return (
 								<>
+									{/* 親リスト */}
 									<li
 										className={Styles.sideList}
 										onClick={page.func}
@@ -33,24 +45,28 @@ const Aside = ({pages, states}) => {
 										</span>
 									</li>
 
-									{
+									{ /* 子リストをループで作成 */
 										page.children.map(item => {
+
+											// 子リストコンポーネントに渡すのに必要な情報の抽出
+											listNeeds = {
+												"sideList": Styles.sideList,
+												"sideListChildren": Styles.sideListChildren,
+												"sideListText": Styles.sideListText,
+												"func": item.func,
+												"state": {
+													"page": item.state.page,
+													"list": item.state.list,
+												},
+												"name": item.name,
+											};
+
 											return (
-												<>
-													{states.list === "hide"}
-													{states.list === "show" && (
-														<li
-															className={`${Styles.sideList} ${Styles.sideListChildren}`}
-															onClick={item.func}
-															id={item.state.page}
-															key={item.state.page}
-														>
-															<span className={Styles.sideListText}>
-																{item.name}
-															</span>
-														</li>)
-													}
-												</>
+												// 子リストのルート設定
+												<LittleListRouter
+													states={states}
+													listNeeds={listNeeds}
+												/>
 											);
 										})
 									}

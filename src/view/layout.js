@@ -1,7 +1,7 @@
 import React from 'react';
 import Aside from './parts/aside'
 import Header from './parts/header'
-import Router from './router/pageRouter'
+import PageRouter from './router/pageRouter'
 import Pages from './../config/pages';
 import Functions from './../config/functions';
 
@@ -14,7 +14,8 @@ class Layout extends React.Component {
 		this.state={
 			page: 0, // Top画面表示
 			menu: 'hide', // サイドメニュー非表示
-			list: 'hide', // サイドメニューの子リスト非表示
+			list1: 'hide', // サイドメニューの子リスト1非表示
+			list2: 'hide', // サイドメニューの子リスト2非表示
 		};
 
 		// function設定
@@ -71,7 +72,7 @@ class Layout extends React.Component {
 					{/* メインエリア */}
 					<main className="main">
 						{/* コンテンツ(ページ)切替 */}
-						<Router
+						<PageRouter
 							pages={this.pages}
 							states={this.state}
 						/>

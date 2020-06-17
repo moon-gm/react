@@ -30,7 +30,7 @@ function Pages(funcs) {
 						"func": funcs[1].Page1.S1,
 						"state": {
 							"page": "1sec1",
-							"list": "show",
+							"list": "list1",
 						},
 					},
 					{
@@ -38,7 +38,7 @@ function Pages(funcs) {
 						"func": funcs[1].Page1.S2,
 						"state": {
 							"page": "1sec2",
-							"list": "show",
+							"list": "list1",
 						},
 					},
 				],
