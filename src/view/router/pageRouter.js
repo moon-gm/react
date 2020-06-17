@@ -3,21 +3,22 @@ import PageSample from '../pages/pageSample';
 import Environment from '../pages/environment';
 import EnvironmentM from '../pages/environmentManual';
 import Top from '../pages/top';
+import States from "../../config/states";
 
 const PageRouter = ({states, pages}) => {
 	return (
 		<>
 			{/* Topページ */}
-			{states.page === 0 && <Top name={pages[0].name} />}
+			{states.page === States.page.Top && <Top name={pages[0].name} />}
 
 			{/* 1. 環境構築ページ */}
 			{/* Section1 */}
-			{states.page === '1sec1' && <Environment title={pages[1].children[0].name} />}
+			{states.page === States.page.Page1.S1 && <Environment title={pages[1].children[0].name} />}
 			{/* Section2 */}
-			{states.page === '1sec2' && <EnvironmentM title={pages[1].children[1].name} />}
+			{states.page === States.page.Page1.S2 && <EnvironmentM title={pages[1].children[1].name} />}
 
 			{/* 2. データ関連 */}
-			{states.page === 2 && <PageSample />}
+			{states.page === States.page.Page2 && <PageSample />}
 		</>
 	);
 }

@@ -1,12 +1,13 @@
 /**
  * ページ設定情報を返す
  * @param funcs array
+ * @param states object
  * @name ページの名前
- * @func ページで使用するfunction
- * @state 表示に必要なstate
+ * @func ページを表示するfunction
+ * @state ページのstate
  * @children 子リストがある場合の設定
  */
-function Pages(funcs) {
+function Pages(funcs, states) {
 	return (
 		[
 			// Topページ
@@ -14,31 +15,31 @@ function Pages(funcs) {
 				"name": "React Learning",
 				"func": funcs[0].Top,
 				"state": {
-					"page": 0,
+					"page": states.page.Top,
 				},
 			},
 			// 1. 環境構築
 			{
 				"name": "1. 環境構築",
-				"func": funcs[1].Page1.List1,
+				"func": funcs[1].Page1.L1,
 				"state": {
-					"page": 1,
+					"page": states.page.Page1.L1,
 				},
 				"children": [
 					{
 						"name": "1. create-react-appを使用",
 						"func": funcs[1].Page1.S1,
 						"state": {
-							"page": "1sec1",
-							"list": "list1",
+							"page": states.page.Page1.S1,
+							"list": states.list1.name,
 						},
 					},
 					{
 						"name": "2. 手動で設定",
 						"func": funcs[1].Page1.S2,
 						"state": {
-							"page": "1sec2",
-							"list": "list1",
+							"page": states.page.Page1.S2,
+							"list": states.list1.name,
 						},
 					},
 				],
@@ -48,7 +49,7 @@ function Pages(funcs) {
 				"name": "2. データ関連",
 				"func": funcs[2].Page2,
 				"state": {
-					"page": 2,
+					"page": states.page.Page2,
 				},
 			},
 		]

@@ -4,19 +4,23 @@ import Header from './parts/header'
 import PageRouter from './router/pageRouter'
 import Pages from './../config/pages';
 import Functions from './../config/functions';
+import States from './../config/states';
 
 class Layout extends React.Component {
 
 	constructor(props) {
 		super(props);
 
-		// Stateの初期値設定
-		this.state={
-			page: 0, // Top画面表示
-			menu: 'hide', // サイドメニュー非表示
-			list1: 'hide', // サイドメニューの子リスト1非表示
-			list2: 'hide', // サイドメニューの子リスト2非表示
+		// stateの初期値設定
+		this.state = {
+			page: States.page.Top, // Top画面表示
+			menu: States.menu.hide, // サイドメニュー非表示
+			list1: States.list1.hide, // サイドメニューの子リスト1非表示
+			list2: States.list2.hide, // サイドメニューの子リスト2非表示
 		};
+
+		// state設定
+		this.states = States;
 
 		// function設定
 		this.funcs = [
@@ -26,18 +30,19 @@ class Layout extends React.Component {
 			},
 			{
 				"Page1": {
-					"List1": Functions.Page1.List.bind(this),
-					"S1": Functions.Page1.S1.bind(this),
-					"S2": Functions.Page1.S2.bind(this),
+					"L1": Functions.Page1.bind(this),
+					"S1": Functions.PageSection.bind(this, States.page.Page1.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page1.S2),
 				},
 			},
 			{
 				"Page2": this.page2.bind(this),
 			},
+
 		];
 
-		// ページ設定
-		this.pages = Pages(this.funcs);
+		// page設定
+		this.pages = Pages(this.funcs, this.states);
 	}
 
 	page2() {
@@ -51,8 +56,8 @@ class Layout extends React.Component {
 			<div className="flex-box">
 
 				{/* サイドエリア */}
-				{this.state.menu === 'hide'}
-				{this.state.menu === 'show' && (
+				{this.state.menu === States.menu.hide}
+				{this.state.menu === States.menu.show && (
 					<Aside
 						pages={this.pages}
 						states ={this.state}
