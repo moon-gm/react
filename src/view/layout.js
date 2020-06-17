@@ -19,9 +19,6 @@ class Layout extends React.Component {
 			list2: States.list2.hide, // サイドメニューの子リスト2非表示
 		};
 
-		// state設定
-		this.states = States;
-
 		// function設定
 		this.funcs = [
 			{
@@ -42,7 +39,7 @@ class Layout extends React.Component {
 		];
 
 		// page設定
-		this.pages = Pages(this.funcs, this.states);
+		this.pages = Pages(this.funcs, States);
 	}
 
 	page2() {
