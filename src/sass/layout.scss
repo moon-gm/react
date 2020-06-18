@@ -2,11 +2,12 @@
 
 // サイドメニューエリア
 .aside {
-	position: absolute;
+	overflow: scroll;
+	position: fixed;
 	top: $header-height;
 	left: 0;
 	width: 30%;
-	height: auto;
+	height: 100%;
 	padding: 20px;
 	background: $dark-grey-skelton;
 	backdrop-filter: blur(10px);

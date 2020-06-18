@@ -2,6 +2,11 @@
 // 変数設定
 @import './../variable';
 
+// スクロールエリア設定
+.asideScroll {
+	height: auto;
+}
+
 // リストの設定
 .sideList {
 	font-size: 18px;

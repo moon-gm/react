@@ -9,13 +9,13 @@ const Aside = ({pages, states}) => {
 
 	return (
 		<aside className="aside">
-			<ul>
+			<ul className={Styles.asideScroll}>
 				{ //サイドメニュー一覧をループで作成
 					pages.map(page => {
 						console.log({"AllPages": pages});
 
 						// 子リストがなければ以下で作成
-						if (page.children === null || page.children === undefined) {
+						if (page.children === undefined) {
 							return (
 								// 親リスト
 								<li
