@@ -35,7 +35,7 @@ const Aside = ({pages, states}) => {
 						// 子リストがあれば以下で作成
 						else {
 							return (
-								<>
+								<React.Fragment key={`flag${page.state.page}`}>
 									{/* 親リスト */}
 									<li
 										className={Styles.sideList}
@@ -76,7 +76,7 @@ const Aside = ({pages, states}) => {
 											);
 										})
 									}
-								</>
+								</React.Fragment>
 							);
 						}
 					})
