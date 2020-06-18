@@ -48,6 +48,7 @@ const Aside = ({pages, states}) => {
 
 									{ /* 子リストをループで作成 */
 										page.children.map(item => {
+											console.log(page);
 
 											// 子リストコンポーネントに渡すのに必要な情報の抽出
 											listNeeds = {
@@ -61,7 +62,7 @@ const Aside = ({pages, states}) => {
 												},
 												"name": item.name,
 											};
-
+											console.log(listNeeds);
 											return (
 												// 子リストのルート設定
 												<LittleListRouter
