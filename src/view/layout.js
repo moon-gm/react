@@ -1,7 +1,9 @@
 import React from 'react';
 import Aside from './parts/aside'
 import Header from './parts/header'
-import PageRouter from './router/pageRouter'
+import Router from './router/router'
+
+// 各種設定値取得
 import Pages from './../config/pages';
 import Functions from './../config/functions';
 import States from './../config/states';
@@ -74,9 +76,10 @@ class Layout extends React.Component {
 					{/* メインエリア */}
 					<main className="main">
 						{/* コンテンツ(ページ)切替 */}
-						<PageRouter
+						<Router
 							pages={this.pages}
 							states={this.state}
+							route="page"
 						/>
 					</main>
 

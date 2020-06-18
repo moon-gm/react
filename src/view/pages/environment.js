@@ -13,13 +13,13 @@ const createEnvironment = ({title}) => {
 					1. create-react-appをインストール
 				</h2>
 					<p className="p">
-						<span className="code">
+						<span className="command">
 							$ npm install -g create-react-app
 						</span>
 						をターミナルに入力してインストール
 					</p>
 					<p className="p">
-						<span className="code">
+						<span className="command">
 							$ create-react-app -v
 						</span>
 						でインストールされているか確認（プロジェクトを作成するようにコンソールメッセージが出ればOK）
@@ -32,7 +32,7 @@ const createEnvironment = ({title}) => {
 						プロジェクトを作成するディレクトリに移動し、以下のコマンドを実行
 					</p>
 					<p className="p">
-						<span className="code">
+						<span className="command">
 							$ create-react-app [作成するプロイジェクト名]
 						</span>
 						でインストールされているか確認（プロジェクトを作成するようにコンソールメッセージが出ればOK）
@@ -41,7 +41,7 @@ const createEnvironment = ({title}) => {
 						※ 以下を入力した場合、create-react-appをローカルインストールせずにプロジェクト作成できる
 					</p>
 					<p className="p">
-						<span className="code">
+						<span className="command">
 							$ npx create-react-app [作成するプロイジェクト名]
 						</span>
 					</p>
@@ -53,7 +53,7 @@ const createEnvironment = ({title}) => {
 						プロジェクトのディレクトリに移動し以下のコマンドを実行
 					</p>
 					<p className="p">
-						<span className="code">
+						<span className="command">
 							$ npm start
 						</span>
 					</p>
@@ -75,7 +75,7 @@ const createEnvironment = ({title}) => {
 					5. Sassを導入
 				</h2>
 					<p className="p">
-						<span className="code">
+						<span className="command">
 							$ npm i -D node-sass
 						</span>
 					</p>

@@ -54,7 +54,10 @@
 			margin-left: 0;
 		}
 	}
-	.code {
+	.code-block {
+		display: inline-block;
+	}
+	.command {
 		background: $white-skelton;
 		color: $red-purple;
 		font-weight: bold;
