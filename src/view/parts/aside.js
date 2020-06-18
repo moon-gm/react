@@ -12,6 +12,7 @@ const Aside = ({pages, states}) => {
 			<ul>
 				{ //サイドメニュー一覧をループで作成
 					pages.map(page => {
+						console.log(pages);
 
 						// 子リストがなければ以下で作成
 						if (page.children === undefined || page.children === null) {
