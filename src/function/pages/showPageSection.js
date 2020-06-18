@@ -1,4 +1,4 @@
-import States from "../../config/states";
+import States from "./../../config/states";
 
 // 子リストのページの表示処理
 function showPageSection(section) {

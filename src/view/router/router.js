@@ -1,9 +1,9 @@
 import React from 'react';
-import PageSample from '../pages/pageSample';
-import Environment from '../pages/environment';
-import EnvironmentM from '../pages/environmentManual';
-import Top from '../pages/top';
-import States from "../../config/states";
+import PageSample from './../pages/pageSample';
+import Environment from './../pages/environment';
+import EnvironmentM from './../pages/environmentManual';
+import Top from './../pages/top';
+import States from "./../../config/states";
 
 const Router = ({pages, states, route}) => {
 

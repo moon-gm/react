@@ -1,6 +1,6 @@
 import React from 'react';
 import LittleList from './../parts/littleList'
-import States from "../../config/states";
+import States from "./../../config/states";
 
 const LittleListRouter = ({states, listNeeds}) => {
 	return (

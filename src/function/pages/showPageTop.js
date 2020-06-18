@@ -1,4 +1,4 @@
-import States from "../../config/states";
+import States from "./../../config/states";
 
 // トップページの表示処理
 function showPageTop() {
