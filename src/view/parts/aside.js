@@ -12,7 +12,7 @@ const Aside = ({pages, states}) => {
 			<ul>
 				{ //サイドメニュー一覧をループで作成
 					pages.map(page => {
-						console.log(pages);
+						console.log({"AllPages": pages});
 
 						// 子リストがなければ以下で作成
 						if (page.children === undefined || page.children === null) {
@@ -26,6 +26,7 @@ const Aside = ({pages, states}) => {
 								>
 									<span className={Styles.sideListText}>
 										{page.name}
+										{console.log({"OnlyParent": page})}
 									</span>
 								</li>
 							);
@@ -43,12 +44,13 @@ const Aside = ({pages, states}) => {
 									>
 										<span className={Styles.sideListText}>
 											{page.name}
+											{console.log({"WithCildren": page})}
 										</span>
 									</li>
 
 									{ /* 子リストをループで作成 */
 										page.children.map(item => {
-											console.log(page);
+											console.log({"SinglePage": page});
 
 											// 子リストコンポーネントに渡すのに必要な情報の抽出
 											listNeeds = {
@@ -62,7 +64,7 @@ const Aside = ({pages, states}) => {
 												},
 												"name": item.name,
 											};
-											console.log(listNeeds);
+											console.log({"listNeeds": listNeeds});
 											return (
 												// 子リストのルート設定
 												<LittleListRouter
