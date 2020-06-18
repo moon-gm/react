@@ -1,11 +1,11 @@
 import React from 'react';
 import Styles from './../../sass/parts/aside.module.scss';
-import LittleListRouter from './../router/littleListRouter';
+// import LittleListRouter from './../router/littleListRouter';
 
 const Aside = ({pages, states}) => {
 
 	// 変数初期値定義
-	var listNeeds = {};
+	// var listNeeds = {};
 
 	return (
 		<aside className="aside">
@@ -15,7 +15,7 @@ const Aside = ({pages, states}) => {
 						console.log({"AllPages": pages});
 
 						// 子リストがなければ以下で作成
-						if (page.children === undefined) {
+
 							return (
 								// 親リスト
 								<li
@@ -30,55 +30,55 @@ const Aside = ({pages, states}) => {
 									</span>
 								</li>
 							);
-						}
+
 
 						// 子リストがあれば以下で作成
-						else {
-							return (
-								<React.Fragment key={`flag${page.state.page}`}>
-									{/* 親リスト */}
-									<li
-										className={Styles.sideList}
-										onClick={page.func}
-										id={page.state.page}
-										key={`key${page.state.page}`}
-									>
-										<span className={Styles.sideListText}>
-											{page.name}
-											{console.log({"WithCildren": page})}
-										</span>
-									</li>
+						// else {
+						// 	return (
+						// 		<React.Fragment key={`flag${page.state.page}`}>
+						// 			{/* 親リスト */}
+						// 			<li
+						// 				className={Styles.sideList}
+						// 				onClick={page.func}
+						// 				id={page.state.page}
+						// 				key={`key${page.state.page}`}
+						// 			>
+						// 				<span className={Styles.sideListText}>
+						// 					{page.name}
+						// 					{console.log({"WithCildren": page})}
+						// 				</span>
+						// 			</li>
 
-									{ /* 子リストをループで作成 */
-										page.children.map(item => {
-											console.log({"SinglePage": page});
+						// 			{ /* 子リストをループで作成 */
+						// 				page.children.map(item => {
+						// 					console.log({"SinglePage": page});
 
-											// 子リストコンポーネントに渡すのに必要な情報の抽出
-											listNeeds = {
-												"sideList": Styles.sideList,
-												"sideListChildren": Styles.sideListChildren,
-												"sideListText": Styles.sideListText,
-												"func": item.func,
-												"state": {
-													"page": item.state.page,
-													"list": item.state.list,
-												},
-												"name": item.name,
-											};
-											console.log({"listNeeds": listNeeds});
-											return (
-												// 子リストのルート設定
-												<LittleListRouter
-													states={states}
-													listNeeds={listNeeds}
-													key={`key${listNeeds.state.page}`}
-												/>
-											);
-										})
-									}
-								</React.Fragment>
-							);
-						}
+						// 					// 子リストコンポーネントに渡すのに必要な情報の抽出
+						// 					listNeeds = {
+						// 						"sideList": Styles.sideList,
+						// 						"sideListChildren": Styles.sideListChildren,
+						// 						"sideListText": Styles.sideListText,
+						// 						"func": item.func,
+						// 						"state": {
+						// 							"page": item.state.page,
+						// 							"list": item.state.list,
+						// 						},
+						// 						"name": item.name,
+						// 					};
+						// 					console.log({"listNeeds": listNeeds});
+						// 					return (
+						// 						// 子リストのルート設定
+						// 						<LittleListRouter
+						// 							states={states}
+						// 							listNeeds={listNeeds}
+						// 							key={`key${listNeeds.state.page}`}
+						// 						/>
+						// 					);
+						// 				})
+						// 			}
+						// 		</React.Fragment>
+						// 	);
+						// }
 					})
 				}
 			</ul>
