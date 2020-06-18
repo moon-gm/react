@@ -8,7 +8,6 @@ function LittleList({listNeeds}) {
 			className={`${listNeeds.sideList} ${listNeeds.sideListChildren}`}
 			onClick={listNeeds.func}
 			id={listNeeds.state.page}
-			key={listNeeds.state.page}
 		>
 			<span className={listNeeds.sideListText}>
 				{listNeeds.name}

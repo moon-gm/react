@@ -15,14 +15,14 @@ const Aside = ({pages, states}) => {
 						console.log({"AllPages": pages});
 
 						// 子リストがなければ以下で作成
-						if (page.children === undefined || page.children === null) {
+						if (page.children === null || page.children === undefined) {
 							return (
 								// 親リスト
 								<li
 									className={Styles.sideList}
 									onClick={page.func}
 									id={page.state.page}
-									key={page.state.page}
+									key={`key${page.state.page}`}
 								>
 									<span className={Styles.sideListText}>
 										{page.name}
@@ -41,6 +41,7 @@ const Aside = ({pages, states}) => {
 										className={Styles.sideList}
 										onClick={page.func}
 										id={page.state.page}
+										key={`key${page.state.page}`}
 									>
 										<span className={Styles.sideListText}>
 											{page.name}
@@ -70,6 +71,7 @@ const Aside = ({pages, states}) => {
 												<LittleListRouter
 													states={states}
 													listNeeds={listNeeds}
+													key={`key${listNeeds.state.page}`}
 												/>
 											);
 										})
