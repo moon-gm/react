@@ -54,8 +54,46 @@
 			margin-left: 0;
 		}
 	}
-	.code-block {
-		display: inline-block;
+	.code {
+		font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+		border: 1px solid $white;
+		padding: 5px;
+		background: $dark-grey;
+		display:inline-block;
+		.purple {
+			color: $purple;
+		}
+		.blue {
+			color: $light-blue;
+		}
+		.red {
+			color: $red-pink;
+		}
+		.yellow {
+			color: $yellow;
+		}
+		.green {
+			color: $light-green;
+		}
+		.white {
+			color: $white;
+		}
+		.brown {
+			color: $brown;
+		}
+		.indent1 {
+			padding-left: 2em;
+		}
+		.indent2 {
+			padding-left: 4em;
+		}
+		.indent3 {
+			padding-left: 6em;
+		}
+		.space {
+			padding-right: 0.5em;
+		}
 	}
 	.command {
 		background: $white-skelton;

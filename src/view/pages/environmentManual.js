@@ -1,4 +1,6 @@
 import React from 'react';
+import codes from './../../config/codes';
+import CreateCode from './../parts/code';
 
 const createEnvironment = ({title}) => {
 	return (
@@ -34,27 +36,11 @@ const createEnvironment = ({title}) => {
 					<p className="p">
 						index.htmlはbodyの中に以下のタグを記載（このタグの中にレンンダリングされていく）
 					</p>
-					<p className="p">
-						<code>
-							{"<div id=\"root\"></div>"}
-						</code>
-					</p>
+					<CreateCode createCode={codes.Page1.Section2.code1} />
 					<p className="p">
 						app.jsは以下のコードを記入
 					</p>
-					<p className="p">
-						<code className="code-block">
-							import React from 'react';<br/>
-							import ReactDOM from 'react-dom';<br/>
-							<br/>
-							ReactDOM.render(<br/>
-								{"<>"}<br/>
-								{"<p>Hellow World!</p>"}<br/>
-								{"</>,"}<br/>
-								document.getElementById('contents')<br/>
-							);
-						</code>
-					</p>
+					<CreateCode createCode={codes.Page1.Section2.code2} />
 
 				<h2 className="h2">
 					2.reactとreact-domのインストール
