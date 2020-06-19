@@ -95,7 +95,7 @@ const createEnvironment = ({title}) => {
 						作成されたファイルに以下の内容を追加
 					</p>
 					<p className="p">
-						<code className="code-block">
+						<code className="code">
 							module.exports = {"{"}<br/>
 								entry: './app.js',<br/>
 								output: {"{"}<br/>
@@ -118,7 +118,7 @@ const createEnvironment = ({title}) => {
 						index.htmlに以下のコードを追加
 					</p>
 					<p className="p">
-						<code>
+						<code className="code">
 							{"<script src=\"./dist/bundle.js\"></script>"}
 						</code>
 					</p>
@@ -156,7 +156,7 @@ const createEnvironment = ({title}) => {
 						package.jsonに以下のコードを追加
 					</p>
 					<p className="p">
-						<code className="code-block" >
+						<code className="code" >
 							"scripts": {"{"}<br/>
 								"test": "echo \"Error: no test specified\" {"&&"} exit 1",<br/>
 								"build": "webpack",<br/>
