@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './../../images/logo.svg';
-import Router from './../router/router'
-import Styles from './../../sass/parts/header.module.scss'
+import Router from './../router/router';
+import Styles from './../../sass/parts/header.module.scss';
 
 const Header = ({states, pages, func}) => {
 	return (
@@ -9,7 +9,7 @@ const Header = ({states, pages, func}) => {
 			<ul className={Styles.headerList}>
 
 				{/* ヘッダーロゴ - start - */}
-					<li className={Styles.headerLogo}>
+					<li className={`${Styles.headerLogo} ${Styles.item}`}>
 						<img
 							src={logo}
 							alt="logo"
@@ -19,7 +19,7 @@ const Header = ({states, pages, func}) => {
 				{/* ヘッダーロゴ - end - */}
 
 				{/* ヘッダータイトル - start - */}
-					<li className={Styles.headerTitle}>
+					<li className={`${Styles.headerTitle} ${Styles.item}`}>
 						<Router
 							pages={pages}
 							states={states}
@@ -28,14 +28,26 @@ const Header = ({states, pages, func}) => {
 					</li>
 				{/* ヘッダータイトル - end - */}
 
-				{/* メニューボタン - start - */}
+				{/* メニューボタンPC - start - */}
 					<li
-						className={Styles.menuBtn}
+						className={Styles.menuBtnPC}
 						onClick={func}
+						id="menuBtnPC"
+					>
+						{states.menu === "show" && "Close Menu ▲"}
+						{states.menu === "hide" && "Open Menu ▼"}
+					</li>
+				{/* メニューボタン - end - */}
+
+				{/* メニューボタンSP - start - */}
+					<li
+						className={Styles.menuBtnSP}
+						onClick={func}
+						id="menuBtnSP"
 					>
 						≡
 					</li>
-				{/* メニューボタン - end - */}
+				{/* メニューボタンSP - end - */}
 
 			</ul>
 		</header>

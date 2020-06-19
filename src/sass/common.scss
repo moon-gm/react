@@ -7,9 +7,6 @@
 		justify-content: space-between;
 	}
 }
-.align-items {
-	align-items: center;
-}
 
 // ページ設定
 .page-layout {
@@ -17,96 +14,55 @@
 	height: 100%;
 	background: $dark-grey;
 	padding: 20px;
+
+	// 見出し１
 	.h1 {
 		font-size: 30px;
 		color: $white;
-		border-bottom: 2px solid $white;
-		margin-bottom: 20px;
+		// border-bottom: 2px solid $white;
+		margin-bottom: $m-bottom;
 		@media screen and (max-width: $sp-max-width) {
 			font-size: 20px;
 		}
 	}
+
+	// 見出し２
 	.h2 {
 		font-size: 25px;
 		color: $light-blue;
-		border-bottom: 1px solid $light-blue;
-		margin-bottom: 20px;
-		margin-left: 20px;
+		border-bottom: 3px solid $light-blue;
+		margin: 0 20px $m-bottom;
+		padding-bottom: 3px;
 		@media screen and (max-width: $sp-max-width) {
 			font-size: 16px;
-			margin-left: 0;
+			margin: 0 0 $m-bottom;
 		}
 	}
+
+	// 見出し３
 	.h3 {
 		font-size: 20px;
-		margin-left: 40px;
-		margin-bottom: 20px;
+		margin: 0 $m-side $m-bottom;
 		@media screen and (max-width: $sp-max-width) {
 			font-size: 14px;
-			margin-left: 0;
+			margin: 0 0 $m-bottom;
 		}
 	}
+
+	// 段落
 	.p {
 		padding: 5px;
-		margin-left: 40px;
-		margin-bottom: 20px;
+		margin: 0 $m-side $m-bottom;
 		@media screen and (max-width: $sp-max-width) {
-			margin-left: 0;
+			margin: 0 0 $m-bottom;
 		}
 	}
-	.code {
-		font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-		border: 1px solid $white;
-		padding: 5px;
-		background: $light-black;
-		display:inline-block;
-		.purple {
-			color: $purple;
-		}
-		.blue {
-			color: $light-blue;
-		}
-		.red {
-			color: $red-pink;
-		}
-		.yellow {
-			color: $yellow;
-		}
-		.green {
-			color: $light-green;
-		}
-		.white {
-			color: $white;
-		}
-		.brown {
-			color: $brown;
-		}
-		.indent1 {
-			padding-left: 2em;
-		}
-		.indent2 {
-			padding-left: 4em;
-		}
-		.indent3 {
-			padding-left: 6em;
-		}
-		.space {
-			padding-right: 0.5em;
-		}
-	}
-	.command {
-		background: $white-skelton;
-		color: $red-purple;
-		font-weight: bold;
-		padding: 2px 5px;
-		border-radius: 4px;
-	}
+
+	// 画像挿入
 	.img-box {
-		margin-bottom: 20px;
-		margin-left: 40px;
+		margin: 0 $m-side $m-bottom;
 		@media screen and (max-width: $sp-max-width) {
-			margin-left: 0;
+			margin: 0 0 $m-bottom;
 		}
 		img {
 			width: 100%;
@@ -117,5 +73,66 @@
 				max-width: 300px;
 			}
 		}
+	}
+
+	// コード挿入
+	.code {
+		font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+		padding: 5px;
+		background: $light-black;
+		display:inline-block;
+
+		// 右スペース
+		.space {
+			padding-right: 0.5em;
+		}
+	}
+
+	// コマンド挿入
+	.command {
+		background: $white-skelton;
+		color: $dark-grey;
+		font-weight: bold;
+		padding: 2px 5px;
+		border-radius: 4px;
+		display: inline-block;
+	}
+
+	// カラー
+	.purple {
+		color: $purple;
+	}
+	.blue {
+		color: $light-blue;
+	}
+	.red {
+		color: $red-pink;
+	}
+	.yellow {
+		color: $yellow;
+	}
+	.green {
+		color: $light-green;
+	}
+	.white {
+		color: $white;
+	}
+	.brown {
+		color: $brown;
+	}
+
+	// インデント
+	.indent1 {
+		padding-left: 2em;
+	}
+	.indent2 {
+		padding-left: 4em;
+	}
+	.indent3 {
+		padding-left: 6em;
+	}
+	.indent4 {
+		padding-left: 8em;
 	}
 }

@@ -27,7 +27,7 @@ function Pages(funcs, states) {
 				},
 				"children": [
 					{
-						"name": "1-1. create-react-appを使用",
+						"name": "1-1. create-react-app",
 						"func": funcs[1].Page1.S1,
 						"state": {
 							"page": states.page.Page1.S1,

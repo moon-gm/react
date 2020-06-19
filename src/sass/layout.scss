@@ -5,18 +5,18 @@
 	overflow: scroll;
 	position: fixed;
 	top: $header-height;
-	left: 0;
+	right: 0;
 	width: 30%;
 	height: 100%;
 	padding: 20px;
 	background: $dark-grey-skelton;
 	backdrop-filter: blur(10px);
 	color: $light-blue;
-	border-right: 1px solid $light-blue;
+	border-left: 1px solid $light-blue;
 	z-index: $z-index-aside;
 	@media screen and (max-width: $sp-max-width) {
 		width: 100%;
-		border-right: none;
+		border-left: none;
 		border-bottom: 1px solid $light-blue;
 	}
 }
@@ -27,9 +27,12 @@
 
 	// ヘッダーエリア
 	.header {
+		max-width: $screen-max-width;
 		position: fixed;
 		top: 0;
 		left: 0;
+		right: 0;
+		margin: auto;
 		padding: 0 20px;
 		background: $dark-grey;
 		color: $light-blue;
@@ -38,6 +41,7 @@
 		border-bottom: 1px solid $light-blue;
 		z-index: $z-index-header;
 		@media screen and (max-width: $sp-max-width) {
+			padding: 0;
 		}
 
 	}

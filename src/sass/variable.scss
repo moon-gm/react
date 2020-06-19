@@ -1,9 +1,15 @@
 /** 変数設定 **/
 // width定義
 $sp-max-width: 768px;
+$screen-max-width: 1280px;
+$screen-min-width: 330px;
 
 // height定義
 $header-height: 50px;
+
+// margin設定
+$m-bottom: 20px;
+$m-side: 40px;
 
 // カラー定義
 $light-blue: #61dafb;

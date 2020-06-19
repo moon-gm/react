@@ -12,6 +12,9 @@ body {
 	font-size: 15px;
 	color: $white;
 	background: $dark-grey;
+	max-width: $screen-max-width;
+	min-width: $screen-min-width;
+	margin: 0 auto;
 	@media screen and (max-width: $sp-max-width) {
 		font-size: 12px;
 	}
