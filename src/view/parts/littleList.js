@@ -1,9 +1,9 @@
 // サイドメニューの子リストの表示処理
 import React from 'react';
 
-function LittleList({listNeeds}) {
+const LittleList = ({listNeeds}) => {
+	// 子リスト
 	return(
-		// 子リスト
 		<li
 			className={`${listNeeds.sideList} ${listNeeds.sideListChildren}`}
 			onClick={listNeeds.func}

@@ -11,13 +11,13 @@ const Aside = ({pages, states}) => {
 		<aside className="aside">
 			<ul className={Styles.asideScroll}>
 				{ //サイドメニュー一覧をループで作成
-					pages.map(page => {
+					pages.map((page) => {
 						console.log({"AllPages": pages});
 
 						// 子リストがなければ以下で作成
-						if (page.children === undefined) {
+						if (page.children === void 0) {
+							// 親リスト
 							return (
-								// 親リスト
 								<li
 									className={Styles.sideList}
 									onClick={page.func}
@@ -34,9 +34,9 @@ const Aside = ({pages, states}) => {
 
 						// 子リストがあれば以下で作成
 						else {
+							// 親リスト
 							return (
 								<React.Fragment key={`flag${page.state.page}`}>
-									{/* 親リスト */}
 									<li
 										className={Styles.sideList}
 										onClick={page.func}
@@ -50,7 +50,7 @@ const Aside = ({pages, states}) => {
 									</li>
 
 									{ /* 子リストをループで作成 */
-										page.children.map(item => {
+										page.children.map((item) => {
 											console.log({"SinglePage": page});
 
 											// 子リストコンポーネントに渡すのに必要な情報の抽出
@@ -66,8 +66,8 @@ const Aside = ({pages, states}) => {
 												"name": item.name,
 											};
 											console.log({"listNeeds": listNeeds});
+											// 子リストのルート設定
 											return (
-												// 子リストのルート設定
 												<LittleListRouter
 													states={states}
 													listNeeds={listNeeds}
