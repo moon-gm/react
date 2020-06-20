@@ -35,19 +35,18 @@ class Layout extends React.Component {
 				},
 			},
 			{
-				"Page2": this.page2.bind(this),
+				"Page2": {
+					"L2": Functions.Page2.bind(this),
+					"S1": Functions.PageSection.bind(this, States.page.Page2.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page2.S2),
+					"S3": Functions.PageSection.bind(this, States.page.Page2.S3),
+				},
 			},
 
 		];
 
 		// page設定
 		this.pages = Pages(this.funcs, States);
-	}
-
-	page2() {
-		this.setState({page: 2});
-		this.setState({menu: 'hide'});
-		console.log(this.state);
 	}
 
 	render() {

@@ -47,10 +47,36 @@ function Pages(funcs, states) {
 			// 2. データ関連
 			{
 				"name": "2. データ関連",
-				"func": funcs[2].Page2,
+				"func": funcs[2].Page2.L2,
 				"state": {
-					"page": states.page.Page2,
+					"page": states.page.Page2.L2,
 				},
+				"children": [
+					{
+						"name": "2-1. Stateの使い方",
+						"func": funcs[2].Page2.S1,
+						"state": {
+							"page": states.page.Page2.S1,
+							"list": states.list2.name,
+						},
+					},
+					{
+						"name": "2-2. Propsの使い方",
+						"func": funcs[2].Page2.S2,
+						"state": {
+							"page": states.page.Page2.S2,
+							"list": states.list2.name,
+						},
+					},
+					{
+						"name": "2-3. Envの使い方",
+						"func": funcs[2].Page2.S3,
+						"state": {
+							"page": states.page.Page2.S3,
+							"list": states.list2.name,
+						},
+					},
+				],
 			},
 		]
 	);

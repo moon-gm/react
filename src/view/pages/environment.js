@@ -1,5 +1,7 @@
 import React from 'react';
-import screenShot from './../../images/environment_react-start.png'
+import screenShot from './../../images/environment_react-start.png';
+import codes from './../../config/codes';
+import CreateCode from './../parts/code';
 
 const createEnvironment = ({title}) => {
 	return (
@@ -74,7 +76,7 @@ const createEnvironment = ({title}) => {
 				</div>
 
 			<h2 className="h2">
-				5. Sassを導入
+				5. Sassを導入（おまけ）
 			</h2>
 				<p className="p">
 					<span className="command">
@@ -84,6 +86,45 @@ const createEnvironment = ({title}) => {
 				<p className="p">
 					上記コマンド入力のみで、Sassの使用が可能になる
 				</p>
+
+			<h2 className="h2">
+				6. サーバにデプロイ
+			</h2>
+				<h3 className="h3">
+					1. プロダクション用をビルド
+				</h3>
+					<p className="p">
+						以下のコマンドを実行で、プロダクション用ビルドがプロジェクトディレクトリに「build」フォルダの中に作成される
+					</p>
+					<p className="p">
+						<span className="command">
+							$ npm run-script build
+						</span>
+					</p>
+					<p className="p">
+						※ファイルの参照が絶対パスになっている場合
+					</p>
+					<p className="p">
+						「build」フォルダのindex.htmlにアクセスしても何も表示されない場合はファイルの参照が絶対パスになっている可能性があるので、package.jsonに以下のコードを追加し、ビルドし直すことで解決する
+					</p>
+					<CreateCode createCode={codes.Page1.Section1.code1} />
+				<h3 className="h3">
+					2.ローカルで確認
+				</h3>
+					<p className="p">
+						以下のコマンドを実行し、http://localhost:5000 にアクセスすることでプロダクション用ビルドの内容を確認できる
+					</p>
+					<p className="p">
+						<span className="command">
+							$ serve -s build
+						</span>
+					</p>
+				<h3 className="h3">
+					3.サーバにデプロイ
+				</h3>
+					<p className="p">
+						確認して問題がなければ、「build」フォルダ内をサーバにアップすることでそのまま表示できる
+					</p>
 
 		</div>
 	);

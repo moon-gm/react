@@ -8,7 +8,12 @@ export default {
 			S1: "1S1",
 			S2: "1S2",
 		},
-		Page2: 2,
+		Page2: {
+			L2: 2,
+			S1: "2S1",
+			S2: "2S2",
+			S3: "2S3",
+		},
 	},
 
 	// 初期値 hide
