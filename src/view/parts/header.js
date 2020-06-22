@@ -3,7 +3,7 @@ import logo from './../../images/logo.svg';
 import Router from './../router/router';
 import Styles from './../../sass/parts/header.module.scss';
 
-const Header = ({states, pages, func}) => {
+const Header = ({allData, states, func}) => {
 	return (
 		<header className="header">
 			<ul className={Styles.headerList}>
@@ -21,7 +21,7 @@ const Header = ({states, pages, func}) => {
 				{/* ヘッダータイトル - start - */}
 					<li className={`${Styles.headerTitle} ${Styles.item}`}>
 						<Router
-							pages={pages}
+							allData={allData}
 							states={states}
 							route="header"
 						/>

@@ -7,7 +7,7 @@
  * @state ページのstate
  * @children 子リストがある場合の設定
  */
-function Pages(funcs, states) {
+function AllData(funcs, states) {
 	return (
 		[
 			// Topページ
@@ -82,4 +82,4 @@ function Pages(funcs, states) {
 	);
 }
 
-export default Pages;
+export default AllData;

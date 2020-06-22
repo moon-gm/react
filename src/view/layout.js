@@ -4,7 +4,7 @@ import Header from './parts/header'
 import Router from './router/router'
 
 // 各種設定値取得
-import Pages from './../config/pages';
+import AllData from './../config/allData';
 import Functions from './../config/functions';
 import States from './../config/states';
 
@@ -45,8 +45,8 @@ class Layout extends React.Component {
 
 		];
 
-		// page設定
-		this.pages = Pages(this.funcs, States);
+		// ページのデータ設定
+		this.allData = AllData(this.funcs, States);
 	}
 
 	render() {
@@ -57,7 +57,7 @@ class Layout extends React.Component {
 				{this.state.menu === States.menu.hide}
 				{this.state.menu === States.menu.show && (
 					<Aside
-						pages={this.pages}
+						allData={this.allData}
 						states ={this.state}
 					/>
 				)}
@@ -67,7 +67,7 @@ class Layout extends React.Component {
 
 					{/* ヘッダーエリア */}
 					<Header
-						pages={this.pages}
+						allData={this.allData}
 						states={this.state}
 						func={this.funcs[0].Menu}
 					/>
@@ -76,7 +76,7 @@ class Layout extends React.Component {
 					<main className="main">
 						{/* コンテンツ(ページ)切替 */}
 						<Router
-							pages={this.pages}
+							allData={this.allData}
 							states={this.state}
 							route="page"
 						/>
