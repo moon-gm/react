@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './../../images/logo.svg';
-import Router from './../router/router';
+import Router from './../../config/routes';
 import Styles from './../../sass/parts/header.module.scss';
 
 const Header = ({allData, states, func}) => {
@@ -20,10 +20,9 @@ const Header = ({allData, states, func}) => {
 
 				{/* ヘッダータイトル - start - */}
 					<li className={`${Styles.headerTitle} ${Styles.item}`}>
-						<Router
+						<Router.Header
 							allData={allData}
 							states={states}
-							route="header"
 						/>
 					</li>
 				{/* ヘッダータイトル - end - */}

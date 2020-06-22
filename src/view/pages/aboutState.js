@@ -1,6 +1,6 @@
 import React from 'react';
 import codes from '../../config/codes';
-import CreateCode from '../parts/code';
+import Parts from '../../config/parts';
 
 const aboutState = ({title}) => {
 	return (
@@ -29,11 +29,11 @@ const aboutState = ({title}) => {
 				<p className="p">
 					index.htmlはbodyの中に以下のタグを記載（このタグの中にレンンダリングされていく）
 				</p>
-				<CreateCode createCode={codes.Page1.Section2.code1} />
+				<Parts.Code createCode={codes.Page1.Section2.code1} />
 				<p className="p">
 					app.jsは以下のコードを記入
 				</p>
-				<CreateCode createCode={codes.Page1.Section2.code2} />
+				<Parts.Code createCode={codes.Page1.Section2.code2} />
 
 			<h2 className="h2">
 				2. reactとreact-domのインストール
@@ -84,11 +84,11 @@ const aboutState = ({title}) => {
 				<p className="p">
 					作成されたファイルに以下の内容を追加
 				</p>
-				<CreateCode createCode={codes.Page1.Section2.code3} />
+				<Parts.Code createCode={codes.Page1.Section2.code3} />
 				<p className="p">
 					index.htmlに以下のコードを追加
 				</p>
-				<CreateCode createCode={codes.Page1.Section2.code4} />
+				<Parts.Code createCode={codes.Page1.Section2.code4} />
 
 			<h2 className="h2">
 				4. Babelのインストール
@@ -112,7 +112,7 @@ const aboutState = ({title}) => {
 						$ touch .babelrc
 					</span>
 				</p>
-				<CreateCode createCode={codes.Page1.Section2.code5} />
+				<Parts.Code createCode={codes.Page1.Section2.code5} />
 
 			<h2 className="h2">
 				5. ブラウザのリロード実装
@@ -123,7 +123,7 @@ const aboutState = ({title}) => {
 				<p className="p">
 					package.jsonに以下のコードを追加
 				</p>
-				<CreateCode createCode={codes.Page1.Section2.code6} />
+				<Parts.Code createCode={codes.Page1.Section2.code6} />
 
 			<h2 className="h2">
 				6. サーバ起動
