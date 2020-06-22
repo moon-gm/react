@@ -24,7 +24,7 @@ class Layout extends React.Component {
 		// function設定
 		this.funcs = [
 			{
-				"Top": Functions.PageTop.bind(this),
+				"Top": Functions.Top.bind(this),
 				"Menu": Functions.Menu.bind(this),
 			},
 			{
@@ -46,7 +46,7 @@ class Layout extends React.Component {
 		];
 
 		// ページのデータ設定
-		this.allData = AllData(this.funcs, States);
+		this.allData = AllData(this.funcs);
 	}
 
 	render() {

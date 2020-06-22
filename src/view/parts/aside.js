@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from './../../sass/parts/aside.module.scss';
-import LittleListRouter from './../router/littleListRouter';
+import Router from './../router/router';
 
 const Aside = ({allData, states}) => {
 
@@ -68,9 +68,10 @@ const Aside = ({allData, states}) => {
 											console.log({"listNeeds": listNeeds});
 											// 子リストのルート設定
 											return (
-												<LittleListRouter
+												<Router
+													allData={listNeeds}
 													states={states}
-													listNeeds={listNeeds}
+													route="littleList"
 													key={`key${listNeeds.state.page}`}
 												/>
 											);
