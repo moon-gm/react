@@ -121,6 +121,12 @@
 	.brown {
 		color: $brown;
 	}
+	.orange {
+		color: $orange;
+	}
+	.emerald {
+		color: $emerald;
+	}
 
 	// インデント
 	.indent1 {
@@ -134,5 +140,8 @@
 	}
 	.indent4 {
 		padding-left: 8em;
+	}
+	.indent5 {
+		padding-left: 10em;
 	}
 }
