@@ -7,146 +7,55 @@ const aboutProps = ({title}) => {
 		<div className="page-layout">
 
 			<h2 className="h2">
-				1. ディレクトリ・ファイル 作成
+				1. ファイルの関係性の確認
 			</h2>
 				<p className="p">
-					プロジェクト用のディレクトリを作成し、以下のコマンドを実行し、package.jsonを作成
-				</p>
-				<p className="p">
-					<span className="command">
-						$ npm init -y
-					</span>
-				</p>
-				<p className="p">
-					以下のコマンドで必要なファイルも作成しておく
-				</p>
-				<p className="p">
-					<span className="command">
-						$ touch index.html<br/>
-						$ touch app.js
-					</span>
-				</p>
-				<p className="p">
-					index.htmlはbodyの中に以下のタグを記載（このタグの中にレンンダリングされていく）
-				</p>
-				<Parts.Code createCode={codes.Page1.Section2.code1} />
-				<p className="p">
-					app.jsは以下のコードを記入
-				</p>
-				<Parts.Code createCode={codes.Page1.Section2.code2} />
-
-			<h2 className="h2">
-				2. reactとreact-domのインストール
-			</h2>
-				<p className="p">
-					Reactを使えるようにする
-				</p>
-				<p className="p">
-					以下のコマンドを実行するとプロジェクト配下にnode_modulesフォルダが作成され、package.jsonのdependenciesにreactとreact-domが記載される
-				</p>
-				<p className="p">
-					<span className="command">
-					$ npm install --save react react-dom
-					</span>
+				親コンポーネント・・・index.js<br/>
+				子コンポーネント・・・App.js
 				</p>
 
 			<h2 className="h2">
-				3. Webpackのインストール
+				2. 親コンポーネント(index.js)での記述
 			</h2>
 				<p className="p">
-					ファイルのビルド関連の設定をする
+					子コンポーネント(App.js)をインポート
 				</p>
+				<Parts.Code createCode={codes.Page2.Section2.code1} />
 				<p className="p">
-					以下のコマンドでグローバルにインストール（上手く動作しない場合があるため、グローバルにインストール）
+					子コンポーネントを使用し、タグの属性のように記載した「comment」をpropsとして渡している
 				</p>
+				<Parts.Code createCode={codes.Page2.Section2.code2} />
+
+			<h2 className="h2">
+				3. 子コンポーネント(App.js)での使い方
+			</h2>
 				<p className="p">
-					<span className="command">
-						$ npm install -g webpack-cli
-					</span>
+					コンポーネントの作り方によって使い方が少し異なるので、以下で３パターンあげる
 				</p>
+
+				<h3 className="h3">
+					3-1. classで作成の場合
+				</h3>
 				<p className="p">
-					以下のコマンドで、インストール＆package.jsonに記載
-				</p>
-				<p className="p">
-					<span className="command">
-						$ npm install --save-dev webpack<br/>
-						$ npm install --save-dev webpack-cli
-					</span>
-				</p>
-				<p className="p">
-					以下のコマンドでWebpackの設定ファイルを作成
-				</p>
-				<p className="p">
-					<span className="command">
-						$ touch webpack.config.js
-					</span>
-				</p>
-				<p className="p">
-					作成されたファイルに以下の内容を追加
+					React.Componentを継承しているのでそのまま「this.props.comment」で使用できる
 				</p>
 				<Parts.Code createCode={codes.Page1.Section2.code3} />
-				<p className="p">
-					index.htmlに以下のコードを追加
-				</p>
-				<Parts.Code createCode={codes.Page1.Section2.code4} />
 
-			<h2 className="h2">
-				4. Babelのインストール
-			</h2>
+				<h3 className="h3">
+					3-2. constで定義した場合
+				</h3>
 				<p className="p">
-					JSX(xml風のJavascript)で書かれたものをJSに変換する
+					アロー関数で親コンポーネントから受け取った「comment」を以下のように渡せば「comment」として使用できる
 				</p>
-				<p className="p">
-					以下のコマンドを実行でBabelをインストール＆package.jsonに記載
-				</p>
-				<p className="p">
-					<span className="command">
-						$ npm install --save-dev babel-loader babel-core babel-preset-es2015 babel-preset-react
-					</span>
-				</p>
-				<p className="p">
-					以下のコマンドで.babelrcファイルを作成し、できたファイルに以下のコードを追加
-				</p>
-				<p className="p">
-					<span className="command">
-						$ touch .babelrc
-					</span>
-				</p>
-				<Parts.Code createCode={codes.Page1.Section2.code5} />
+				<Parts.Code createCode={codes.Page1.Section2.code3} />
 
-			<h2 className="h2">
-				5. ブラウザのリロード実装
-			</h2>
+				<h3 className="h3">
+					3-3. functionで作成した場合
+				</h3>
 				<p className="p">
-					毎回コマンドを実行せずに、コードを更新する度にブラウザのオートリロードをする設定
+					functionの場合、引数に入れてあげると以下のようにそのまま使える
 				</p>
-				<p className="p">
-					package.jsonに以下のコードを追加
-				</p>
-				<Parts.Code createCode={codes.Page1.Section2.code6} />
-
-			<h2 className="h2">
-				6. サーバ起動
-			</h2>
-				<p className="p">
-					以下を実行し、「http://localhost:8080 」にアクセスで画面が表示(app.jsにReact記述した内容が表示)
-				</p>
-				<p className="p">
-					・webpackの実行
-				</p>
-				<p className="p">
-					<span className="command">
-						$ npm run build
-					</span>
-				</p>
-				<p className="p">
-					・自動リロード
-				</p>
-				<p className="p">
-					<span className="command">
-						$ npm start
-					</span>
-				</p>
+				<Parts.Code createCode={codes.Page1.Section2.code3} />
 
 		</div>
 	);
