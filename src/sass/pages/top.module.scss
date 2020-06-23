@@ -2,13 +2,8 @@
 // 変数設定
 @import './../variable';
 
-.App {
-  text-align: center;
-}
-
 .AppLogo {
   height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,23 +14,18 @@
 
 .AppHeader {
   background-color: $dark-grey;
-  min-height: 100vh;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: $white;
 }
 
-.AppLink {
-  color: $light-blue;
-}
 .mainTitle {
-  color: $light-blue;
-  font-size: 50px;
-  @media screen and (max-width: $sp-max-width) {
-	font-size: 30px;
-}
+	color: $light-blue;
+	font-size: 50px;
+	@media screen and (max-width: $sp-max-width) {
+		font-size: 30px;
+	}
 }
 
