@@ -4,7 +4,6 @@ import States from "../../config/states";
 function showPage(pageState) {
 	this.setState({page: pageState});
 	this.setState({menu: States.menu.hide});
-	console.log(this.state);
 }
 
 export default showPage;

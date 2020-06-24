@@ -11,7 +11,6 @@ const LittleList = ({listNeeds}) => {
 		>
 			<span className={listNeeds.sideListText}>
 				{listNeeds.name}
-				{console.log({"LittleList": listNeeds})}
 			</span>
 		</li>
 	);
