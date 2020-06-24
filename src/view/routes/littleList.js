@@ -1,18 +1,14 @@
 import React from 'react';
-import States from "./../../config/states";
 
 // ルーティングするコンポーネントのインポート
 import LittleList from './../parts/littleList'
 
+// 子リストのルーティング設定
 const LittleListRouter = ({listNeeds, states}) => {
 
 	return (
 		<>
-			{console.log("LittleListRouter")}
-			{/* 1. 環境構築の子リスト */}
-			{listNeeds.state.list === States.list1.name && states.list1 === States.list1.show && <LittleList listNeeds={listNeeds} />}
-			{/* 2. データ関連の子リスト */}
-			{listNeeds.state.list === States.list2.name && states.list2 === States.list2.show && <LittleList listNeeds={listNeeds} />}
+			{listNeeds.state.list && states.list === listNeeds.state.list && <LittleList listNeeds={listNeeds} />}
 		</>
 	);
 }

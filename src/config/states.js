@@ -18,21 +18,15 @@ export default {
 
 	// 初期値 hide
 	menu: {
-		hide: 'hide',
-		show: 'show',
+		hide: "hide",
+		show: "show",
 	},
 
 	// 初期値 hide
-	list1: {
-		name: 'list1',
-		hide: 'hide',
-		show: 'show',
+	list: {
+		hide: "hide",
+		list1: "list1",
+		list2: "list2",
 	},
 
-	// 初期値 hide
-	list2: {
-		name: 'list2',
-		hide: 'hide',
-		show: 'show',
-	},
 };

@@ -28,6 +28,7 @@ function AllData(funcs) {
 				"func": funcs[1].Page1.L1,
 				"state": {
 					"page": States.page.Page1.L1,
+					"list": States.list.list1,
 				},
 				"children": [
 					// 1-1. create-react-app
@@ -37,7 +38,7 @@ function AllData(funcs) {
 						"func": funcs[1].Page1.S1,
 						"state": {
 							"page": States.page.Page1.S1,
-							"list": States.list1.name,
+							"list": States.list.list1,
 						},
 					},
 					// 1-2. 手動で設定
@@ -47,7 +48,7 @@ function AllData(funcs) {
 						"func": funcs[1].Page1.S2,
 						"state": {
 							"page": States.page.Page1.S2,
-							"list": States.list1.name,
+							"list": States.list.list1,
 						},
 					},
 				],
@@ -58,6 +59,7 @@ function AllData(funcs) {
 				"func": funcs[2].Page2.L2,
 				"state": {
 					"page": States.page.Page2.L2,
+					"list": States.list.list2,
 				},
 				"children": [
 					// 2-1. Stateの使い方
@@ -67,7 +69,7 @@ function AllData(funcs) {
 						"func": funcs[2].Page2.S1,
 						"state": {
 							"page": States.page.Page2.S1,
-							"list": States.list2.name,
+							"list": States.list.list2,
 						},
 					},
 					// 2-2. Propsの使い方
@@ -77,7 +79,7 @@ function AllData(funcs) {
 						"func": funcs[2].Page2.S2,
 						"state": {
 							"page": States.page.Page2.S2,
-							"list": States.list2.name,
+							"list": States.list.list2,
 						},
 					},
 					// 2-3. Envの使い方
@@ -87,7 +89,7 @@ function AllData(funcs) {
 						"func": funcs[2].Page2.S3,
 						"state": {
 							"page": States.page.Page2.S3,
-							"list": States.list2.name,
+							"list": States.list.list2,
 						},
 					},
 				],

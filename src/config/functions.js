@@ -1,14 +1,12 @@
 import Menu from './../function/showMenu';
-import Top from './../function/pages/showPageTop';
+import Page from '../function/pages/showPage';
+import List from '../function/pages/selectList';
 import PageSection from './../function/pages/showPageSection';
-import Page1 from './../function/pages/selectPage1';
-import Page2 from './../function/pages/selectPage2';
 
 // Function設定
 export default {
 	"Menu": Menu,
-	"Top": Top,
+	"Page": Page,
+	"List": List,
 	"PageSection": PageSection,
-	"Page1": Page1,
-	"Page2": Page2,
 };

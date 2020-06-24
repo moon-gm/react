@@ -18,26 +18,25 @@ class Layout extends React.Component {
 		this.state = {
 			page: States.page.Top, // Top画面表示
 			menu: States.menu.hide, // サイドメニュー非表示
-			list1: States.list1.hide, // サイドメニューの子リスト1非表示
-			list2: States.list2.hide, // サイドメニューの子リスト2非表示
+			list: States.list.hide, // サイドメニューの子リスト非表示
 		};
 
 		// function設定
 		this.funcs = [
 			{
-				"Top": Functions.Top.bind(this),
+				"Top": Functions.Page.bind(this, States.page.Top),
 				"Menu": Functions.Menu.bind(this),
 			},
 			{
 				"Page1": {
-					"L1": Functions.Page1.bind(this),
+					"L1": Functions.List.bind(this, States.list.list1),
 					"S1": Functions.PageSection.bind(this, States.page.Page1.S1),
 					"S2": Functions.PageSection.bind(this, States.page.Page1.S2),
 				},
 			},
 			{
 				"Page2": {
-					"L2": Functions.Page2.bind(this),
+					"L2": Functions.List.bind(this, States.list.list2),
 					"S1": Functions.PageSection.bind(this, States.page.Page2.S1),
 					"S2": Functions.PageSection.bind(this, States.page.Page2.S2),
 					"S3": Functions.PageSection.bind(this, States.page.Page2.S3),
