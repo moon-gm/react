@@ -92,7 +92,7 @@ export default {
 			},
 		],
 		// 3行目
-		null,
+		[],
 		// 4行目 ReactDOM.render
 		[
 			{

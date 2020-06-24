@@ -26,10 +26,10 @@ const aboutEnv = ({title}) => {
 				<p className="p">
 					作成したファイルに記載するKEYは必ず「REACT_APP_」を頭につけること
 				</p>
-				<p className="p">
+				<div className="p">
 					Ex.)
 					<Parts.Code createCode={codes.Section3.code1} />
-				</p>
+				</div>
 
 			<h2 className="h2">
 				3. 呼び出し方
@@ -38,10 +38,10 @@ const aboutEnv = ({title}) => {
 					以下のような記述で呼び出せる
 				</p>
 				<Parts.Code createCode={codes.Section3.code2} />
-				<p className="p">
+				<div className="p">
 					Ex.)
 					<Parts.Code createCode={codes.Section3.code3} />
-				</p>
+				</div>
 				<p className="p">
 					上記で「React Learning」を取得できる
 				</p>

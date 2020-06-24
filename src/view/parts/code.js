@@ -8,13 +8,13 @@ const CreateCode = ({createCode}) => {
 				{
 					createCode.contents.map(content => {
 
-						if (content === null) {
+						if (content === void 0) {
 							return (
-								<br key={createCode.contents.indexOf(content)}/>
+								<br key={`code${createCode.contents.indexOf(content)}`}/>
 							);
 						} else {
 							return (
-								<React.Fragment  key={createCode.contents.indexOf(content)}>
+								<React.Fragment key={`code${createCode.contents.indexOf(content)}`}>
 									{
 										content.map(item => {
 											return (
