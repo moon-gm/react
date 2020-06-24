@@ -16,6 +16,7 @@ function AllData(funcs) {
 			// Topページ
 			{
 				"name": Pages.Top.Name,
+				"Component": Pages.Top.Top,
 				"func": funcs[0].Top,
 				"state": {
 					"page": States.page.Top,
@@ -32,6 +33,7 @@ function AllData(funcs) {
 					// 1-1. create-react-app
 					{
 						"name": Pages.Page1.Section1.Name,
+						"Component": Pages.Page1.Section1.Environment,
 						"func": funcs[1].Page1.S1,
 						"state": {
 							"page": States.page.Page1.S1,
@@ -41,6 +43,7 @@ function AllData(funcs) {
 					// 1-2. 手動で設定
 					{
 						"name": Pages.Page1.Section2.Name,
+						"Component": Pages.Page1.Section2.EnvironmentM,
 						"func": funcs[1].Page1.S2,
 						"state": {
 							"page": States.page.Page1.S2,
@@ -60,6 +63,7 @@ function AllData(funcs) {
 					// 2-1. Stateの使い方
 					{
 						"name": Pages.Page2.Section1.Name,
+						"Component": Pages.Page2.Section1.AboutState,
 						"func": funcs[2].Page2.S1,
 						"state": {
 							"page": States.page.Page2.S1,
@@ -69,6 +73,7 @@ function AllData(funcs) {
 					// 2-2. Propsの使い方
 					{
 						"name": Pages.Page2.Section2.Name,
+						"Component": Pages.Page2.Section2.AboutProps,
 						"func": funcs[2].Page2.S2,
 						"state": {
 							"page": States.page.Page2.S2,
@@ -78,6 +83,7 @@ function AllData(funcs) {
 					// 2-3. Envの使い方
 					{
 						"name": Pages.Page2.Section3.Name,
+						"Component": Pages.Page2.Section3.AboutEnv,
 						"func": funcs[2].Page2.S3,
 						"state": {
 							"page": States.page.Page2.S3,
