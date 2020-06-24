@@ -1,5 +1,5 @@
 import React from 'react';
-import codes from '../../config/codes';
+import codes from '../../config/codes/page2';
 import Parts from '../../config/parts';
 
 const aboutProps = ({title}) => {
@@ -20,11 +20,11 @@ const aboutProps = ({title}) => {
 				<p className="p">
 					子コンポーネント(App.js)をインポート
 				</p>
-				<Parts.Code createCode={codes.Page2.Section2.code1} />
+				<Parts.Code createCode={codes.Section2.code1} />
 				<p className="p">
 					子コンポーネントを使用し、タグの属性のように記載した「comment」をpropsとして渡している
 				</p>
-				<Parts.Code createCode={codes.Page2.Section2.code2} />
+				<Parts.Code createCode={codes.Section2.code2} />
 
 			<h2 className="h2">
 				3. 子コンポーネント(App.js)での使い方
@@ -39,7 +39,7 @@ const aboutProps = ({title}) => {
 				<p className="p">
 					React.Componentを継承しているのでそのまま「this.props.comment」で使用できる
 				</p>
-				<Parts.Code createCode={codes.Page2.Section2.code3} />
+				<Parts.Code createCode={codes.Section2.code3} />
 
 				<h3 className="h3">
 					3-2. constで定義した場合
@@ -47,7 +47,7 @@ const aboutProps = ({title}) => {
 				<p className="p">
 					アロー関数で親コンポーネントから受け取った「comment」を以下のように渡せば「comment」として使用できる
 				</p>
-				<Parts.Code createCode={codes.Page2.Section2.code4} />
+				<Parts.Code createCode={codes.Section2.code4} />
 
 				<h3 className="h3">
 					3-3. functionで作成した場合
@@ -55,7 +55,7 @@ const aboutProps = ({title}) => {
 				<p className="p">
 					functionの場合、引数に入れてあげると以下のようにそのまま使える
 				</p>
-				<Parts.Code createCode={codes.Page2.Section2.code5} />
+				<Parts.Code createCode={codes.Section2.code5} />
 
 		</div>
 	);

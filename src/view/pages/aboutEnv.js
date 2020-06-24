@@ -1,5 +1,5 @@
 import React from 'react';
-import codes from '../../config/codes';
+import codes from '../../config/codes/page2';
 import Parts from '../../config/parts';
 
 const aboutEnv = ({title}) => {
@@ -28,7 +28,7 @@ const aboutEnv = ({title}) => {
 				</p>
 				<p className="p">
 					Ex.)
-					<Parts.Code createCode={codes.Page2.Section3.code1} />
+					<Parts.Code createCode={codes.Section3.code1} />
 				</p>
 
 			<h2 className="h2">
@@ -37,10 +37,10 @@ const aboutEnv = ({title}) => {
 				<p className="p">
 					以下のような記述で呼び出せる
 				</p>
-				<Parts.Code createCode={codes.Page2.Section3.code2} />
+				<Parts.Code createCode={codes.Section3.code2} />
 				<p className="p">
 					Ex.)
-					<Parts.Code createCode={codes.Page2.Section3.code3} />
+					<Parts.Code createCode={codes.Section3.code3} />
 				</p>
 				<p className="p">
 					上記で「React Learning」を取得できる

@@ -1,6 +1,6 @@
 import React from 'react';
 import screenShot from './../../images/environment_react-start.png';
-import codes from './../../config/codes';
+import codes from './../../config/codes/page1';
 import Parts from '../../config/parts';
 
 const createEnvironment = ({title}) => {
@@ -107,7 +107,7 @@ const createEnvironment = ({title}) => {
 					<p className="p">
 						「build」フォルダのindex.htmlにアクセスしても何も表示されない場合はファイルの参照が絶対パスになっている可能性があるので、package.jsonに以下のコードを追加し、ビルドし直すことで解決する
 					</p>
-					<Parts.Code createCode={codes.Page1.Section1.code1} />
+					<Parts.Code createCode={codes.Section1.code1} />
 				<h3 className="h3">
 					2.ローカルで確認
 				</h3>

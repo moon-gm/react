@@ -1,0 +1,127 @@
+// Page2 Section1 Code4
+export default {
+	contents: [
+		// 1行目
+		[
+			{
+				id: "code4-1-1",
+				text: "<",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-2",
+				text: "button",
+				color: "red",
+				indent: "",
+				space: true,
+			},
+			{
+				id: "code4-1-3",
+				text: "onClick",
+				color: "yellow",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-4",
+				text: "=",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-5",
+				text: "{",
+				color: "emerald",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-6",
+				text: "this",
+				color: "red",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-7",
+				text: ".",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-8",
+				text: "func",
+				color: "blue",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-9",
+				text: ".",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-10",
+				text: "bind",
+				color: "brown",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-11",
+				text: "(",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-12",
+				text: "this",
+				color: "red",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-13",
+				text: ")",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-14",
+				text: "}",
+				color: "emerald",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-15",
+				text: ">Change State</",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-16",
+				text: "button",
+				color: "red",
+				indent: "",
+				space: false,
+			},
+			{
+				id: "code4-1-17",
+				text: ">",
+				color: "white",
+				indent: "",
+				space: false,
+			},
+		],
+	]
+}
