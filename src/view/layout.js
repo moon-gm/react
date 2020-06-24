@@ -42,6 +42,62 @@ class Layout extends React.Component {
 					"S3": Functions.PageSection.bind(this, States.page.Page2.S3),
 				},
 			},
+			{
+				"Page3": {
+					"L3": Functions.List.bind(this, States.list.list3),
+					"S1": Functions.PageSection.bind(this, States.page.Page3.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page3.S2),
+				},
+			},
+			{
+				"Page4": {
+					"L4": Functions.List.bind(this, States.list.list4),
+					"S1": Functions.PageSection.bind(this, States.page.Page4.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page4.S2),
+				},
+			},
+			{
+				"Page5": {
+					"L5": Functions.List.bind(this, States.list.list5),
+					"S1": Functions.PageSection.bind(this, States.page.Page5.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page5.S2),
+				},
+			},
+			{
+				"Page6": {
+					"L6": Functions.List.bind(this, States.list.list6),
+					"S1": Functions.PageSection.bind(this, States.page.Page6.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page6.S2),
+				},
+			},
+			{
+				"Page7": {
+					"L7": Functions.List.bind(this, States.list.list7),
+					"S1": Functions.PageSection.bind(this, States.page.Page7.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page7.S2),
+				},
+			},
+			{
+				"Page8": {
+					"L8": Functions.List.bind(this, States.list.list8),
+					"S1": Functions.PageSection.bind(this, States.page.Page8.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page8.S2),
+				},
+			},
+			{
+				"Page9": {
+					"L9": Functions.List.bind(this, States.list.list9),
+					"S1": Functions.PageSection.bind(this, States.page.Page9.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page9.S2),
+				},
+			},
+			{
+				"Page10": {
+					"L10": Functions.List.bind(this, States.list.list10),
+					"S1": Functions.PageSection.bind(this, States.page.Page10.S1),
+					"S2": Functions.PageSection.bind(this, States.page.Page10.S2),
+				},
+			},
 
 		];
 

@@ -94,6 +94,254 @@ function AllData(funcs) {
 					},
 				],
 			},
+			// 3. ---追加予定---
+			{
+				"name": Pages.Page3.Name,
+				"func": funcs[3].Page3.L3,
+				"state": {
+					"page": States.page.Page3.L3,
+					"list": States.list.list3,
+				},
+				"children": [
+					// 3-1. ---追加予定---
+					{
+						"name": Pages.Page3.Section1.Name,
+						"Component": Pages.Page3.Section1.Sample,
+						"func": funcs[3].Page3.S1,
+						"state": {
+							"page": States.page.Page3.S1,
+							"list": States.list.list3,
+						},
+					},
+					// 3-2. ---追加予定---
+					{
+						"name": Pages.Page3.Section2.Name,
+						"Component": Pages.Page3.Section2.Sample,
+						"func": funcs[3].Page3.S2,
+						"state": {
+							"page": States.page.Page3.S2,
+							"list": States.list.list3,
+						},
+					},
+				],
+			},
+			// 4. ---追加予定---
+			{
+				"name": Pages.Page4.Name,
+				"func": funcs[4].Page4.L4,
+				"state": {
+					"page": States.page.Page4.L4,
+					"list": States.list.list4,
+				},
+				"children": [
+					// 4-1. ---追加予定---
+					{
+						"name": Pages.Page4.Section1.Name,
+						"Component": Pages.Page4.Section1.Sample,
+						"func": funcs[4].Page4.S1,
+						"state": {
+							"page": States.page.Page4.S1,
+							"list": States.list.list4,
+						},
+					},
+					// 4-2. ---追加予定---
+					{
+						"name": Pages.Page4.Section2.Name,
+						"Component": Pages.Page4.Section2.Sample,
+						"func": funcs[4].Page4.S2,
+						"state": {
+							"page": States.page.Page4.S2,
+							"list": States.list.list4,
+						},
+					},
+				],
+			},
+			// 5. ---追加予定---
+			{
+				"name": Pages.Page5.Name,
+				"func": funcs[5].Page5.L5,
+				"state": {
+					"page": States.page.Page5.L5,
+					"list": States.list.list5,
+				},
+				"children": [
+					// 5-1. ---追加予定---
+					{
+						"name": Pages.Page5.Section1.Name,
+						"Component": Pages.Page5.Section1.Sample,
+						"func": funcs[5].Page5.S1,
+						"state": {
+							"page": States.page.Page5.S1,
+							"list": States.list.list5,
+						},
+					},
+					// 5-2. ---追加予定---
+					{
+						"name": Pages.Page5.Section2.Name,
+						"Component": Pages.Page5.Section2.Sample,
+						"func": funcs[5].Page5.S2,
+						"state": {
+							"page": States.page.Page5.S2,
+							"list": States.list.list5,
+						},
+					},
+				],
+			},
+			// 6. ---追加予定---
+			{
+				"name": Pages.Page6.Name,
+				"func": funcs[6].Page6.L6,
+				"state": {
+					"page": States.page.Page6.L6,
+					"list": States.list.list6,
+				},
+				"children": [
+					// 6-1. ---追加予定---
+					{
+						"name": Pages.Page6.Section1.Name,
+						"Component": Pages.Page6.Section1.Sample,
+						"func": funcs[6].Page6.S1,
+						"state": {
+							"page": States.page.Page6.S1,
+							"list": States.list.list6,
+						},
+					},
+					// 6-2. ---追加予定---
+					{
+						"name": Pages.Page6.Section2.Name,
+						"Component": Pages.Page6.Section2.Sample,
+						"func": funcs[6].Page6.S2,
+						"state": {
+							"page": States.page.Page6.S2,
+							"list": States.list.list6,
+						},
+					},
+				],
+			},
+			// 7. ---追加予定---
+			{
+				"name": Pages.Page7.Name,
+				"func": funcs[7].Page7.L7,
+				"state": {
+					"page": States.page.Page7.L7,
+					"list": States.list.list7,
+				},
+				"children": [
+					// 7-1. ---追加予定---
+					{
+						"name": Pages.Page7.Section1.Name,
+						"Component": Pages.Page7.Section1.Sample,
+						"func": funcs[7].Page7.S1,
+						"state": {
+							"page": States.page.Page7.S1,
+							"list": States.list.list7,
+						},
+					},
+					// 7-2. ---追加予定---
+					{
+						"name": Pages.Page7.Section2.Name,
+						"Component": Pages.Page7.Section2.Sample,
+						"func": funcs[7].Page7.S2,
+						"state": {
+							"page": States.page.Page7.S2,
+							"list": States.list.list7,
+						},
+					},
+				],
+			},
+			// 8. ---追加予定---
+			{
+				"name": Pages.Page8.Name,
+				"func": funcs[8].Page8.L8,
+				"state": {
+					"page": States.page.Page8.L8,
+					"list": States.list.list8,
+				},
+				"children": [
+					// 8-1. ---追加予定---
+					{
+						"name": Pages.Page8.Section1.Name,
+						"Component": Pages.Page8.Section1.Sample,
+						"func": funcs[8].Page8.S1,
+						"state": {
+							"page": States.page.Page8.S1,
+							"list": States.list.list8,
+						},
+					},
+					// 8-2. ---追加予定---
+					{
+						"name": Pages.Page8.Section2.Name,
+						"Component": Pages.Page8.Section2.Sample,
+						"func": funcs[8].Page8.S2,
+						"state": {
+							"page": States.page.Page8.S2,
+							"list": States.list.list8,
+						},
+					},
+				],
+			},
+			// 9. ---追加予定---
+			{
+				"name": Pages.Page9.Name,
+				"func": funcs[9].Page9.L9,
+				"state": {
+					"page": States.page.Page9.L9,
+					"list": States.list.list9,
+				},
+				"children": [
+					// 9-1. ---追加予定---
+					{
+						"name": Pages.Page9.Section1.Name,
+						"Component": Pages.Page9.Section1.Sample,
+						"func": funcs[9].Page9.S1,
+						"state": {
+							"page": States.page.Page9.S1,
+							"list": States.list.list9,
+						},
+					},
+					// 9-2. ---追加予定---
+					{
+						"name": Pages.Page9.Section2.Name,
+						"Component": Pages.Page9.Section2.Sample,
+						"func": funcs[9].Page9.S2,
+						"state": {
+							"page": States.page.Page9.S2,
+							"list": States.list.list9,
+						},
+					},
+				],
+			},
+			// 10. ---追加予定---
+			{
+				"name": Pages.Page10.Name,
+				"func": funcs[10].Page10.L10,
+				"state": {
+					"page": States.page.Page10.L10,
+					"list": States.list.list10,
+				},
+				"children": [
+					// 10-1. ---追加予定---
+					{
+						"name": Pages.Page10.Section1.Name,
+						"Component": Pages.Page10.Section1.Sample,
+						"func": funcs[10].Page10.S1,
+						"state": {
+							"page": States.page.Page10.S1,
+							"list": States.list.list10,
+						},
+					},
+					// 10-2. ---追加予定---
+					{
+						"name": Pages.Page10.Section2.Name,
+						"Component": Pages.Page10.Section2.Sample,
+						"func": funcs[10].Page10.S2,
+						"state": {
+							"page": States.page.Page10.S2,
+							"list": States.list.list10,
+						},
+					},
+				],
+			},
 		]
 	);
 }
