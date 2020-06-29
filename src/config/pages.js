@@ -4,6 +4,7 @@ import EnvironmentM from '../view/pages/environmentManual';
 import AboutState from '../view/pages/aboutState';
 import AboutProps from '../view/pages/aboutProps';
 import AboutEnv from '../view/pages/aboutEnv';
+import HowToCreateComponent from '../view/pages/howToCreateComponent';
 import Sample from '../sample/pageSample';
 
 // Page Component設定
@@ -41,35 +42,35 @@ export default {
 			AboutEnv: AboutEnv,
 		},
 	},
-	// 3. ---追加予定---
+	// 3. コンポーネント
 	Page3: {
-		Name: "3. ---追加予定---",
+		Name: "3. コンポーネント",
 		Section1: {
-			Name: "3-1. ---追加予定---",
-			Sample: Sample,
+			Name: "3-1. 作成方法",
+			HowToCreateComponent: HowToCreateComponent,
 		},
 		Section2: {
-			Name: "3-2. ---追加予定---",
+			Name: "3-2. 役割ごとに作成",
 			Sample: Sample,
 		},
 	},
-	// 4. ---追加予定---
+	// 4. ルーティング
 	Page4: {
-		Name: "4. ---追加予定---",
+		Name: "4. ルーティング",
 		Section1: {
-			Name: "4-1. ---追加予定---",
+			Name: "4-1. React Router",
 			Sample: Sample,
 		},
 		Section2: {
-			Name: "4-2. ---追加予定---",
+			Name: "4-2. ファイルで設定",
 			Sample: Sample,
 		},
 	},
-	// 5. ---追加予定---
+	// 5. ライブラリ(プラグイン)
 	Page5: {
-		Name: "5. ---追加予定---",
+		Name: "5. ライブラリ(プラグイン)",
 		Section1: {
-			Name: "5-1. ---追加予定---",
+			Name: "5-1. react-syntax-highlighter",
 			Sample: Sample,
 		},
 		Section2: {

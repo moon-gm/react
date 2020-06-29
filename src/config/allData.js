@@ -94,7 +94,7 @@ function AllData(funcs) {
 					},
 				],
 			},
-			// 3. ---追加予定---
+			// 3. コンポーネント
 			{
 				"name": Pages.Page3.Name,
 				"func": funcs[3].Page3.L3,
@@ -103,17 +103,17 @@ function AllData(funcs) {
 					"list": States.list.list3,
 				},
 				"children": [
-					// 3-1. ---追加予定---
+					// 3-1. 作成方法
 					{
 						"name": Pages.Page3.Section1.Name,
-						"Component": Pages.Page3.Section1.Sample,
+						"Component": Pages.Page3.Section1.HowToCreateComponent,
 						"func": funcs[3].Page3.S1,
 						"state": {
 							"page": States.page.Page3.S1,
 							"list": States.list.list3,
 						},
 					},
-					// 3-2. ---追加予定---
+					// 3-2. 役割ごとに作成
 					{
 						"name": Pages.Page3.Section2.Name,
 						"Component": Pages.Page3.Section2.Sample,
@@ -125,7 +125,7 @@ function AllData(funcs) {
 					},
 				],
 			},
-			// 4. ---追加予定---
+			// 4. ルーティング
 			{
 				"name": Pages.Page4.Name,
 				"func": funcs[4].Page4.L4,
@@ -134,7 +134,7 @@ function AllData(funcs) {
 					"list": States.list.list4,
 				},
 				"children": [
-					// 4-1. ---追加予定---
+					// 4-1. React Router
 					{
 						"name": Pages.Page4.Section1.Name,
 						"Component": Pages.Page4.Section1.Sample,
@@ -144,7 +144,7 @@ function AllData(funcs) {
 							"list": States.list.list4,
 						},
 					},
-					// 4-2. ---追加予定---
+					// 4-2. ファイルで設定
 					{
 						"name": Pages.Page4.Section2.Name,
 						"Component": Pages.Page4.Section2.Sample,
@@ -156,7 +156,7 @@ function AllData(funcs) {
 					},
 				],
 			},
-			// 5. ---追加予定---
+			// 5. ライブラリ(プラグイン)
 			{
 				"name": Pages.Page5.Name,
 				"func": funcs[5].Page5.L5,
@@ -165,7 +165,7 @@ function AllData(funcs) {
 					"list": States.list.list5,
 				},
 				"children": [
-					// 5-1. ---追加予定---
+					// 5-1. react-syntax-highlighter
 					{
 						"name": Pages.Page5.Section1.Name,
 						"Component": Pages.Page5.Section1.Sample,
