@@ -1,5 +1,5 @@
 import React from 'react';
-import codes from './../../config/codes/page1';
+import codes from './../../config/codes';
 import Parts from '../../config/parts';
 
 const createEnvironment = ({title}) => {
@@ -29,11 +29,19 @@ const createEnvironment = ({title}) => {
 				<p className="p">
 					index.htmlはbodyの中に以下のタグを記載（このタグの中にレンンダリングされていく）
 				</p>
-				<Parts.Code createCode={codes.Section2.code1} />
+				<Parts.CodeHighlighter
+					language={codes.languages.html}
+					codeString={codes.pages.Page1.Section2.code1}
+					codeColor={codes.styles.tomorrow}
+				/>
 				<p className="p">
 					app.jsは以下のコードを記入
 				</p>
-				<Parts.Code createCode={codes.Section2.code2} />
+				<Parts.CodeHighlighter
+					language={codes.languages.jsx}
+					codeString={codes.pages.Page1.Section2.code2}
+					codeColor={codes.styles.tomorrow}
+				/>
 
 			<h2 className="h2">
 				2. reactとreact-domのインストール
@@ -84,12 +92,19 @@ const createEnvironment = ({title}) => {
 				<p className="p">
 					作成されたファイルに以下の内容を追加
 				</p>
-				<Parts.Code createCode={codes.Section2.code3} />
+				<Parts.CodeHighlighter
+					language={codes.languages.javascript}
+					codeString={codes.pages.Page1.Section2.code3}
+					codeColor={codes.styles.tomorrow}
+				/>
 				<p className="p">
 					index.htmlに以下のコードを追加
 				</p>
-				<Parts.Code createCode={codes.Section2.code4} />
-
+				<Parts.CodeHighlighter
+					language={codes.languages.html}
+					codeString={codes.pages.Page1.Section2.code4}
+					codeColor={codes.styles.tomorrow}
+				/>
 			<h2 className="h2">
 				4. Babelのインストール
 			</h2>
@@ -112,7 +127,11 @@ const createEnvironment = ({title}) => {
 						$ touch .babelrc
 					</span>
 				</p>
-				<Parts.Code createCode={codes.Section2.code5} />
+				<Parts.CodeHighlighter
+					language={codes.languages.json}
+					codeString={codes.pages.Page1.Section2.code5}
+					codeColor={codes.styles.tomorrow}
+				/>
 
 			<h2 className="h2">
 				5. ブラウザのリロード実装
@@ -123,7 +142,11 @@ const createEnvironment = ({title}) => {
 				<p className="p">
 					package.jsonに以下のコードを追加
 				</p>
-				<Parts.Code createCode={codes.Section2.code6} />
+				<Parts.CodeHighlighter
+					language={codes.languages.json}
+					codeString={codes.pages.Page1.Section2.code6}
+					codeColor={codes.styles.tomorrow}
+				/>
 
 			<h2 className="h2">
 				6. サーバ起動

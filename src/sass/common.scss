@@ -79,9 +79,10 @@
 	.code {
 		font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
-		padding: 5px;
-		background: $light-black;
 		display:inline-block;
+		pre {
+			border: 1px solid $white;
+		}
 
 		// 右スペース
 		.space {

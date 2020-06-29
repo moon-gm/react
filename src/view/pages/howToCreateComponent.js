@@ -1,5 +1,5 @@
 import React from 'react';
-import codes from '../../config/codes/page2';
+import codes from '../../config/codes';
 import Parts from '../../config/parts';
 
 const HowToCreateComponent = ({title}) => {
@@ -9,22 +9,38 @@ const HowToCreateComponent = ({title}) => {
 			<h2 className="h2">
 				1. import
 			</h2>
-				<Parts.Code createCode={codes.Section3.code1} />
+				<Parts.CodeHighlighter
+						language={codes.languages.jsx}
+						codeString={codes.pages.Page3.Section1.code1}
+						codeColor={codes.styles.tomorrow}
+				/>
 				<p className="p">
 				->Reactコンポーネントを作成する際に必須<br/>
 				※最低これだけインポートしておけばコンポーネントは作成できる
 				</p>
-				<Parts.Code createCode={codes.Section3.code1} />
+				<Parts.CodeHighlighter
+						language={codes.languages.jsx}
+						codeString={codes.pages.Page3.Section1.code2}
+						codeColor={codes.styles.tomorrow}
+				/>
 				<p className="p">
 				->ReactをHTMLにレンダリングする際などに使用<br/>
 				※HTMLのどこにレンダリングするかなど、トップレベルのみの設定で、ほとんどのコンポーネントでは使用しない
 				</p>
-				<Parts.Code createCode={codes.Section3.code1} />
+				<Parts.CodeHighlighter
+						language={codes.languages.jsx}
+						codeString={codes.pages.Page3.Section1.code3}
+						codeColor={codes.styles.tomorrow}
+				/>
 				<p className="p">
 				->インポートしたコンポーネントのみに当たるCSSモジュール<br/>
 				※ファイル名は「〜.module.(s)css」でないと効かない
 				</p>
-				<Parts.Code createCode={codes.Section3.code1} />
+				<Parts.CodeHighlighter
+						language={codes.languages.jsx}
+						codeString={codes.pages.Page3.Section1.code4}
+						codeColor={codes.styles.tomorrow}
+				/>
 				<p className="p">
 				->画像のパスを指定すればインポートして使える<br/>
 				</p>

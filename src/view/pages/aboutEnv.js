@@ -1,5 +1,5 @@
 import React from 'react';
-import codes from '../../config/codes/page2';
+import codes from '../../config/codes';
 import Parts from '../../config/parts';
 
 const aboutEnv = ({title}) => {
@@ -28,8 +28,12 @@ const aboutEnv = ({title}) => {
 				</p>
 				<div className="p">
 					Ex.)
-					<Parts.Code createCode={codes.Section3.code1} />
 				</div>
+				<Parts.CodeHighlighter
+					language={codes.languages.javascript}
+					codeString={codes.pages.Page2.Section3.code1}
+					codeColor={codes.styles.tomorrow}
+				/>
 
 			<h2 className="h2">
 				3. 呼び出し方
@@ -37,11 +41,19 @@ const aboutEnv = ({title}) => {
 				<p className="p">
 					以下のような記述で呼び出せる
 				</p>
-				<Parts.Code createCode={codes.Section3.code2} />
+				<Parts.CodeHighlighter
+						language={codes.languages.javascript}
+						codeString={codes.pages.Page2.Section3.code2}
+						codeColor={codes.styles.tomorrow}
+				/>
 				<div className="p">
 					Ex.)
-					<Parts.Code createCode={codes.Section3.code3} />
 				</div>
+				<Parts.CodeHighlighter
+					language={codes.languages.javascript}
+					codeString={codes.pages.Page2.Section3.code3}
+					codeColor={codes.styles.tomorrow}
+				/>
 				<p className="p">
 					上記で「React Learning」を取得できる
 				</p>
