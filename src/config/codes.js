@@ -1,5 +1,7 @@
+// react-syntax-highlighterのstyleをインポート
 import { dark, coy, funky, okaidia, solarizedlight, tomorrow, twilight, prism, atomDark, base16AteliersulphurpoolLight, cb, darcula, duotoneDark, duotoneEarth, duotoneForest, duotoneLight, duotoneSea, duotoneSpace, ghcolors, hopscotch, pojoaque, vs, xonokai} from 'react-syntax-highlighter/dist/esm/styles/prism';
 
+// ハイライトするコードの設定
 export default {
 	pages: {
 		Top: null,
@@ -43,6 +45,36 @@ export default {
 				code2: "import ReactDOM from 'react-dom'",
 				code3: "import Styles from './style.module.css'",
 				code4: "import Image from './image.png'",
+			},
+			Section2: {
+				code1: "",
+				code2: "",
+				code3: "",
+				code4: "",
+				code5: "",
+			},
+		},
+		Page4: {
+			Section1: {
+				code1: "",
+				code2: "",
+				code3: "",
+				code4: "",
+			},
+			Section2: {
+				code1: "",
+				code2: "",
+				code3: "",
+				code4: "",
+				code5: "",
+			},
+		},
+		Page5: {
+			Section1: {
+				code1: "import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';",
+				code2: "import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';",
+				code3: "<SyntaxHighlighter language={language} style={dark}>\n	{codeString}\n</SyntaxHighlighter>",
+				code4: "import React from 'react';\nimport { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';\nimport { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';\n\nconst CodeHighlighter = ({codeString, language}) => {\n  return (\n	<div className=\"p code\">\n		<SyntaxHighlighter language={language} style={dark}>\n			{codeString}\n		</SyntaxHighlighter>\n	</div>\n  );\n};\nexport default CodeHighlighter;\n",
 			},
 			Section2: {
 				code1: "",

@@ -168,7 +168,7 @@ function AllData(funcs) {
 					// 5-1. react-syntax-highlighter
 					{
 						"name": Pages.Page5.Section1.Name,
-						"Component": Pages.Page5.Section1.Sample,
+						"Component": Pages.Page5.Section1.ReactSyntaxHighlighter,
 						"func": funcs[5].Page5.S1,
 						"state": {
 							"page": States.page.Page5.S1,

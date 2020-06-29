@@ -5,6 +5,7 @@ import AboutState from '../view/pages/page2/s1AboutState';
 import AboutProps from '../view/pages/page2/s2AboutProps';
 import AboutEnv from '../view/pages/page2/s3AboutEnv';
 import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
+import ReactSyntaxHighlighter from '../view/pages/page5/s1ReactSyntaxHighlighter';
 import Sample from '../sample/pageSample';
 
 // Page Component設定
@@ -71,7 +72,7 @@ export default {
 		Name: "5. ライブラリ(プラグイン)",
 		Section1: {
 			Name: "5-1. react-syntax-highlighter",
-			Sample: Sample,
+			ReactSyntaxHighlighter: ReactSyntaxHighlighter,
 		},
 		Section2: {
 			Name: "5-2. ---追加予定---",

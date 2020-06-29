@@ -80,6 +80,12 @@
 		font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 		display:inline-block;
+		width: 90%;
+		min-width: 300px;
+		overflow: scroll;
+		@media screen and (max-width: $sp-max-width) {
+			width: 100%;
+		}
 		pre {
 			border: 1px solid $white;
 		}
