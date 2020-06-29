@@ -1,8 +1,8 @@
 import React from 'react';
-import codes from '../../config/codes';
-import Parts from '../../config/parts';
+import codes from './../../../config/codes';
+import Parts from './../../../config/parts';
 
-const aboutProps = ({title}) => {
+const AboutProps = ({title}) => {
 	return (
 		<div className="page-layout">
 
@@ -81,4 +81,4 @@ const aboutProps = ({title}) => {
 	);
 }
 
-export default aboutProps;
+export default AboutProps;

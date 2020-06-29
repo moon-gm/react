@@ -1,10 +1,10 @@
 import Top from '../view/pages/top';
-import Environment from '../view/pages/environment';
-import EnvironmentM from '../view/pages/environmentManual';
-import AboutState from '../view/pages/aboutState';
-import AboutProps from '../view/pages/aboutProps';
-import AboutEnv from '../view/pages/aboutEnv';
-import HowToCreateComponent from '../view/pages/howToCreateComponent';
+import Environment from '../view/pages/page1/s1Environment';
+import EnvironmentM from '../view/pages/page1/s2EnvironmentManual';
+import AboutState from '../view/pages/page2/s1AboutState';
+import AboutProps from '../view/pages/page2/s2AboutProps';
+import AboutEnv from '../view/pages/page2/s3AboutEnv';
+import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
 import Sample from '../sample/pageSample';
 
 // Page Component設定

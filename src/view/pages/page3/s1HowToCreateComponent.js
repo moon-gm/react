@@ -1,6 +1,6 @@
 import React from 'react';
-import codes from '../../config/codes';
-import Parts from '../../config/parts';
+import codes from './../../../config/codes';
+import Parts from './../../../config/parts';
 
 const HowToCreateComponent = ({title}) => {
 	return (

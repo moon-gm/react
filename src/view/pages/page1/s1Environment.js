@@ -1,9 +1,9 @@
 import React from 'react';
-import screenShot from './../../images/environment_react-start.png';
-import codes from './../../config/codes';
-import Parts from '../../config/parts';
+import screenShot from './../../../images/environment_react-start.png';
+import codes from './../../../config/codes';
+import Parts from './../../../config/parts';
 
-const createEnvironment = ({title}) => {
+const Environment = ({title}) => {
 	return (
 		<div className="page-layout">
 
@@ -108,7 +108,7 @@ const createEnvironment = ({title}) => {
 						「build」フォルダのindex.htmlにアクセスしても何も表示されない場合はファイルの参照が絶対パスになっている可能性があるので、package.jsonに以下のコードを追加し、ビルドし直すことで解決する
 					</p>
 					<Parts.CodeHighlighter
-						language={codes.languages.javascript}
+						language={codes.languages.json}
 						codeString={codes.pages.Page1.Section1.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
@@ -134,4 +134,4 @@ const createEnvironment = ({title}) => {
 	);
 }
 
-export default createEnvironment;
+export default Environment;

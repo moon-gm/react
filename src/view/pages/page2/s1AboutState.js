@@ -1,8 +1,8 @@
 import React from 'react';
-import codes from '../../config/codes';
-import Parts from '../../config/parts';
+import codes from './../../../config/codes';
+import Parts from './../../../config/parts';
 
-const aboutState = ({title}) => {
+const AboutState = ({title}) => {
 	return (
 		<div className="page-layout">
 
@@ -69,4 +69,4 @@ const aboutState = ({title}) => {
 	);
 }
 
-export default aboutState;
+export default AboutState;

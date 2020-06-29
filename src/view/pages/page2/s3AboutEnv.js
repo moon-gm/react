@@ -1,8 +1,8 @@
 import React from 'react';
-import codes from '../../config/codes';
-import Parts from '../../config/parts';
+import codes from './../../../config/codes';
+import Parts from './../../../config/parts';
 
-const aboutEnv = ({title}) => {
+const AboutEnv = ({title}) => {
 	return (
 		<div className="page-layout">
 
@@ -62,4 +62,4 @@ const aboutEnv = ({title}) => {
 	);
 }
 
-export default aboutEnv;
+export default AboutEnv;

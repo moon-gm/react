@@ -1,8 +1,8 @@
 import React from 'react';
-import codes from './../../config/codes';
-import Parts from '../../config/parts';
+import codes from './../../../config/codes';
+import Parts from './../../../config/parts';
 
-const createEnvironment = ({title}) => {
+const EnvironmentManual = ({title}) => {
 	return (
 		<div className="page-layout">
 
@@ -175,4 +175,4 @@ const createEnvironment = ({title}) => {
 	);
 }
 
-export default createEnvironment;
+export default EnvironmentManual;
