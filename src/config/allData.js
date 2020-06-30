@@ -51,6 +51,16 @@ function AllData(funcs) {
 							"list": States.list.list1,
 						},
 					},
+					// 1-3. Envの設定
+					{
+						"name": Pages.Page1.Section3.Name,
+						"Component": Pages.Page1.Section3.AboutEnv,
+						"func": funcs[1].Page1.S3,
+						"state": {
+							"page": States.page.Page1.S3,
+							"list": States.list.list1,
+						},
+					},
 				],
 			},
 			// 2. データ関連
@@ -79,16 +89,6 @@ function AllData(funcs) {
 						"func": funcs[2].Page2.S2,
 						"state": {
 							"page": States.page.Page2.S2,
-							"list": States.list.list2,
-						},
-					},
-					// 2-3. Envの使い方
-					{
-						"name": Pages.Page2.Section3.Name,
-						"Component": Pages.Page2.Section3.AboutEnv,
-						"func": funcs[2].Page2.S3,
-						"state": {
-							"page": States.page.Page2.S3,
 							"list": States.list.list2,
 						},
 					},

@@ -7,12 +7,12 @@ export default {
 			L1: 1,
 			S1: "1S1",
 			S2: "1S2",
+			S3: "1S3",
 		},
 		Page2: {
 			L2: 2,
 			S1: "2S1",
 			S2: "2S2",
-			S3: "2S3",
 		},
 		Page3: {
 			L3: 3,

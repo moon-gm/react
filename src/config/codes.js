@@ -17,6 +17,11 @@ export default {
 				code5: "{\"presets\": [\"react\", \"es2015\"]}",
 				code6: "\"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"build\": \"webpack\",\n    \"start\": \"webpack-dev-server --hot --inline\"\n}",
 			},
+			Section3: {
+				code1: "REACT_APP_NAME=\"React Learning\"",
+				code2: "process.env.{KEY名}",
+				code3: "process.env.REACT_APP_NAME",
+			},
 		},
 		Page2: {
 			Section1: {
@@ -32,11 +37,6 @@ export default {
 				code3: "class Sample extends React.Component{\n    render() {\n        return(\n            <header className=\"header\">\n                <p>{this.props.comment}</p>\n            </header>\n        );\n    }\n}\nexport default Sample;",
 				code4: "const Sample = ({comment}) =>{\n    return(\n        <header className=\"header\">\n            <p>{comment}</p>\n        </header>\n    );\n}\nexport default Sample;",
 				code5: "function Sample(comment) {\n    return(\n        <header className=\"header\">\n            <p>{comment}</p>\n        </header>\n    );\n}\nexport default Sample;",
-			},
-			Section3: {
-				code1: "REACT_APP_NAME=\"React Learning\"",
-				code2: "process.env.{KEY名}",
-				code3: "process.env.REACT_APP_NAME",
 			},
 		},
 		Page3: {

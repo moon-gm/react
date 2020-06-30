@@ -1,14 +1,21 @@
+/** Page Componentインポート **/
+// Topページ
 import Top from '../view/pages/top';
+// Page1
 import Environment from '../view/pages/page1/s1Environment';
 import EnvironmentM from '../view/pages/page1/s2EnvironmentManual';
+import AboutEnv from '../view/pages/page1/s3AboutEnv';
+// Page2
 import AboutState from '../view/pages/page2/s1AboutState';
 import AboutProps from '../view/pages/page2/s2AboutProps';
-import AboutEnv from '../view/pages/page2/s3AboutEnv';
+// Page3
 import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
+// Page5
 import ReactSyntaxHighlighter from '../view/pages/page5/s1ReactSyntaxHighlighter';
+// Sample page
 import Sample from '../sample/pageSample';
 
-// Page Component設定
+/** Page Component設定 **/
 export default {
 	// Topページ
 	Top: {
@@ -26,6 +33,10 @@ export default {
 			Name: "1-2. 手動で設定",
 			EnvironmentM: EnvironmentM,
 		},
+		Section3: {
+			Name: "1-3. Envの設定",
+			AboutEnv: AboutEnv,
+		},
 	},
 	// 2. データ関連
 	Page2: {
@@ -37,10 +48,6 @@ export default {
 		Section2: {
 			Name: "2-2. Propsの使い方",
 			AboutProps: AboutProps,
-		},
-		Section3: {
-			Name: "2-3. Envの使い方",
-			AboutEnv: AboutEnv,
 		},
 	},
 	// 3. コンポーネント

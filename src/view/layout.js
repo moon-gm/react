@@ -32,6 +32,7 @@ class Layout extends React.Component {
 					"L1": Functions.List.bind(this, States.list.list1),
 					"S1": Functions.PageSection.bind(this, States.page.Page1.S1),
 					"S2": Functions.PageSection.bind(this, States.page.Page1.S2),
+					"S3": Functions.PageSection.bind(this, States.page.Page1.S3),
 				},
 			},
 			{
@@ -39,7 +40,6 @@ class Layout extends React.Component {
 					"L2": Functions.List.bind(this, States.list.list2),
 					"S1": Functions.PageSection.bind(this, States.page.Page2.S1),
 					"S2": Functions.PageSection.bind(this, States.page.Page2.S2),
-					"S3": Functions.PageSection.bind(this, States.page.Page2.S3),
 				},
 			},
 			{

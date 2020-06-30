@@ -31,7 +31,7 @@ const AboutEnv = ({title}) => {
 				</div>
 				<Parts.CodeHighlighter
 					language={codes.languages.javascript}
-					codeString={codes.pages.Page2.Section3.code1}
+					codeString={codes.pages.Page1.Section3.code1}
 					codeColor={codes.styles.tomorrow}
 				/>
 
@@ -43,7 +43,7 @@ const AboutEnv = ({title}) => {
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.javascript}
-						codeString={codes.pages.Page2.Section3.code2}
+						codeString={codes.pages.Page1.Section3.code2}
 						codeColor={codes.styles.tomorrow}
 				/>
 				<div className="p">
@@ -51,7 +51,7 @@ const AboutEnv = ({title}) => {
 				</div>
 				<Parts.CodeHighlighter
 					language={codes.languages.javascript}
-					codeString={codes.pages.Page2.Section3.code3}
+					codeString={codes.pages.Page1.Section3.code3}
 					codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
