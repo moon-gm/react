@@ -165,7 +165,7 @@ function AllData(funcs) {
 					"list": States.list.list5,
 				},
 				"children": [
-					// 5-1. react-syntax-highlighter
+					// 5-1. React Syntax Highlighter
 					{
 						"name": Pages.Page5.Section1.Name,
 						"Component": Pages.Page5.Section1.ReactSyntaxHighlighter,

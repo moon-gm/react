@@ -7,8 +7,11 @@ const HowToCreateComponent = ({title}) => {
 		<div className="page-layout">
 
 			<h2 className="h2">
-				1. import
+				1. Reactをインポート
 			</h2>
+				<h3 className="h3">
+					1-1. コンポーネントに必須のインポート
+				</h3>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page3.Section1.code1}
@@ -24,9 +27,12 @@ const HowToCreateComponent = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
-				->ReactをHTMLにレンダリングする際などに使用<br/>
+				->ReactをHTMLにレンダリングする際に使用<br/>
 				※HTMLのどこにレンダリングするかなど、トップレベルのみの設定で、ほとんどのコンポーネントでは使用しない
 				</p>
+				<h3 className="h3">
+					1-2. 必須ではないがよく使うインポート
+				</h3>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page3.Section1.code3}
@@ -46,7 +52,7 @@ const HowToCreateComponent = ({title}) => {
 				</p>
 
 			<h2 className="h2">
-				2. export
+				2. 作成したコンポーネントをエクスポート
 			</h2>
 				<h3 className="h3">
 					2-1. 「export default (...)」でHTML風のタグをエクスポート
@@ -63,6 +69,7 @@ const HowToCreateComponent = ({title}) => {
 					② {"{ }"}で括った箇所では１文のみのJSを追加できる（if文は簡略化しないと記述できない）<br/>
 					③ 「class」は 「className」で指定する<br/>
 					④ HTMLでは閉じタグがないものでも必ず閉じタグが必要である※２
+					⑤ 作成するタグ名は通常のHTMLと区別するため、必ず大文字で始める
 				</p>
 				<p className="p">
 					※１ React Fraagment（{"<React.Fragment></React.Fragment"}）の省略である。ループをしてkeyをつける場合は、正式に書く必要がある<br/>

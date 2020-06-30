@@ -42,7 +42,7 @@
 	// 見出し３
 	.h3 {
 		font-size: 20px;
-		margin: 0 $m-side $m-bottom;
+		margin: 0 20px $m-bottom;
 		@media screen and (max-width: $sp-max-width) {
 			font-size: 14px;
 			margin: 0 0 $m-bottom;

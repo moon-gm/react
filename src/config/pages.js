@@ -71,7 +71,7 @@ export default {
 	Page5: {
 		Name: "5. ライブラリ(プラグイン)",
 		Section1: {
-			Name: "5-1. react-syntax-highlighter",
+			Name: "5-1. React Syntax Highlighter",
 			ReactSyntaxHighlighter: ReactSyntaxHighlighter,
 		},
 		Section2: {
