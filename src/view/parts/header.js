@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './../../images/logo.svg';
-import back from './../../images/back-btn.png';
+import back from './../../images/back-btn1.png';
 import Router from './../../config/routes';
 import Styles from './../../sass/parts/header.module.scss';
 
