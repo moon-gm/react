@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './../../images/logo.svg';
+import back from './../../images/back-btn.png';
 import Router from './../../config/routes';
 import Styles from './../../sass/parts/header.module.scss';
 
@@ -10,11 +11,22 @@ const Header = ({allData, states, func}) => {
 
 				{/* ヘッダーロゴ - start - */}
 					<li className={`${Styles.headerLogo} ${Styles.item}`}>
-						<img
-							src={logo}
-							alt="logo"
-							className={Styles.animation}
-						/>
+						{states.page === "0" && (
+							<img
+								src={logo}
+								alt="logo"
+								className={`${Styles.animation} ${Styles.logo}`}
+								onClick={func[0].Back}
+							/>
+						)}
+						{states.page !== "0" && (
+							<img
+								src={back}
+								alt="logo"
+								className={Styles.backBtn}
+								onClick={func[0].Back}
+							/>
+						)}
 					</li>
 				{/* ヘッダーロゴ - end - */}
 
@@ -30,7 +42,7 @@ const Header = ({allData, states, func}) => {
 				{/* メニューボタンPC - start - */}
 					<li
 						className={Styles.menuBtnPC}
-						onClick={func}
+						onClick={func[0].Menu}
 						id="menuBtnPC"
 					>
 						{states.menu === "show" && "Close Menu ▲"}
@@ -41,7 +53,7 @@ const Header = ({allData, states, func}) => {
 				{/* メニューボタンSP - start - */}
 					<li
 						className={Styles.menuBtnSP}
-						onClick={func}
+						onClick={func[0].Menu}
 						id="menuBtnSP"
 					>
 						≡

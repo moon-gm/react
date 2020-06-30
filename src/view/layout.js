@@ -21,11 +21,15 @@ class Layout extends React.Component {
 			list: States.list.hide, // サイドメニューの子リスト非表示
 		};
 
+		// sessionStorageに現在のページのstateを保存
+		sessionStorage.setItem('nowPage', this.state.page);
+
 		// function設定
 		this.funcs = [
 			{
 				"Top": Functions.Page.bind(this, States.page.Top),
 				"Menu": Functions.Menu.bind(this),
+				"Back": Functions.Back.bind(this),
 			},
 			{
 				"Page1": {
@@ -127,7 +131,7 @@ class Layout extends React.Component {
 					<Parts.Header
 						allData={this.allData}
 						states={this.state}
-						func={this.funcs[0].Menu}
+						func={this.funcs}
 					/>
 
 					{/* メインエリア */}
