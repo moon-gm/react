@@ -116,7 +116,7 @@ function AllData(funcs) {
 					// 3-2. 役割ごとに作成
 					{
 						"name": Pages.Page3.Section2.Name,
-						"Component": Pages.Page3.Section2.Sample,
+						"Component": Pages.Page3.Section2.CreateRolls,
 						"func": funcs[3].Page3.S2,
 						"state": {
 							"page": States.page.Page3.S2,

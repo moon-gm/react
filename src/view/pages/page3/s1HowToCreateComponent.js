@@ -40,7 +40,8 @@ const HowToCreateComponent = ({title}) => {
 				/>
 				<p className="p">
 				->インポートしたコンポーネントのみに当たるCSSモジュール<br/>
-				※ファイル名は「〜.module.(s)css」でないと効かない
+				※ファイル名は「〜.module.(s)css」でないと効かない<br/>
+				※タグ内では、モジュールを使ってクラス指定する際、「-(ハイフン)」は使えないため、命名に気を付ける
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
@@ -75,6 +76,18 @@ const HowToCreateComponent = ({title}) => {
 					※１ React Fraagment（{"<React.Fragment></React.Fragment"}）の省略である。ループをしてkeyをつける場合は、正式に書く必要がある<br/>
 					※２  {"「<img>」は「<img/>」か「<img></img>」"}とする必要がある
 				</p>
+
+			<h2 className="h2">
+				3. 作成例
+			</h2>
+				<p className="p">
+					コンポーネントの作成方法は様々だが、以下のように作成（詳細はセクション「3-4」にて）
+				</p>
+				<Parts.CodeHighlighter
+						language={codes.languages.jsx}
+						codeString={codes.pages.Page3.Section1.code5}
+						codeColor={codes.styles.tomorrow}
+				/>
 
 		</div>
 	);

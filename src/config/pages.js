@@ -8,6 +8,7 @@ import AboutEnv from '../view/pages/page1/s3AboutEnv';
 // Page2
 // Page3
 import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
+import CreateRolls from '../view/pages/page3/s2CreateRolls';
 import AboutState from '../view/pages/page3/s3AboutState';
 import AboutProps from '../view/pages/page3/s4AboutProps';
 // Page5
@@ -59,7 +60,7 @@ export default {
 		},
 		Section2: {
 			Name: "3-2. 役割ごとに作成",
-			Sample: Sample,
+			CreateRolls: CreateRolls,
 		},
 		Section3: {
 			Name: "3-3. Stateの使い方",
