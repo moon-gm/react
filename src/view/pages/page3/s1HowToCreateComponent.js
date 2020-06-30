@@ -1,8 +1,9 @@
 import React from 'react';
 import codes from './../../../config/codes';
+import urls from './../../../config/outerUrls';
 import Parts from './../../../config/parts';
 
-const HowToCreateComponent = ({title}) => {
+const HowToCreateComponent = ({title, allData}) => {
 	return (
 		<div className="page-layout">
 
@@ -18,8 +19,8 @@ const HowToCreateComponent = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
-				->Reactコンポーネントを作成する際に必須<br/>
-				※最低これだけインポートしておけばコンポーネントは作成できる
+					->Reactコンポーネントを作成する際に必須<br/>
+					※最低これだけインポートしておけばコンポーネントは作成できる
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
@@ -27,8 +28,8 @@ const HowToCreateComponent = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
-				->ReactをHTMLにレンダリングする際に使用<br/>
-				※HTMLのどこにレンダリングするかなど、トップレベルのみの設定で、ほとんどのコンポーネントでは使用しない
+					->ReactをHTMLにレンダリングする際に使用<br/>
+					※HTMLのどこにレンダリングするかなど、トップレベルのみの設定で、ほとんどのコンポーネントでは使用しない
 				</p>
 				<h3 className="h3">
 					1-2. 必須ではないがよく使うインポート
@@ -39,9 +40,9 @@ const HowToCreateComponent = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
-				->インポートしたコンポーネントのみに当たるCSSモジュール<br/>
-				※ファイル名は「〜.module.(s)css」でないと効かない<br/>
-				※タグ内では、モジュールを使ってクラス指定する際、「-(ハイフン)」は使えないため、命名に気を付ける
+					->インポートしたコンポーネントのみに当たるCSSモジュール<br/>
+					※ファイル名は「〜.module.(s)css」でないと効かない<br/>
+					※タグ内では、モジュールを使ってクラス指定する際、「-(ハイフン)」は使えないため、命名に気を付ける
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
@@ -49,7 +50,7 @@ const HowToCreateComponent = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
-				->画像のパスを指定すればインポートして使える<br/>
+					->画像のパスを指定すればインポートして使える<br/>
 				</p>
 
 			<h2 className="h2">
@@ -73,7 +74,15 @@ const HowToCreateComponent = ({title}) => {
 					⑤ 作成するタグ名は通常のHTMLと区別するため、必ず大文字で始める
 				</p>
 				<p className="p">
-					※１ React Fraagment（{"<React.Fragment></React.Fragment"}）の省略である。ループをしてkeyをつける場合は、正式に書く必要がある<br/>
+					※１ {"<React.Fragment></React.Fragment"}の省略である。ループをしてkeyをつける場合は、正式に書く必要がある<br/>
+				</p>
+				<p className="p">
+					<Parts.Link
+						url={urls.Flagment}
+						linkText="? React Fragmentとは"
+					/>
+				</p>
+				<p className="p">
 					※２  {"「<img>」は「<img/>」か「<img></img>」"}とする必要がある
 				</p>
 

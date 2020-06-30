@@ -10,7 +10,7 @@ const PageRouter = ({allData, states}) => {
 					if (pageData.children === void 0) {
 						return (
 							<React.Fragment key={`page${pageData.state.page}`}>
-								{states.page === pageData.state.page && <pageData.Component title={pageData.name} />}
+								{states.page === pageData.state.page && <pageData.Component title={pageData.name} allData={allData} />}
 							</React.Fragment>
 						);
 					}
@@ -23,7 +23,7 @@ const PageRouter = ({allData, states}) => {
 									pageData.children.map(pageDataWithC => {
 										return (
 											<React.Fragment key={`page${pageDataWithC.state.page}`}>
-												{states.page === pageDataWithC.state.page && <pageDataWithC.Component title={pageDataWithC.name} />}
+												{states.page === pageDataWithC.state.page && <pageDataWithC.Component title={pageDataWithC.name} allData={allData} />}
 											</React.Fragment>
 										);
 									})

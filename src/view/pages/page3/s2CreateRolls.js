@@ -3,7 +3,7 @@ import codes from './../../../config/codes';
 import urls from './../../../config/outerUrls';
 import Parts from './../../../config/parts';
 
-const CreateRolls = ({title}) => {
+const CreateRolls = ({title, allData}) => {
 	return (
 		<div className="page-layout">
 
@@ -11,7 +11,7 @@ const CreateRolls = ({title}) => {
 				1. パーツとなるコンポーネントを作成
 			</h2>
 				<p className="p">
-					セクション「3-1」を参考に以下のように、ヘッダーエリア、メインコンテンツエリア、フッターエリアを作成<br/>
+					セクション<span className="page-jump" onClick={allData[3].children[0].func}>[ {allData[3].children[0].name} ]</span>を参考に以下のように、ヘッダーエリア、メインコンテンツエリア、フッターエリアを作成<br/>
 					作成したファイルは「./src/view/parts」に格納<br/>
 					※State, Propsについては次セクション以降で解説
 				</p>
@@ -44,7 +44,7 @@ const CreateRolls = ({title}) => {
 				2. 切り替えるメインコンテンツのページコンポーネントを作成
 			</h2>
 				<p className="p">
-					以下のようにページを切り替えるコンポーネントを作成（※詳細はセクション「4-2」にて）<br/>
+					以下のようにページを切り替えるコンポーネントを作成（詳細はセクション<span className="page-jump" onClick={allData[4].children[1].func}>[ {allData[4].children[1].name} ]</span>）<br/>
 					作成したファイルは「./src/view/routes」に格納し、インポートするページのコンポーネントは上記のヘッダーなどと同様に作成し、同階層に格納<br/>
 					※State, Propsについては次セクション以降で解説
 				</p>

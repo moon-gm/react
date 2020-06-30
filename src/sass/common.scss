@@ -75,6 +75,15 @@
 		}
 	}
 
+	// ページジャンプリンク
+	.page-jump {
+		color: $light-blue;
+		&:hover {
+			background: $white-skelton;
+			padding: 0 5px;
+		}
+	}
+
 	// コード挿入
 	.code {
 		font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
