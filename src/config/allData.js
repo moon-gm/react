@@ -63,7 +63,7 @@ function AllData(funcs) {
 					},
 				],
 			},
-			// 2. データ関連
+			// 2. ファイル構成
 			{
 				"name": Pages.Page2.Name,
 				"func": funcs[2].Page2.L2,
@@ -72,20 +72,20 @@ function AllData(funcs) {
 					"list": States.list.list2,
 				},
 				"children": [
-					// 2-1. Stateの使い方
+					// 2-1. ---追加予定---
 					{
 						"name": Pages.Page2.Section1.Name,
-						"Component": Pages.Page2.Section1.AboutState,
+						"Component": Pages.Page2.Section1.Sample,
 						"func": funcs[2].Page2.S1,
 						"state": {
 							"page": States.page.Page2.S1,
 							"list": States.list.list2,
 						},
 					},
-					// 2-2. Propsの使い方
+					// 2-2. ---追加予定---
 					{
 						"name": Pages.Page2.Section2.Name,
-						"Component": Pages.Page2.Section2.AboutProps,
+						"Component": Pages.Page2.Section2.Sample,
 						"func": funcs[2].Page2.S2,
 						"state": {
 							"page": States.page.Page2.S2,
@@ -120,6 +120,26 @@ function AllData(funcs) {
 						"func": funcs[3].Page3.S2,
 						"state": {
 							"page": States.page.Page3.S2,
+							"list": States.list.list3,
+						},
+					},
+					// 3-3. Stateの使い方
+					{
+						"name": Pages.Page3.Section3.Name,
+						"Component": Pages.Page3.Section3.AboutState,
+						"func": funcs[3].Page3.S3,
+						"state": {
+							"page": States.page.Page3.S3,
+							"list": States.list.list3,
+						},
+					},
+					// 3-4. Propsの使い方
+					{
+						"name": Pages.Page3.Section4.Name,
+						"Component": Pages.Page3.Section4.AboutProps,
+						"func": funcs[3].Page3.S4,
+						"state": {
+							"page": States.page.Page3.S4,
 							"list": States.list.list3,
 						},
 					},

@@ -6,10 +6,10 @@ import Environment from '../view/pages/page1/s1Environment';
 import EnvironmentM from '../view/pages/page1/s2EnvironmentManual';
 import AboutEnv from '../view/pages/page1/s3AboutEnv';
 // Page2
-import AboutState from '../view/pages/page2/s1AboutState';
-import AboutProps from '../view/pages/page2/s2AboutProps';
 // Page3
 import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
+import AboutState from '../view/pages/page3/s3AboutState';
+import AboutProps from '../view/pages/page3/s4AboutProps';
 // Page5
 import ReactSyntaxHighlighter from '../view/pages/page5/s1ReactSyntaxHighlighter';
 // Sample page
@@ -38,16 +38,16 @@ export default {
 			AboutEnv: AboutEnv,
 		},
 	},
-	// 2. データ関連
+	// 2. ファイル構成
 	Page2: {
-		Name: "2. データ関連",
+		Name: "2. ファイル構成",
 		Section1: {
-			Name: "2-1. Stateの使い方",
-			AboutState: AboutState,
+			Name: "2-1. ---追加予定---",
+			Sample: Sample,
 		},
 		Section2: {
-			Name: "2-2. Propsの使い方",
-			AboutProps: AboutProps,
+			Name: "2-2. ---追加予定---",
+			Sample: Sample,
 		},
 	},
 	// 3. コンポーネント
@@ -60,6 +60,14 @@ export default {
 		Section2: {
 			Name: "3-2. 役割ごとに作成",
 			Sample: Sample,
+		},
+		Section3: {
+			Name: "3-3. Stateの使い方",
+			AboutState: AboutState,
+		},
+		Section4: {
+			Name: "3-4. Propsの使い方",
+			AboutProps: AboutProps,
 		},
 	},
 	// 4. ルーティング

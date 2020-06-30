@@ -14,7 +14,7 @@ const AboutState = ({title}) => {
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page2.Section1.code1}
+						codeString={codes.pages.Page3.Section3.code1}
 						codeColor={codes.styles.tomorrow}
 				/>
 
@@ -26,7 +26,7 @@ const AboutState = ({title}) => {
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page2.Section1.code2}
+						codeString={codes.pages.Page3.Section3.code2}
 						codeColor={codes.styles.tomorrow}
 				/>
 
@@ -39,7 +39,7 @@ const AboutState = ({title}) => {
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page2.Section1.code3}
+						codeString={codes.pages.Page3.Section3.code3}
 						codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
@@ -48,7 +48,7 @@ const AboutState = ({title}) => {
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page2.Section1.code4}
+						codeString={codes.pages.Page3.Section3.code4}
 						codeColor={codes.styles.tomorrow}
 				/>
 				<p className="p">
@@ -61,7 +61,7 @@ const AboutState = ({title}) => {
 			</h2>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page2.Section1.code5}
+						codeString={codes.pages.Page3.Section3.code5}
 						codeColor={codes.styles.tomorrow}
 				/>
 
