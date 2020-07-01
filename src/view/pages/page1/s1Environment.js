@@ -76,7 +76,7 @@ const Environment = ({title}) => {
 				</div>
 
 			<h2 className="h2">
-				5. Sassを導入（おまけ）
+				5. +α 〜 Sassを導入 〜
 			</h2>
 				<p className="p">
 					<span className="command">

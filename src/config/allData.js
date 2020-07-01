@@ -31,7 +31,7 @@ function AllData(funcs) {
 					"list": States.list.list1,
 				},
 				"children": [
-					// 1-1. create-react-app
+					// 1-1. React.js
 					{
 						"name": Pages.Page1.Section1.Name,
 						"Component": Pages.Page1.Section1.Environment,
@@ -63,7 +63,7 @@ function AllData(funcs) {
 					},
 				],
 			},
-			// 2. ファイル構成
+			// 2. プロジェクト構成
 			{
 				"name": Pages.Page2.Name,
 				"func": funcs[2].Page2.L2,
@@ -72,20 +72,20 @@ function AllData(funcs) {
 					"list": States.list.list2,
 				},
 				"children": [
-					// 2-1. ---追加予定---
+					// 2-1. ディレクトリ構成
 					{
 						"name": Pages.Page2.Section1.Name,
-						"Component": Pages.Page2.Section1.Sample,
+						"Component": Pages.Page2.Section1.DirCheck,
 						"func": funcs[2].Page2.S1,
 						"state": {
 							"page": States.page.Page2.S1,
 							"list": States.list.list2,
 						},
 					},
-					// 2-2. ---追加予定---
+					// 2-2. ファイル構成
 					{
 						"name": Pages.Page2.Section2.Name,
-						"Component": Pages.Page2.Section2.Sample,
+						"Component": Pages.Page2.Section2.FileConst,
 						"func": funcs[2].Page2.S2,
 						"state": {
 							"page": States.page.Page2.S2,

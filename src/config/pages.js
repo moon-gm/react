@@ -6,6 +6,8 @@ import Environment from '../view/pages/page1/s1Environment';
 import EnvironmentM from '../view/pages/page1/s2EnvironmentManual';
 import AboutEnv from '../view/pages/page1/s3AboutEnv';
 // Page2
+import DirCheck from '../view/pages/page2/s1DirConst';
+import FileConst from '../view/pages/page2/s2FileConst';
 // Page3
 import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
 import CreateRolls from '../view/pages/page3/s2CreateRolls';
@@ -27,7 +29,7 @@ export default {
 	Page1: {
 		Name: "1. 環境構築",
 		Section1: {
-			Name: "1-1. create-react-app",
+			Name: "1-1. React.js",
 			Environment: Environment,
 		},
 		Section2: {
@@ -39,16 +41,16 @@ export default {
 			AboutEnv: AboutEnv,
 		},
 	},
-	// 2. ファイル構成
+	// 2. プロジェクト構成
 	Page2: {
-		Name: "2. ファイル構成",
+		Name: "2. プロジェクト構成",
 		Section1: {
-			Name: "2-1. ---追加予定---",
-			Sample: Sample,
+			Name: "2-1. ディレクトリ構成",
+			DirCheck: DirCheck,
 		},
 		Section2: {
-			Name: "2-2. ---追加予定---",
-			Sample: Sample,
+			Name: "2-2. ファイル構成",
+			FileConst: FileConst,
 		},
 	},
 	// 3. コンポーネント

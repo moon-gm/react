@@ -78,7 +78,7 @@ const HowToCreateComponent = ({title, allData}) => {
 				</p>
 				<p className="p">
 					<Parts.Link
-						url={urls.Flagment}
+						url={urls.ReactOfficial.Fragment}
 						linkText="? React Fragmentとは"
 					/>
 				</p>
@@ -90,7 +90,7 @@ const HowToCreateComponent = ({title, allData}) => {
 				3. 作成例
 			</h2>
 				<p className="p">
-					コンポーネントの作成方法は様々だが、以下のように作成（詳細はセクション「3-4」にて）
+					コンポーネントの作成方法は様々だが、以下のように作成（詳細はセクション<span className="page-jump" onClick={allData[3].children[3].func}>[ {allData[3].children[3].name} ]</span>）
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}

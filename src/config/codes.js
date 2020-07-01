@@ -25,15 +25,11 @@ export default {
 		},
 		Page2: {
 			Section1: {
-				code1: "",
-				code2: "",
-				code3: "",
-				code4: "",
-				code5: "",
+				code1: "Project\n    - build\n    - public\n        - index.html\n        - manifest.json\n    - src\n        - App.js\n        - App.css\n        - index.js\n        - index.css\n        - serviceWorker.js\n    - node_modules\n    - package.json",
 			},
 			Section2: {
-				code1: "",
-				code2: "",
+				code1: "import React from 'react';\nimport logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <header className=\"App-header\">\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n        <p>\n          Edit <code>src/App.js</code> and save to reload.\n        </p>\n        <a\n          className=\"App-link\"\n          href=\"https://reactjs.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Learn React\n        </a>\n      </header>\n    </div>\n  );\n}\n\nexport default App;",
+				code2: "import React from 'react';\nimport ReactDOM from 'react-dom';\nimport './sass/index.scss';\nimport App from './App';\nimport * as serviceWorker from './serviceWorker';\n\nReactDOM.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>,\n  document.getElementById('root')\n);\n\n// If you want your app to work offline and load faster, you can change\n// unregister() to register() below. Note this comes with some pitfalls.\n// Learn more about service workers: https://bit.ly/CRA-PWA\nserviceWorker.unregister();",
 				code3: "",
 				code4: "",
 				code5: "",
@@ -111,6 +107,7 @@ export default {
 		css: "css",
 		sass: "sass",
 		json: "json",
+		unset: "unset",
 	},
 	styles: {
 		"dark": dark,

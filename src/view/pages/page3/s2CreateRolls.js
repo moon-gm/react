@@ -100,7 +100,7 @@ const CreateRolls = ({title, allData}) => {
 				</p>
 				<div className="p">
 					<Parts.Link
-						url={urls.SrtictMode}
+						url={urls.ReactOfficial.StrictMode}
 						linkText="? React StrictModeとは"
 					/>
 				</div>
