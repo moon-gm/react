@@ -45,7 +45,7 @@ const ReactSyntaxHighlighter = ({title}) => {
 				<h3 className="h3">
 					3-1. コンポーネントを作成
 				</h3>
-				<p className="p">
+				<div className="p">
 					① 以下のようにインポートし、「SyntaxHighlighter」をコンポーネントとして使用できるようにする<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
@@ -67,15 +67,15 @@ const ReactSyntaxHighlighter = ({title}) => {
 						codeString={codes.pages.Page5.Section1.code3}
 						codeColor={codes.styles.tomorrow}
 					/>
-				</p>
-				<p className="p">
+				</div>
+				<div className="p">
 					上記設定のサンプルコード<br/>
 					<Parts.CodeHighlighter
 							language={codes.languages.jsx}
 							codeString={codes.pages.Page5.Section1.code4}
 							codeColor={codes.styles.tomorrow}
 					/>
-				</p>
+				</div>
 				<h3 className="h3">
 					3-2. 呼び出し側の設定
 				</h3>
@@ -91,7 +91,7 @@ const ReactSyntaxHighlighter = ({title}) => {
 				<p className="p">
 					現在では以下のカラーが設定可能
 				</p>
-				<p className="p">
+				<div className="p">
 					dark<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
@@ -230,7 +230,7 @@ const ReactSyntaxHighlighter = ({title}) => {
 						codeString={codes.pages.Page5.Section1.code4}
 						codeColor={codes.styles.xonokai}
 					/><br/>
-				</p>
+				</div>
 
 		</div>
 	);

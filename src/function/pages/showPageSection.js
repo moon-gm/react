@@ -5,7 +5,7 @@ function showPageSection(section) {
 	// sessionStorageに保存されている値を取得
 	var getBack = [this.state.page];
 	for (var i = 1; i <= 4; i++) {getBack.push(sessionStorage.getItem('back' + i + 'Page'));}
-	console.log(getBack);
+
 	// sessionStorageに保存されている値を書き換え
 	for (var j = 0; j <=4; j++) {
 		sessionStorage.setItem('back' + (j+1) + 'Page', getBack[j]);

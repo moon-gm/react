@@ -15,30 +15,30 @@ const CreateRolls = ({title, allData}) => {
 					作成したファイルは「./src/view/parts」に格納<br/>
 					※State, Propsについては次セクション以降で解説
 				</p>
-				<p className="p">
+				<div className="p">
 					ヘッダーエリア(header.js)<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page3.Section2.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
-				</p>
-				<p className="p">
+				</div>
+				<div className="p">
 					メインコンテンツエリア(mainContents.js)<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page3.Section2.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
-				</p>
-				<p className="p">
+				</div>
+				<div className="p">
 					フッターエリア(footer.js)<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page3.Section2.code3}
 						codeColor={codes.styles.tomorrow}
 					/>
-				</p>
+				</div>
 
 			<h2 className="h2">
 				2. 切り替えるメインコンテンツのページコンポーネントを作成
@@ -48,14 +48,14 @@ const CreateRolls = ({title, allData}) => {
 					作成したファイルは「./src/view/routes」に格納し、インポートするページのコンポーネントは上記のヘッダーなどと同様に作成し、同階層に格納<br/>
 					※State, Propsについては次セクション以降で解説
 				</p>
-				<p className="p">
+				<div className="p">
 					ページ切り替えコンポーネント(pageRouter.js)<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page3.Section2.code4}
 						codeColor={codes.styles.tomorrow}
 					/>
-				</p>
+				</div>
 				<p className="p">
 					※「page」というstateが「１」の時「Page1」を表示、「2」の時、「Page2」を表示する
 				</p>
@@ -98,12 +98,12 @@ const CreateRolls = ({title, allData}) => {
 				<p className="p">
 					※「React.StrictMode」は無くてもレンダリングできるが、子孫要素に対して付加的な検査及警告が動くようになるので、エラーとなりそうなコードを書くとメッセージが出る
 				</p>
-				<p className="p">
+				<div className="p">
 					<Parts.Link
 						url={urls.SrtictMode}
 						linkText="? React StrictModeとは"
 					/>
-				</p>
+				</div>
 				<h3 className="h3">
 					3-4. レンダリングするHTMLの設定
 				</h3>
