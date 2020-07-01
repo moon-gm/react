@@ -14,17 +14,25 @@ class Layout extends React.Component {
 	constructor(props) {
 		super(props);
 
-		// stateの初期値設定
+		/***** state初期値設定 *****/
 		this.state = {
-			page: States.page.Top, // Top画面表示
-			menu: States.menu.hide, // サイドメニュー非表示
-			list: States.list.hide, // サイドメニューの子リスト非表示
+			// ページ表示設定
+			page: States.page.Top,
+			 // サイドエリア表示設定
+			menu: States.menu.hide,
+			// サイドエリアの子リスト表示
+			list: States.list.hide,
 		};
 
-		// sessionStorageに現在のページのstateを保存
-		sessionStorage.setItem('nowPage', this.state.page);
+		/***** sessionStorrage初期値設定(戻るボタン用) *****/
+		// 現在のページのstateをセット
+		for (var i = 1; i <= 5; i++) {
+			sessionStorage.setItem('back' + i + 'Page', this.state.page);
+		}
+		// 戻るボタンを押した回数をセット
+		sessionStorage.setItem('backCount', "1");
 
-		// function設定
+		/***** functionの初期値設定 *****/
 		this.funcs = [
 			{
 				"Top": Functions.Page.bind(this, States.page.Top),
@@ -107,7 +115,7 @@ class Layout extends React.Component {
 
 		];
 
-		// ページのデータ設定
+		/***** ページデータ設定 *****/
 		this.allData = AllData(this.funcs);
 	}
 
@@ -116,7 +124,6 @@ class Layout extends React.Component {
 			<div className="flex-box">
 
 				{/* サイドエリア */}
-				{this.state.menu === States.menu.hide}
 				{this.state.menu === States.menu.show && (
 					<Parts.Aside
 						allData={this.allData}
