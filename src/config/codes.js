@@ -47,7 +47,7 @@ export default {
 				code1: "import React from 'react';\n\nconst Header = () => {\n  return (\n	<header className=\"header\">\n		<div className=\"header-title\">\n            ヘッダーエリア\n        </div>\n	</header>\n  );\n};\nexport default Header;",
 				code2: "import React from 'react';\nimport PageRouter from './../routes/pageRouter';\n\nconst MainContents = ({state}) => {\n  return (\n	<main className=\"main\">\n		<div className=\"main-title\">\n            メインコンテンツーエリア\n            <PageRouter state={state} />\n        </div>\n	</main>\n  );\n};\nexport default MainContents;",
 				code3: "import React from 'react';\n\nconst Footer = () => {\n  return (\n	<footer className=\"footer\">\n		<div className=\"footer-title\">\n            フッターエリア\n        </div>\n	</footer>\n  );\n};\nexport default Footer;",
-				code4: "import React from 'react';\nimport Page1 from './page1';\nimport Page2 from './page2';\n\nconst PageRouter = ({state}) => {\n  return (\n	<>\n        {state.page === \"1\" && <Page1 />}\n        {state.page === \"2\" && <Page2 />}\n    </>\n  );\n};\nexport default PageRouter;",
+				code4: "import React from 'react';\nimport Page1 from './../pages/page1';\nimport Page2 from './../pages/page2';\n\nconst PageRouter = ({state}) => {\n  return (\n	<>\n        {state.page === \"1\" && <Page1 />}\n        {state.page === \"2\" && <Page2 />}\n    </>\n  );\n};\nexport default PageRouter;",
 				code5: "import Header from './parts/header';\nimport MainContents from './parts/mainContents';\nimport Footer from './parts/footer';",
 				code6: "<>\n    <Header />\n    <MainContents state={this.state}/>\n    <Footer />\n</>",
 				code7: "import ReactDOM from 'react-dom';\n...(省略)...\n\nReactDOM.render(\n    <React.StrictMode>\n        <Layout />\n    </React.StrictMode>,\n    document.getElementById('root')\n);",
@@ -77,11 +77,9 @@ export default {
 				code4: "",
 			},
 			Section2: {
-				code1: "",
-				code2: "",
-				code3: "",
-				code4: "",
-				code5: "",
+				code1: "import React from 'react';\n\nconst Page1 = ({title}) => {\n  return (\n	<div className=\"pages\">\n		<div className=\"pages-header\">\n			{title}\n		</div>\n		<div className=\"pages-contents\">\n			…メインコンテンツを表示…\n		</div>\n	</div>\n  );\n};\nexport default Page1;\n",
+				code2: "import React from 'react';\nimport Page1 from './../pages/page1';\nimport Page2 from './../pages/page2';\n\nconst PageRouter = ({state}) => {\n  return (\n	<>\n        {state.page === \"1\" && <Page1 />}\n        {state.page === \"2\" && <Page2 />}\n    </>\n  );\n};\nexport default PageRouter;\n",
+				code3: "import React from 'react';\nimport Page1 from './../pages/page1';\nimport Page2 from './../pages/page2';\n\nconst PageRouter = ({state}) => {\n\n	const Pages = [\n		{\n			Component: Page1,\n			State: \"1\"\n		},\n		{\n			Component: Page2,\n			State: \"2\"\n		}\n	];\n\n  return (\n	<>\n		{Pages.map(Page => {\n            return (\n                <React.Fragment key={Page.State}>\n			        {state.page === Page.State && <Page.Component />}\n                </React.Fragment>\n            );\n		})}\n    </>\n  );\n};\n\nexport default PageRouter;",
 			},
 		},
 		Page5: {

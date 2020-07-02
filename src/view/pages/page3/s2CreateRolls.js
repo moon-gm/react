@@ -45,7 +45,7 @@ const CreateRolls = ({title, allData}) => {
 			</h2>
 				<p className="p">
 					以下のようにページを切り替えるコンポーネントを作成（詳細はセクション<span className="page-jump" onClick={allData[4].children[1].func}>[ {allData[4].children[1].name} ]</span>）<br/>
-					作成したファイルは「./src/view/routes」に格納し、インポートするページのコンポーネントは上記のヘッダーなどと同様に作成し、同階層に格納<br/>
+					作成したファイルは「./src/view/routes」に格納し、インポートするページのコンポーネントは上記のヘッダーなどと同様に作成し、「./src/view/pages」に格納<br/>
 					※State, Propsについては次セクション以降で解説
 				</p>
 				<div className="p">

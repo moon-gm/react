@@ -13,6 +13,8 @@ import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
 import CreateRolls from '../view/pages/page3/s2CreateRolls';
 import AboutState from '../view/pages/page3/s3AboutState';
 import AboutProps from '../view/pages/page3/s4AboutProps';
+// Page4
+import RoutingManual from '../view/pages/page4/s2RoutingManual';
 // Page5
 import ReactSyntaxHighlighter from '../view/pages/page5/s1ReactSyntaxHighlighter';
 // Sample page
@@ -81,8 +83,8 @@ export default {
 			Sample: Sample,
 		},
 		Section2: {
-			Name: "4-2. ファイルで設定",
-			Sample: Sample,
+			Name: "4-2. 自前で作成",
+			RoutingManual: RoutingManual,
 		},
 	},
 	// 5. ライブラリ(プラグイン)

@@ -164,10 +164,10 @@ function AllData(funcs) {
 							"list": States.list.list4,
 						},
 					},
-					// 4-2. ファイルで設定
+					// 4-2. 自前で作成
 					{
 						"name": Pages.Page4.Section2.Name,
-						"Component": Pages.Page4.Section2.Sample,
+						"Component": Pages.Page4.Section2.RoutingManual,
 						"func": funcs[4].Page4.S2,
 						"state": {
 							"page": States.page.Page4.S2,
