@@ -16,7 +16,8 @@ import AboutProps from '../view/pages/page3/s4AboutProps';
 // Page4
 import RoutingManual from '../view/pages/page4/s2RoutingManual';
 // Page5
-import ReactSyntaxHighlighter from '../view/pages/page5/s1ReactSyntaxHighlighter';
+import LibaryList from '../view/pages/page5/s1LibaryList';
+import ReactSyntaxHighlighter from '../view/pages/page5/s2ReactSyntaxHighlighter';
 // Sample page
 import Sample from '../sample/pageSample';
 
@@ -91,12 +92,12 @@ export default {
 	Page5: {
 		Name: "5. ライブラリ(プラグイン)",
 		Section1: {
-			Name: "5-1. React Syntax Highlighter",
-			ReactSyntaxHighlighter: ReactSyntaxHighlighter,
+			Name: "5-1. ライブラリ一覧",
+			LibaryList: LibaryList,
 		},
 		Section2: {
-			Name: "5-2. ---追加予定---",
-			Sample: Sample,
+			Name: "5-2. React Syntax Highlighter",
+			ReactSyntaxHighlighter: ReactSyntaxHighlighter,
 		},
 	},
 	// 6. ---追加予定---

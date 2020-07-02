@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './../../images/logo.svg';
 import Styles from './../../sass/pages/top.module.scss';
+import Parts from './../../config/parts';
+import urls from './../../config/outerUrls';
 
 const Top = ({title}) => {
 
@@ -14,13 +16,10 @@ const Top = ({title}) => {
 				className={Styles.AppLogo}
 				alt="logo"
 			/>
-			<a
-				href="https://reactjs.org"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				> Go to Support
-			</a>
+			<Parts.Link
+				url={urls.ReactOfficial.Support}
+				linkText="> Go to Support"
+			/>
 		</div>
 	);
 }

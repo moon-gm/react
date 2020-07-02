@@ -185,20 +185,20 @@ function AllData(funcs) {
 					"list": States.list.list5,
 				},
 				"children": [
-					// 5-1. React Syntax Highlighter
+					// 5-1. ライブラリ一覧
 					{
 						"name": Pages.Page5.Section1.Name,
-						"Component": Pages.Page5.Section1.ReactSyntaxHighlighter,
+						"Component": Pages.Page5.Section1.LibaryList,
 						"func": funcs[5].Page5.S1,
 						"state": {
 							"page": States.page.Page5.S1,
 							"list": States.list.list5,
 						},
 					},
-					// 5-2. ---追加予定---
+					// 5-2. React Syntax Highlighter
 					{
 						"name": Pages.Page5.Section2.Name,
-						"Component": Pages.Page5.Section2.Sample,
+						"Component": Pages.Page5.Section2.ReactSyntaxHighlighter,
 						"func": funcs[5].Page5.S2,
 						"state": {
 							"page": States.page.Page5.S2,
