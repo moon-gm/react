@@ -117,6 +117,29 @@ class Layout extends React.Component {
 
 		/***** ページデータ設定 *****/
 		this.allData = AllData(this.funcs);
+
+		// URL設定
+		const urlPath = [
+			{
+				path: "/",
+				statePage: "0"
+			},
+			{
+				path: "/page1/section1",
+				statePage: "1S1"
+			},
+		];
+
+		if (window.location.pathname === "/") {
+			// 特に処理なし
+		} else if (window.location.pathname === process.env.REACT_APP_PATH_NAME + "/Section1" || this.state.page === "1S1") {
+			if (window.location.pathname !== process.env.REACT_APP_PATH_NAME + "/Section1"){
+				window.location.pathname = process.env.REACT_APP_PATH_NAME + "/Section1"
+			}
+			if (this.state.page !== "1S1") {
+				this.state.page = "1S1";
+			}
+		}
 	}
 
 	render() {
