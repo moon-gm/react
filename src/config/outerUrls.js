@@ -10,4 +10,30 @@ export default {
 
 	// 外部参考サイト
 	PWA: "https://www.seohacks.net/basic/terms/pwa/",
+	ReactSelect: "https://react-select.com/home",
+	ReactRedux: "https://react-redux.js.org/",
+
+	// npm公式サイト
+	npm: {
+		ReactSyntaxHighlighter: "https://www.npmjs.com/package/react-syntax-highlighter",
+		ReactSelect: "https://www.npmjs.com/package/react-select",
+		ReactDraggable: "https://www.npmjs.com/package/react-draggable",
+		ReactDropzone: "https://www.npmjs.com/package/react-dropzone",
+		ReactColor: "https://www.npmjs.com/package/react-color",
+		ReactTable: "https://www.npmjs.com/package/react-table",
+		ReactSwipeableViews: "https://www.npmjs.com/package/react-swipeable-views",
+		ReactModal: "https://www.npmjs.com/package/react-modal",
+		ReactDatepicker: "https://www.npmjs.com/package/react-datepicker",
+		ReactRedux: "https://www.npmjs.com/package/react-redux",
+		ReactScripts: "https://www.npmjs.com/package/react-scripts",
+		PropTypes: "https://www.npmjs.com/package/prop-types",
+		ReactRouter: "https://www.npmjs.com/package/react-router",
+		ReactRouterDOM: "https://www.npmjs.com/package/react-router-dom",
+		ReactHelmet: "https://www.npmjs.com/package/react-helmet",
+		ReactHotLoader: "https://www.npmjs.com/package/react-hot-loader",
+		Classnames: "https://www.npmjs.com/package/classnames",
+		StyledComponents: "https://www.npmjs.com/package/styled-components",
+		ReactOnclickoutside: "https://www.npmjs.com/package/react-onclickoutside",
+		ReactMarkdown: "https://www.npmjs.com/package/react-markdown",
+	},
 }
