@@ -30,9 +30,6 @@ export default {
 			Section2: {
 				code1: "import React from 'react';\nimport logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n      <header className=\"App-header\">\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\n        <p>\n          Edit <code>src/App.js</code> and save to reload.\n        </p>\n        <a\n          className=\"App-link\"\n          href=\"https://reactjs.org\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Learn React\n        </a>\n      </header>\n    </div>\n  );\n}\n\nexport default App;",
 				code2: "import React from 'react';\nimport ReactDOM from 'react-dom';\nimport './sass/index.scss';\nimport App from './App';\nimport * as serviceWorker from './serviceWorker';\n\nReactDOM.render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>,\n  document.getElementById('root')\n);\n\n// If you want your app to work offline and load faster, you can change\n// unregister() to register() below. Note this comes with some pitfalls.\n// Learn more about service workers: https://bit.ly/CRA-PWA\nserviceWorker.unregister();",
-				code3: "",
-				code4: "",
-				code5: "",
 			},
 		},
 		Page3: {
@@ -83,17 +80,17 @@ export default {
 			},
 		},
 		Page5: {
-			Section1: {
+			Section2: {
 				code1: "import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';",
 				code2: "import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';",
 				code3: "<SyntaxHighlighter language={language} style={dark}>\n	{codeString}\n</SyntaxHighlighter>",
 				code4: "import React from 'react';\nimport { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';\nimport { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';\n\nconst CodeHighlighter = ({codeString, language}) => {\n  return (\n	<div className=\"p code\">\n		<SyntaxHighlighter language={language} style={dark}>\n			{codeString}\n		</SyntaxHighlighter>\n	</div>\n  );\n};\nexport default CodeHighlighter;\n",
 			},
-			Section2: {
-				code1: "",
-				code2: "",
-				code3: "",
-				code4: "",
+			Section3: {
+				code1: "import Select from 'react-select';",
+				code2: "const options = [\n  { value: 'sample1', label: 'サンプル1' },\n  { value: 'sample2', label: 'サンプル2' },\n  { value: 'sample3', label: 'サンプル3' },\n  { value: 'sample4', label: 'サンプル4' },\n];",
+				code3: " <Select options={options} />",
+				code4: "import React from 'react';\nimport Select from 'react-select';\n\nconst options = [\n  { value: 'sample1', label: 'サンプル1' },\n  { value: 'sample2', label: 'サンプル2' },\n  { value: 'sample3', label: 'サンプル3' },\n  { value: 'sample4', label: 'サンプル4' },\n];\n\nconst Sample = () => {\n  return (\n    <Select options={options} />\n  );\n}\n\nexport default Sample;",
 				code5: "",
 			},
 		},

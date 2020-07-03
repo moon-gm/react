@@ -1,0 +1,10 @@
+/** セレクトボックス設定 **/
+// 変数設定
+@import './../variable';
+
+.selectBoxWrap {
+	color: $black;
+	width: 100%;
+	max-width: 300px;
+	margin: 5px;
+}

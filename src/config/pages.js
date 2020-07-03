@@ -18,6 +18,7 @@ import RoutingManual from '../view/pages/page4/s2RoutingManual';
 // Page5
 import LibaryList from '../view/pages/page5/s1LibaryList';
 import ReactSyntaxHighlighter from '../view/pages/page5/s2ReactSyntaxHighlighter';
+import ReactSelect from '../view/pages/page5/s3ReactSelect';
 // Sample page
 import Sample from '../sample/pageSample';
 
@@ -98,6 +99,10 @@ export default {
 		Section2: {
 			Name: "5-2. React Syntax Highlighter",
 			ReactSyntaxHighlighter: ReactSyntaxHighlighter,
+		},
+		Section3: {
+			Name: "5-3. React Select",
+			ReactSelect: ReactSelect,
 		},
 	},
 	// 6. ---追加予定---

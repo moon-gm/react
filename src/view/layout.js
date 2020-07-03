@@ -75,6 +75,7 @@ class Layout extends React.Component {
 					"L5": Functions.List.bind(this, States.list.list5),
 					"S1": Functions.PageSection.bind(this, States.page.Page5.S1),
 					"S2": Functions.PageSection.bind(this, States.page.Page5.S2),
+					"S3": Functions.PageSection.bind(this, States.page.Page5.S3),
 				},
 			},
 			{

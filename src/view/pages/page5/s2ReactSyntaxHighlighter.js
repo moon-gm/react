@@ -6,7 +6,6 @@ const ReactSyntaxHighlighter = ({title}) => {
 	return (
 		<div className="page-layout">
 
-
 			<h2 className="h2">
 				1. react-syntax-highlighterとは
 			</h2>
@@ -19,7 +18,7 @@ const ReactSyntaxHighlighter = ({title}) => {
 				</p>
 				<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code1}
+						codeString={codes.pages.Page5.Section2.code1}
 						codeColor={codes.styles.tomorrow}
 				/>
 
@@ -49,14 +48,14 @@ const ReactSyntaxHighlighter = ({title}) => {
 					① 以下のようにインポートし、「SyntaxHighlighter」をコンポーネントとして使用できるようにする<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code1}
+						codeString={codes.pages.Page5.Section2.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
 					② 以下のようにスタイルをインポートし、コンポーネントの「style」propsで使用できるように設定<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code2}
+						codeString={codes.pages.Page5.Section2.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
@@ -64,7 +63,7 @@ const ReactSyntaxHighlighter = ({title}) => {
 					※「language」propsで指定した言語でソースコードを判断し、文字をハイライトする<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code3}
+						codeString={codes.pages.Page5.Section2.code3}
 						codeColor={codes.styles.tomorrow}
 					/>
 				</div>
@@ -72,7 +71,7 @@ const ReactSyntaxHighlighter = ({title}) => {
 					上記設定のサンプルコード<br/>
 					<Parts.CodeHighlighter
 							language={codes.languages.jsx}
-							codeString={codes.pages.Page5.Section1.code4}
+							codeString={codes.pages.Page5.Section2.code4}
 							codeColor={codes.styles.tomorrow}
 					/>
 				</div>
@@ -95,139 +94,139 @@ const ReactSyntaxHighlighter = ({title}) => {
 					dark<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.dark}
 					/><br/>
 					coy<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.coy}
 					/><br/>
 					funky<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.funky}
 					/><br/>
 					okaidia<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.okaidia}
 					/><br/>
 					solarizedlight<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.solarizedlight}
 					/><br/>
 					tomorrow<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.tomorrow}
 					/><br/>
 					twilight<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.twilight}
 					/><br/>
 					prism<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.prism}
 					/><br/>
 					atomDark<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.atomDark}
 					/><br/>
 					base16AteliersulphurpoolLight<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.base16AteliersulphurpoolLight}
 					/><br/>
 					cb<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.cb}
 					/><br/>
 					darcula<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.darcula}
 					/><br/>
 					duotoneDark<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.duotoneDark}
 					/><br/>
 					duotoneEarth<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.duotoneEarth}
 					/><br/>
 					duotoneForest<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.duotoneForest}
 					/><br/>
 					duotoneLight<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.duotoneLight}
 					/><br/>
 					duotoneSea<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.duotoneSea}
 					/><br/>
 					duotoneSpace<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.duotoneSpace}
 					/><br/>
 					ghcolors<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.ghcolors}
 					/><br/>
 					hopscotch<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.hopscotch}
 					/><br/>
 					pojoaque<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.pojoaque}
 					/><br/>
 					vs<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.vs}
 					/><br/>
 					xonokai<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section1.code4}
+						codeString={codes.pages.Page5.Section2.code4}
 						codeColor={codes.styles.xonokai}
 					/><br/>
 				</div>

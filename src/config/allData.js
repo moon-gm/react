@@ -205,6 +205,16 @@ function AllData(funcs) {
 							"list": States.list.list5,
 						},
 					},
+					// 5-3. React Select
+					{
+						"name": Pages.Page5.Section3.Name,
+						"Component": Pages.Page5.Section3.ReactSelect,
+						"func": funcs[5].Page5.S3,
+						"state": {
+							"page": States.page.Page5.S3,
+							"list": States.list.list5,
+						},
+					},
 				],
 			},
 			// 6. ---追加予定---
