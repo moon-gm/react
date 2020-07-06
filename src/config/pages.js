@@ -98,7 +98,7 @@ export default {
 	Page4: {
 		Name: "4. ルーティング",
 		Section1: {
-			Name: "4-1. React Router",
+			Name: "4-1. ライブラリ等を使用",
 			Sample: Sample,
 		},
 		Section2: {

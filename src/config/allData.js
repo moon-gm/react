@@ -154,7 +154,7 @@ function AllData(funcs) {
 					"list": States.list.list4,
 				},
 				"children": [
-					// 4-1. React Router
+					// 4-1. ライブラリ等を使用
 					{
 						"name": Pages.Page4.Section1.Name,
 						"Component": Pages.Page4.Section1.Sample,

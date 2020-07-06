@@ -279,7 +279,7 @@ const LibaryList = ({title, allData}) => {
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactOnclickoutside}
-						linkText="? React onclickoutside"
+						linkText="? React Onclickoutside"
 					/>
 				</p>
 
