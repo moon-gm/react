@@ -19,6 +19,23 @@ import RoutingManual from '../view/pages/page4/s2RoutingManual';
 import LibaryList from '../view/pages/page5/s1LibaryList';
 import ReactSyntaxHighlighter from '../view/pages/page5/s2ReactSyntaxHighlighter';
 import ReactSelect from '../view/pages/page5/s3ReactSelect';
+import ReactDropzone from '../view/pages/page5/s4ReactDropzone';
+import ReactColor from '../view/pages/page5/s5ReactColor';
+import ReactTable from '../view/pages/page5/s6ReactTable';
+import ReactDraggable from '../view/pages/page5/s7ReactDraggable';
+import ReactSwipeableViews from '../view/pages/page5/s8ReactSwipeableViews';
+import ReactModal from '../view/pages/page5/s9ReactModal';
+import ReactDatepicker from '../view/pages/page5/s10ReactDatepicker';
+import StyledComponents from '../view/pages/page5/s11StyledComponents';
+import ReactRedux from '../view/pages/page5/s12ReactRedux';
+import PropTypes from '../view/pages/page5/s13PropTypes';
+import ReactRouter from '../view/pages/page5/s14ReactRouter';
+import ReactHelmet from '../view/pages/page5/s15ReactHelmet';
+import Classnames from '../view/pages/page5/s16Classnames';
+import ReactOnclickoutside from '../view/pages/page5/s17ReactOnclickoutside';
+import ReactMarkdown from '../view/pages/page5/s18ReactMarkdown';
+import ReactScripts from '../view/pages/page5/s19ReactScripts';
+import ReactHotLoader from '../view/pages/page5/s20ReactHotLoader';
 // Sample page
 import Sample from '../sample/pageSample';
 
@@ -103,6 +120,74 @@ export default {
 		Section3: {
 			Name: "5-3. React Select",
 			ReactSelect: ReactSelect,
+		},
+		Section4: {
+			Name: "5-4. React Dropzone",
+			ReactDropzone: ReactDropzone,
+		},
+		Section5: {
+			Name: "5-5. React Color",
+			ReactColor: ReactColor,
+		},
+		Section6: {
+			Name: "5-6. React Table",
+			ReactTable: ReactTable,
+		},
+		Section7: {
+			Name: "5-7. React Draggable",
+			ReactDraggable: ReactDraggable,
+		},
+		Section8: {
+			Name: "5-8. React Swipeable Views",
+			ReactSwipeableViews: ReactSwipeableViews,
+		},
+		Section9: {
+			Name: "5-9. React Modal",
+			ReactModal: ReactModal,
+		},
+		Section10: {
+			Name: "5-10. React Datepicker",
+			ReactDatepicker: ReactDatepicker,
+		},
+		Section11: {
+			Name: "5-11. Styled Components",
+			StyledComponents: StyledComponents,
+		},
+		Section12: {
+			Name: "5-12. React Redux",
+			ReactRedux: ReactRedux,
+		},
+		Section13: {
+			Name: "5-13. Prop Types",
+			PropTypes: PropTypes,
+		},
+		Section14: {
+			Name: "5-14. React Router / React RouterDOM",
+			ReactRouter: ReactRouter,
+		},
+		Section15: {
+			Name: "5-15. React Helmet",
+			ReactHelmet: ReactHelmet,
+		},
+		Section16: {
+			Name: "5-16. Classnames",
+			Classnames: Classnames,
+		},
+		Section17: {
+			Name: "5-17. React Onclickoutside",
+			ReactOnclickoutside: ReactOnclickoutside,
+		},
+		Section18: {
+			Name: "5-18. React Markdown",
+			ReactMarkdown: ReactMarkdown,
+		},
+		Section19: {
+			Name: "5-19. React Scripts",
+			ReactScripts: ReactScripts,
+		},
+		Section20: {
+			Name: "5-20. React Hot Loader",
+			ReactHotLoader: ReactHotLoader,
 		},
 	},
 	// 6. ---追加予定---

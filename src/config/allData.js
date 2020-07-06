@@ -215,6 +215,176 @@ function AllData(funcs) {
 							"list": States.list.list5,
 						},
 					},
+					// 5-4. React Dropzone
+					{
+						"name": Pages.Page5.Section4.Name,
+						"Component": Pages.Page5.Section4.ReactDropzone,
+						"func": funcs[5].Page5.S4,
+						"state": {
+							"page": States.page.Page5.S4,
+							"list": States.list.list5,
+						},
+					},
+					// 5-5. React Color
+					{
+						"name": Pages.Page5.Section5.Name,
+						"Component": Pages.Page5.Section5.ReactColor,
+						"func": funcs[5].Page5.S5,
+						"state": {
+							"page": States.page.Page5.S5,
+							"list": States.list.list5,
+						},
+					},
+					// 5-6. React Table
+					{
+						"name": Pages.Page5.Section6.Name,
+						"Component": Pages.Page5.Section6.ReactTable,
+						"func": funcs[5].Page5.S6,
+						"state": {
+							"page": States.page.Page5.S6,
+							"list": States.list.list5,
+						},
+					},
+					// 5-7. React Draggable
+					{
+						"name": Pages.Page5.Section7.Name,
+						"Component": Pages.Page5.Section7.ReactDraggable,
+						"func": funcs[5].Page5.S7,
+						"state": {
+							"page": States.page.Page5.S7,
+							"list": States.list.list5,
+						},
+					},
+					// 5-8. React Swipeable Views
+					{
+						"name": Pages.Page5.Section8.Name,
+						"Component": Pages.Page5.Section8.ReactSwipeableViews,
+						"func": funcs[5].Page5.S8,
+						"state": {
+							"page": States.page.Page5.S8,
+							"list": States.list.list5,
+						},
+					},
+					// 5-9. React Modal
+					{
+						"name": Pages.Page5.Section9.Name,
+						"Component": Pages.Page5.Section9.ReactModal,
+						"func": funcs[5].Page5.S9,
+						"state": {
+							"page": States.page.Page5.S9,
+							"list": States.list.list5,
+						},
+					},
+					// 5-10. React Datepicker
+					{
+						"name": Pages.Page5.Section10.Name,
+						"Component": Pages.Page5.Section10.ReactDatepicker,
+						"func": funcs[5].Page5.S10,
+						"state": {
+							"page": States.page.Page5.S10,
+							"list": States.list.list5,
+						},
+					},
+					// 5-11. Styled Components
+					{
+						"name": Pages.Page5.Section11.Name,
+						"Component": Pages.Page5.Section11.StyledComponents,
+						"func": funcs[5].Page5.S11,
+						"state": {
+							"page": States.page.Page5.S11,
+							"list": States.list.list5,
+						},
+					},
+					// 5-12. React Redux
+					{
+						"name": Pages.Page5.Section12.Name,
+						"Component": Pages.Page5.Section12.ReactRedux,
+						"func": funcs[5].Page5.S12,
+						"state": {
+							"page": States.page.Page5.S12,
+							"list": States.list.list5,
+						},
+					},
+					// 5-13. Prop Types
+					{
+						"name": Pages.Page5.Section13.Name,
+						"Component": Pages.Page5.Section13.PropTypes,
+						"func": funcs[5].Page5.S13,
+						"state": {
+							"page": States.page.Page5.S13,
+							"list": States.list.list5,
+						},
+					},
+					// 5-14. React Router / React RouterDOM
+					{
+						"name": Pages.Page5.Section14.Name,
+						"Component": Pages.Page5.Section14.ReactRouter,
+						"func": funcs[5].Page5.S14,
+						"state": {
+							"page": States.page.Page5.S14,
+							"list": States.list.list5,
+						},
+					},
+					// 5-15. React Helmet
+					{
+						"name": Pages.Page5.Section15.Name,
+						"Component": Pages.Page5.Section15.ReactHelmet,
+						"func": funcs[5].Page5.S15,
+						"state": {
+							"page": States.page.Page5.S15,
+							"list": States.list.list5,
+						},
+					},
+					// 5-16. Classnames
+					{
+						"name": Pages.Page5.Section16.Name,
+						"Component": Pages.Page5.Section16.Classnames,
+						"func": funcs[5].Page5.S16,
+						"state": {
+							"page": States.page.Page5.S16,
+							"list": States.list.list5,
+						},
+					},
+					// 5-17. React Onclickoutside
+					{
+						"name": Pages.Page5.Section17.Name,
+						"Component": Pages.Page5.Section17.ReactOnclickoutside,
+						"func": funcs[5].Page5.S17,
+						"state": {
+							"page": States.page.Page5.S17,
+							"list": States.list.list5,
+						},
+					},
+					// 5-18. React Markdown
+					{
+						"name": Pages.Page5.Section18.Name,
+						"Component": Pages.Page5.Section18.ReactMarkdown,
+						"func": funcs[5].Page5.S18,
+						"state": {
+							"page": States.page.Page5.S18,
+							"list": States.list.list5,
+						},
+					},
+					// 5-19. React Scripts
+					{
+						"name": Pages.Page5.Section19.Name,
+						"Component": Pages.Page5.Section19.ReactScripts,
+						"func": funcs[5].Page5.S19,
+						"state": {
+							"page": States.page.Page5.S19,
+							"list": States.list.list5,
+						},
+					},
+					// 5-20. React Hot Loader
+					{
+						"name": Pages.Page5.Section20.Name,
+						"Component": Pages.Page5.Section20.ReactHotLoader,
+						"func": funcs[5].Page5.S20,
+						"state": {
+							"page": States.page.Page5.S20,
+							"list": States.list.list5,
+						},
+					},
 				],
 			},
 			// 6. ---追加予定---

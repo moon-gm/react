@@ -60,7 +60,7 @@ const LibaryList = ({title, allData}) => {
 					ファイルをドラッグアンドドロップできるようにするコンポーネント<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[3].func}>[ {allData[5].children[3].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactDropzone}
@@ -76,7 +76,7 @@ const LibaryList = ({title, allData}) => {
 					設定をすれば、選択したカラーを即時に指定した要素（コンポーネント）に適用もできる
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[4].func}>[ {allData[5].children[4].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactColor}
@@ -92,7 +92,7 @@ const LibaryList = ({title, allData}) => {
 					Hooksを使用すれば、ソート・検索などの機能のみを自前のテーブルに実装することもできる
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[5].func}>[ {allData[5].children[5].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactTable}
@@ -108,7 +108,7 @@ const LibaryList = ({title, allData}) => {
 					LocalStorageやStateを使えば、配置を記憶してドラッグした位置から表示もできる
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[6].func}>[ {allData[5].children[6].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactDraggable}
@@ -123,7 +123,7 @@ const LibaryList = ({title, allData}) => {
 					囲った要素をスワイプ可能にするコンポーネント<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[7].func}>[ {allData[5].children[7].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactSwipeableViews}
@@ -138,7 +138,7 @@ const LibaryList = ({title, allData}) => {
 					モーダルウィンドウを表示するコンポーネント<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[8].func}>[ {allData[5].children[8].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactModal}
@@ -153,7 +153,7 @@ const LibaryList = ({title, allData}) => {
 					日付を選択できるカレンダーコンポーネント<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[9].func}>[ {allData[5].children[9].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactDatepicker}
@@ -165,10 +165,10 @@ const LibaryList = ({title, allData}) => {
 					Styled Components
 				</h3>
 				<p className="p">
-					CSS in　JS / デザインを含んだコンポーネント<br/>
+					CSS in JS / デザインを含んだコンポーネント<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[10].func}>[ {allData[5].children[10].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.StyledComponents}
@@ -188,7 +188,7 @@ const LibaryList = ({title, allData}) => {
 					State変更方法をReduxで管理する
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[11].func}>[ {allData[5].children[11].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactRedux}
@@ -209,7 +209,7 @@ const LibaryList = ({title, allData}) => {
 					型のチェックなどバリデーションを行うライブラリ<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[12].func}>[ {allData[5].children[12].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.PropTypes}
@@ -224,7 +224,7 @@ const LibaryList = ({title, allData}) => {
 					URLにパスを付与してルーティングできるようにするライブラリ<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[13].func}>[ {allData[5].children[13].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactRouter}
@@ -243,7 +243,7 @@ const LibaryList = ({title, allData}) => {
 					headタグの管理をするコンポーネント<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[14].func}>[ {allData[5].children[14].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactHelmet}
@@ -259,7 +259,7 @@ const LibaryList = ({title, allData}) => {
 					クラス名をObjectにして値にtrue/falseを入れると表示非表示の設定ができる
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[15].func}>[ {allData[5].children[15].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.Classnames}
@@ -268,14 +268,14 @@ const LibaryList = ({title, allData}) => {
 				</p>
 
 				<h3 className="h3">
-					React onclickoutside
+					React Onclickoutside
 				</h3>
 				<p className="p">
 					要素（コンポーネント）の外部をクリックした時の動作を指定できるライブラリ<br/>
 					「export defalt」の際に、動作を付与したいコンポーネントを引数に入れるだけで指定できる
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[16].func}>[ {allData[5].children[16].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactOnclickoutside}
@@ -290,7 +290,7 @@ const LibaryList = ({title, allData}) => {
 					マークダウンで記述したものをHTMLに変換するライブラリ<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[17].func}>[ {allData[5].children[17].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactMarkdown}
@@ -309,7 +309,7 @@ const LibaryList = ({title, allData}) => {
 					create react appをビルドして使用する際に実行するスクリプトライブラリ<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[18].func}>[ {allData[5].children[18].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactScripts}
@@ -324,7 +324,7 @@ const LibaryList = ({title, allData}) => {
 					ファイルを監視して変更があれば、ブラウザのリロードをせずに画面を更新するライブラリ<br/>
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[19].func}>[ {allData[5].children[19].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactHotLoader}
