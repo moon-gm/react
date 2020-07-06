@@ -39,7 +39,7 @@ const LibaryList = ({title, allData}) => {
 					文字を入力してプルダウンの選択肢を検索したり、Propsを使って複数選択したりなどの設定ができる
 				</p>
 				<p className="p">
-					詳細セクション ：<span className="page-jump" onClick={allData[5].children[1].func}>[ {allData[5].children[1].name} ]</span><br/>
+					詳細セクション ：<span className="page-jump" onClick={allData[5].children[2].func}>[ {allData[5].children[2].name} ]</span><br/>
 					npm概要ページ ：
 					<Parts.Link
 						url={urls.npm.ReactSelect}

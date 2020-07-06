@@ -6,7 +6,58 @@ const ReactSelect = ({title}) => {
 
 	const options = [
 		{value: "Sample1", label: "サンプル１"},
-		{value: "Sample2", label: "サンプル2"}
+		{value: "Sample2", label: "サンプル2"},
+		{value: "Apple", label: "りんご"},
+		{value: "Pineapple", label: "パイナップル"},
+		{value: "Grape", label: "ぶどう"},
+		{value: "Melon", label: "メロン"},
+	];
+
+	const tableData = [
+		{
+			propsName: "autoFocus",
+			roll: "描画時テキストエリアをFocusさせる",
+		},
+		{
+			propsName: "className",
+			roll: "className指定",
+		},
+		{
+			propsName: "classNamePrefix",
+			roll: "指定した接頭辞を持つclassNameを適用",
+		},
+		{
+			propsName: "isDisabled",
+			roll: "disableのコントール",
+		},
+		{
+			propsName: "isMulti",
+			roll: "複数選択可能か指定",
+		},
+		{
+			propsName: "isSearchable",
+			roll: "検索機能を付けられる。一致するoptionの絞り込み機能",
+		},
+		{
+			propsName: "name",
+			roll: "name",
+		},
+		{
+			propsName: "onChange",
+			roll: "onChangeイベント",
+		},
+		{
+			propsName: "options",
+			roll: "Selectの選択肢（option配列）",
+		},
+		{
+			propsName: "placeholder",
+			roll: "プレースホルダー",
+		},
+		{
+			propsName: "value",
+			roll: "value",
+		},
 	];
 
 	return (
@@ -19,8 +70,10 @@ const ReactSelect = ({title}) => {
 					セレクトボックスを拡張機能を含め使用できるライブラリ<br/>
 					文字を入力してプルダウンの選択肢を検索したり、Propsを使って複数選択したりなどの設定ができる
 				</p>
-				<div className="p">
+				<p className="p">
 					以下はコンポーネントをインポートしたのみのデフォルトのセレクトボックスである
+				</p>
+				<div className="p">
 					<Parts.Select options={options} />
 				</div>
 
@@ -84,6 +137,80 @@ const ReactSelect = ({title}) => {
 				<p className="p">
 					以下のPropsが設定可能である
 				</p>
+				<div className="table-box">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									Props名
+								</th>
+								<th>
+									役割
+								</th>
+							</tr>
+						</thead>
+						{
+							tableData.map(item => {
+								return (
+									<tbody key={item.propsName}>
+										<tr>
+											<td>
+												{item.propsName}
+											</td>
+											<td>
+												{item.roll}
+											</td>
+										</tr>
+									</tbody>
+								);
+							})
+						}
+					</table>
+				</div>
+
+			<h2 className="h2">
+				4. Propsを利用した場合
+			</h2>
+				<h3 className="h3">
+					4-1. autoFocus
+				</h3>
+				<p className="p">
+					描画時にテキストエリアをfocusする
+				</p>
+				<div className="p">
+					<Parts.Select options={options} autoFocus/>
+				</div>
+
+				<h3 className="h3">
+					4-2. isMulti
+				</h3>
+				<p className="p">
+					設定することで複数の選択項目を選択できるようになる
+				</p>
+				<div className="p">
+					<Parts.Select options={options} isMulti/>
+				</div>
+
+				<h3 className="h3">
+					4-3. isSearchable
+				</h3>
+				<p className="p">
+					設定することで、選択項目の検索が可能になる
+				</p>
+				<div className="p">
+					<Parts.Select options={options} isSearchable/>
+				</div>
+
+				<h3 className="h3">
+					4-4. isDisabled
+				</h3>
+				<p className="p">
+					設定することで、要素がdisabledとなり選択不可となる
+				</p>
+				<div className="p">
+					<Parts.Select options={options} isDisabled/>
+				</div>
+
 		</div>
 	);
 }

@@ -75,6 +75,44 @@
 		}
 	}
 
+	// テーブル挿入
+	.table-box {
+		margin: 0 $m-side $m-bottom;
+		width: 100%;
+		overflow: scroll;
+		@media screen and (max-width: $sp-max-width) {
+			margin: 0 0 $m-bottom;
+		}
+		table {
+			border-collapse: separate;
+			width: 1000px;
+		}
+		th,td {
+			padding: 10px 20px;
+		}
+
+		th {
+			color: $light-blue;
+			border-bottom: 2px solid $light-blue;
+			text-align: left;
+		}
+		td {
+			color: $white;
+			border-bottom: 1px dotted $white;
+			&::before {
+				content: "-";
+				padding-right: 0.5em;
+			}
+			&:first-child {
+				&::before {
+					content: "▶︎";
+					padding-right: 3px;
+				}
+			}
+		}
+
+	}
+
 	// ページジャンプリンク
 	.page-jump {
 		color: $light-blue;
