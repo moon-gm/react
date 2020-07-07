@@ -112,6 +112,7 @@ const ReactDropzone = ({title}) => {
 						codeString={codes.pages.Page5.Section4.code7}
 						codeColor={codes.styles.tomorrow}
 					/>
+					<br/>
 					④ 以下のように②で定義した機能を「3-1③」同様にコンポーネントに反映する
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}

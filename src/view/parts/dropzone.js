@@ -19,10 +19,12 @@ function Dropzone() {
 				name : {file.path}
 			</p>
 			<p className={Styles.dropZoneText}>
-				size : {file.size}
+				{String(file.size).length <= 3 && `size : ${file.size} byte`}
+				{3 < String(file.size).length && String(file.size).length < 7 && `size : ${file.size/1000} Kbyte`}
+				{7 <= String(file.size).length && `size : ${file.size/1000000} Mbyte`}
 			</p>
 			<p className={Styles.dropZoneText}>
-				type : {file.type}
+				Content-Type : {file.type}
 			</p>
 			{console.log(file)}
 		</React.Fragment>
@@ -82,7 +84,6 @@ function Dropzone() {
 					:
 					files
 				}
-				{console.log(files)}
 			</div>
 		</div>
 	</>
