@@ -64,17 +64,25 @@ function Dropzone() {
 						(
 							<div>
 								<p className={Styles.dropZoneText}>
-									[ ファイルタイプが不正なものです ]
+									[ ファイルタイプが以下のものではありません ]<br/>
+									PNG, JPEG, GIF, BMP
 								</p>
 							</div>
 						)
 				}
 			</div>
 			<div className={`p ${Styles.dropZone}`}>
-				<p className={Styles.dropZoneText}>
-					[ ここにファイル名が表示される ]
-				</p>
-				{files}
+				{
+					files.length === 0 ?
+					(
+						<p className={Styles.dropZoneText}>
+							[ ここにファイル名が表示される ]
+						</p>
+					)
+					:
+					files
+				}
+				{console.log(files)}
 			</div>
 		</div>
 	</>
