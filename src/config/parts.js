@@ -5,6 +5,7 @@ import OuterLink from '../view/parts/outerLink';
 import CodeHighlighter from '../view/parts/syntaxHighlighter';
 import SelectBox from '../view/parts/selectBox';
 import DropZone from '../view/parts/dropzone';
+import OnClickOutside from '../view/parts/onclickoutside';
 
 // Parts Component設定
 export default {
@@ -15,4 +16,5 @@ export default {
 	"CodeHighlighter": CodeHighlighter,
 	"Select": SelectBox,
 	"DropZone": DropZone,
+	"OnClickOutside": OnClickOutside,
 };

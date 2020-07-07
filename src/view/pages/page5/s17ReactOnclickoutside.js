@@ -1,7 +1,7 @@
 
-import React from 'react';
-import codes from './../../../config/codes';
-import Parts from './../../../config/parts';
+import React from 'react'
+import codes from './../../../config/codes'
+import Parts from './../../../config/parts'
 
 const ReactOnclickoutside = ({title}) => {
 	return (
@@ -17,11 +17,7 @@ const ReactOnclickoutside = ({title}) => {
 				<p className="p">
 					サンプル
 				</p>
-				<Parts.CodeHighlighter
-						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code1}
-						codeColor={codes.styles.tomorrow}
-				/>
+				<Parts.OnClickOutside/>
 
 			<h2 className="h2">
 				2. インストール方法
@@ -43,28 +39,28 @@ const ReactOnclickoutside = ({title}) => {
 				3. 使用方法
 			</h2>
 				<h3 className="h3">
-					3-1. コンポーネントを作成
+					3-1. 任意のコンポーネントに機能を適用
 				</h3>
 				<div className="p">
-					① 以下のようにインポートし、「SyntaxHighlighter」をコンポーネントとして使用できるようにする<br/>
+					① 以下のようにインポートし、「onClickOutside」をfunctionとして使用できるようにする<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code1}
+						codeString={codes.pages.Page5.Section17.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 以下のようにスタイルをインポートし、コンポーネントの「style」propsで使用できるように設定<br/>
+					② 以下のようにコンポーネント外を押した時の処理を設定<br/>
+					※「handleClickOutside」というメソッド名にすることで、自動で実行してくれる
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code2}
+						codeString={codes.pages.Page5.Section17.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					③ 以下のようにコンポーネントを作成し、外からソースコード(codeString)、使用する言語(language)を渡して使用できるように設定<br/>
-					※「language」propsで指定した言語でソースコードを判断し、文字をハイライトする<br/>
+					③ 以下のようにコンポーネントを①のfunctionの引数に入れ、エクスポート<br/>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code3}
+						codeString={codes.pages.Page5.Section17.code3}
 						codeColor={codes.styles.tomorrow}
 					/>
 				</div>
@@ -72,18 +68,10 @@ const ReactOnclickoutside = ({title}) => {
 					上記設定のサンプルコード<br/>
 					<Parts.CodeHighlighter
 							language={codes.languages.jsx}
-							codeString={codes.pages.Page5.Section2.code4}
+							codeString={codes.pages.Page5.Section17.code4}
 							codeColor={codes.styles.tomorrow}
 					/>
 				</div>
-				<h3 className="h3">
-					3-2. 呼び出し側の設定
-				</h3>
-				<p className="p">
-					① 3-1で作成したコンポーネントを使いたい場所でインポート<br/>
-					② 「codeString」propsに表示させたいソースコードを渡す<br/>
-					③ 「language」propsに読ませたい言語を渡す<br/>
-				</p>
 
 		</div>
 	);
