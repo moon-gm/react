@@ -4,6 +4,7 @@ import LittleList from '../view/parts/littleList';
 import OuterLink from '../view/parts/outerLink';
 import CodeHighlighter from '../view/parts/syntaxHighlighter';
 import SelectBox from '../view/parts/selectBox';
+import DropZone from '../view/parts/dropzone';
 
 // Parts Component設定
 export default {
@@ -13,4 +14,5 @@ export default {
 	"Link": OuterLink,
 	"CodeHighlighter": CodeHighlighter,
 	"Select": SelectBox,
+	"DropZone": DropZone,
 };

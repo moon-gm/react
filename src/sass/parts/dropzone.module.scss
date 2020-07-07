@@ -1,0 +1,19 @@
+/** ドロップゾーン設定 **/
+// 変数設定
+@import './../variable';
+
+.dropZone {
+	display: block;
+	height: auto;
+	width: 50%;
+	border: 1px dashed $white;
+	@media screen and (max-width: $sp-max-width){
+		width: 100%;
+	}
+
+	&Text {
+		padding: 20px;
+		text-indent: -3em;
+		padding-left: 60px;
+	}
+}
