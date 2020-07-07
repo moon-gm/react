@@ -138,6 +138,11 @@ class Layout extends React.Component {
 
 	}
 
+	// メニューエリア以外押下時のメソッド
+	handleClickOutside() {
+		this.setState({menu: "hide"});
+	}
+
 	render() {
 		return (
 			<div className="flex-box">
@@ -147,6 +152,7 @@ class Layout extends React.Component {
 					<Parts.Aside
 						allData={this.allData}
 						states ={this.state}
+						handleClickOutside={this.handleClickOutside.bind(this)}
 					/>
 				)}
 
