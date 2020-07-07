@@ -15,8 +15,12 @@ function showPageSection(section) {
 		for (var k = 1; k <= 5; k++) {sessionStorage.setItem('back' + k + 'Page', this.state.page);}
 	}
 
+	// ページコンポーネントを表示してメニューを非表示
 	this.setState({page: section});
 	this.setState({menu: States.menu.hide});
+
+	// 画面の最上部を表示
+	window.scrollTo(0, 0);
 }
 
 export default showPageSection;
