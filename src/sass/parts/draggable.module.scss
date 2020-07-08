@@ -1,0 +1,47 @@
+/** セレクトボックス設定 **/
+// 変数設定
+@import './../variable';
+.container {
+	width: 100%;
+	max-width: 300px;
+	height: 200px;
+	box-shadow: 2px 2px 2px 2px $black;
+}
+
+.header {
+	background: rgb(215, 215, 215);
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	padding: 7px;
+	.dotRed {
+		color: red;
+		padding-left: 8px;
+		padding-right: 7px;
+	}
+	.dotYellow {
+		color: $yellow;
+		padding-right: 7px;
+	}
+	.dotGreen {
+		color: $green;
+	}
+	.cross {
+		color: rgb(215, 215, 215);
+
+	}
+}
+
+.flexBox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contents {
+	background: $white;
+	color: $black;
+	border-top: none;
+	padding: 20px;
+	border-radius: 0 0 4px 4px;
+	height: 82%;
+}
