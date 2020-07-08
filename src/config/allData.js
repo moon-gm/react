@@ -157,7 +157,7 @@ function AllData(funcs) {
 					// 4-1. ライブラリ等を使用
 					{
 						"name": Pages.Page4.Section1.Name,
-						"Component": Pages.Page4.Section1.Sample,
+						"Component": Pages.Page4.Section1.Maintenance,
 						"func": funcs[4].Page4.S1,
 						"state": {
 							"page": States.page.Page4.S1,
@@ -387,7 +387,7 @@ function AllData(funcs) {
 					},
 				],
 			},
-			// 6. ---追加予定---
+			// 6. フック(Hooks)
 			{
 				"name": Pages.Page6.Name,
 				"func": funcs[6].Page6.L6,
@@ -399,7 +399,7 @@ function AllData(funcs) {
 					// 6-1. ---追加予定---
 					{
 						"name": Pages.Page6.Section1.Name,
-						"Component": Pages.Page6.Section1.Sample,
+						"Component": Pages.Page6.Section1.Maintenance,
 						"func": funcs[6].Page6.S1,
 						"state": {
 							"page": States.page.Page6.S1,
@@ -409,7 +409,7 @@ function AllData(funcs) {
 					// 6-2. ---追加予定---
 					{
 						"name": Pages.Page6.Section2.Name,
-						"Component": Pages.Page6.Section2.Sample,
+						"Component": Pages.Page6.Section2.Maintenance,
 						"func": funcs[6].Page6.S2,
 						"state": {
 							"page": States.page.Page6.S2,
@@ -430,7 +430,7 @@ function AllData(funcs) {
 					// 7-1. ---追加予定---
 					{
 						"name": Pages.Page7.Section1.Name,
-						"Component": Pages.Page7.Section1.Sample,
+						"Component": Pages.Page7.Section1.Maintenance,
 						"func": funcs[7].Page7.S1,
 						"state": {
 							"page": States.page.Page7.S1,
@@ -440,7 +440,7 @@ function AllData(funcs) {
 					// 7-2. ---追加予定---
 					{
 						"name": Pages.Page7.Section2.Name,
-						"Component": Pages.Page7.Section2.Sample,
+						"Component": Pages.Page7.Section2.Maintenance,
 						"func": funcs[7].Page7.S2,
 						"state": {
 							"page": States.page.Page7.S2,
@@ -461,7 +461,7 @@ function AllData(funcs) {
 					// 8-1. ---追加予定---
 					{
 						"name": Pages.Page8.Section1.Name,
-						"Component": Pages.Page8.Section1.Sample,
+						"Component": Pages.Page8.Section1.Maintenance,
 						"func": funcs[8].Page8.S1,
 						"state": {
 							"page": States.page.Page8.S1,
@@ -471,7 +471,7 @@ function AllData(funcs) {
 					// 8-2. ---追加予定---
 					{
 						"name": Pages.Page8.Section2.Name,
-						"Component": Pages.Page8.Section2.Sample,
+						"Component": Pages.Page8.Section2.Maintenance,
 						"func": funcs[8].Page8.S2,
 						"state": {
 							"page": States.page.Page8.S2,
@@ -492,7 +492,7 @@ function AllData(funcs) {
 					// 9-1. ---追加予定---
 					{
 						"name": Pages.Page9.Section1.Name,
-						"Component": Pages.Page9.Section1.Sample,
+						"Component": Pages.Page9.Section1.Maintenance,
 						"func": funcs[9].Page9.S1,
 						"state": {
 							"page": States.page.Page9.S1,
@@ -502,7 +502,7 @@ function AllData(funcs) {
 					// 9-2. ---追加予定---
 					{
 						"name": Pages.Page9.Section2.Name,
-						"Component": Pages.Page9.Section2.Sample,
+						"Component": Pages.Page9.Section2.Maintenance,
 						"func": funcs[9].Page9.S2,
 						"state": {
 							"page": States.page.Page9.S2,
@@ -523,7 +523,7 @@ function AllData(funcs) {
 					// 10-1. ---追加予定---
 					{
 						"name": Pages.Page10.Section1.Name,
-						"Component": Pages.Page10.Section1.Sample,
+						"Component": Pages.Page10.Section1.Maintenance,
 						"func": funcs[10].Page10.S1,
 						"state": {
 							"page": States.page.Page10.S1,
@@ -533,7 +533,7 @@ function AllData(funcs) {
 					// 10-2. ---追加予定---
 					{
 						"name": Pages.Page10.Section2.Name,
-						"Component": Pages.Page10.Section2.Sample,
+						"Component": Pages.Page10.Section2.Maintenance,
 						"func": funcs[10].Page10.S2,
 						"state": {
 							"page": States.page.Page10.S2,
@@ -545,5 +545,4 @@ function AllData(funcs) {
 		]
 	);
 }
-
 export default AllData;

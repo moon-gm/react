@@ -36,8 +36,8 @@ import ReactOnclickoutside from '../view/pages/page5/s17ReactOnclickoutside';
 import ReactMarkdown from '../view/pages/page5/s18ReactMarkdown';
 import ReactScripts from '../view/pages/page5/s19ReactScripts';
 import ReactHotLoader from '../view/pages/page5/s20ReactHotLoader';
-// Sample page
-import Sample from '../sample/pageSample';
+// Maintenance page
+import Maintenance from '../view/pages/maintenance';
 
 /** Page Component設定 **/
 export default {
@@ -99,7 +99,7 @@ export default {
 		Name: "4. ルーティング",
 		Section1: {
 			Name: "4-1. ライブラリ等を使用",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 		Section2: {
 			Name: "4-2. 自前で作成",
@@ -190,16 +190,16 @@ export default {
 			ReactHotLoader: ReactHotLoader,
 		},
 	},
-	// 6. ---追加予定---
+	// 6. フック(Hooks)
 	Page6: {
-		Name: "6. ---追加予定---",
+		Name: "6. フック(Hooks)",
 		Section1: {
 			Name: "6-1. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 		Section2: {
 			Name: "6-2. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 	},
 	// 7. ---追加予定---
@@ -207,11 +207,11 @@ export default {
 		Name: "7. ---追加予定---",
 		Section1: {
 			Name: "7-1. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 		Section2: {
 			Name: "7-2. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 	},
 	// 8. ---追加予定---
@@ -219,11 +219,11 @@ export default {
 		Name: "8. ---追加予定---",
 		Section1: {
 			Name: "8-1. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 		Section2: {
 			Name: "8-2. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 	},
 	// 9. ---追加予定---
@@ -231,11 +231,11 @@ export default {
 		Name: "9. ---追加予定---",
 		Section1: {
 			Name: "9-1. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 		Section2: {
 			Name: "9-2. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 	},
 	// 10. ---追加予定---
@@ -243,11 +243,11 @@ export default {
 		Name: "10. ---追加予定---",
 		Section1: {
 			Name: "10-1. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 		Section2: {
 			Name: "10-2. ---追加予定---",
-			Sample: Sample,
+			Maintenance: Maintenance,
 		},
 	},
 };
