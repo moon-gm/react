@@ -396,23 +396,43 @@ function AllData(funcs) {
 					"list": States.list.list6,
 				},
 				"children": [
-					// 6-1. ---追加予定---
+					// 6-1. フックとは
 					{
 						"name": Pages.Page6.Section1.Name,
-						"Component": Pages.Page6.Section1.Maintenance,
+						"Component": Pages.Page6.Section1.AboutHook,
 						"func": funcs[6].Page6.S1,
 						"state": {
 							"page": States.page.Page6.S1,
 							"list": States.list.list6,
 						},
 					},
-					// 6-2. ---追加予定---
+					// 6-2. フックの使い方
 					{
 						"name": Pages.Page6.Section2.Name,
-						"Component": Pages.Page6.Section2.Maintenance,
+						"Component": Pages.Page6.Section2.HowToUseHook,
 						"func": funcs[6].Page6.S2,
 						"state": {
 							"page": States.page.Page6.S2,
+							"list": States.list.list6,
+						},
+					},
+					// 6-3. カスタムフック
+					{
+						"name": Pages.Page6.Section3.Name,
+						"Component": Pages.Page6.Section3.CustomHook,
+						"func": funcs[6].Page6.S3,
+						"state": {
+							"page": States.page.Page6.S3,
+							"list": States.list.list6,
+						},
+					},
+					// 6-4. フックAPI
+					{
+						"name": Pages.Page6.Section4.Name,
+						"Component": Pages.Page6.Section4.HookAPI,
+						"func": funcs[6].Page6.S4,
+						"state": {
+							"page": States.page.Page6.S4,
 							"list": States.list.list6,
 						},
 					},

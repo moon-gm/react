@@ -117,6 +117,11 @@ export default {
 				code4: "import React from 'react'\nimport onClickOutside from 'react-onclickoutside'\n \nconst DropDownMenu = () => {\n\n    handleClickOutside() {\n        this.setState({\n            areaOpen: false,\n        });\n    }\n \n    return (\n        <div>\n            ドロップダウンメニュー\n        </div>\n    );\n}\nexport default onClickOutside(DropDownMenu)\n",
 			},
 		},
+		Page6: {
+			Section1:{
+				code1: "import React, { useState } from 'react';\n\nfunction Example() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={() => setCount(count + 1)}>\n        Click me\n      </button>\n    </div>\n  );\n}",
+			},
+		},
 	},
 	languages: {
 		jsx: "jsx",

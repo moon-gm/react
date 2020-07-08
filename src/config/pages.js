@@ -36,6 +36,11 @@ import ReactOnclickoutside from '../view/pages/page5/s17ReactOnclickoutside';
 import ReactMarkdown from '../view/pages/page5/s18ReactMarkdown';
 import ReactScripts from '../view/pages/page5/s19ReactScripts';
 import ReactHotLoader from '../view/pages/page5/s20ReactHotLoader';
+// Page6
+import AboutHook from '../view/pages/page6/s1AboutHook';
+import HowToUseHook from '../view/pages/page6/s2HowToUseHook';
+import CustomHook from '../view/pages/page6/s3CustomHook';
+import HookAPI from '../view/pages/page6/s4HookAPI';
 // Maintenance page
 import Maintenance from '../view/pages/maintenance';
 
@@ -194,12 +199,20 @@ export default {
 	Page6: {
 		Name: "6. フック(Hooks)",
 		Section1: {
-			Name: "6-1. ---追加予定---",
-			Maintenance: Maintenance,
+			Name: "6-1. フックとは",
+			AboutHook: AboutHook,
 		},
 		Section2: {
-			Name: "6-2. ---追加予定---",
-			Maintenance: Maintenance,
+			Name: "6-2. フックの使い方",
+			HowToUseHook: HowToUseHook,
+		},
+		Section3: {
+			Name: "6-3. カスタムフック",
+			CustomHook: CustomHook,
+		},
+		Section4: {
+			Name: "6-4. フックAPI",
+			HookAPI: HookAPI,
 		},
 	},
 	// 7. ---追加予定---
