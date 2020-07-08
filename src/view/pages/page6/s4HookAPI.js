@@ -30,44 +30,6 @@ const HookAPI = ({title, allData}) => {
 					codeColor={codes.styles.tomorrow}
 				/>
 
-			<h2 className="h2">
-				2. フック導入背景
-			</h2>
-				<p className="p">
-					根本として、クラスを使わないようにするための導入である。<br/>
-					Reactにおいてクラスとは、コードの再利用や整頓が難しくなるなど障壁となり得る点が多いからである。
-					functionやメソッドなどのイベントハンドラでは、「this」をbindしなくてはならなかったりとコードが冗長になりがちである。
-					また、ホットリローディングも不安定になり、信頼できないものとなってしまう点などがあげられる
-				</p>
-
-			<h2 className="h2">
-				3. フックのルール
-			</h2>
-				<p className="p">
-					フックは JavaScript の関数だが、それらを使う際には以下の2つのルールに従う必要がある
-				</p>
-
-				<h3 className="h3">
-					3-1. 呼び出すのはトップレベルのみ
-				</h3>
-				<p className="p">
-					フックをループや条件分岐、あるいはネストされた関数内で呼び出してはいけない。
-					なぜなら、Reactは初回レンダー時、更新のレンダー時でフックが呼び出される順序を元にしているため、
-					条件分岐や、ループを行うとその回数・順序が狂い、バグが発生するからである
-				</p>
-
-				<h3 className="h3">
-					3-2. 呼び出すのはReactの関数内のみ
-				</h3>
-				<p className="p">
-					フックを通常のJavaScript関数から呼び出してはいけない。以下のにパターンなら呼び出し可能である。<br/>
-					・Reactの関数コンポーネント内<br/>
-					・自作のカスタムフック内
-				</p>
-				<p className="p">
-					カスタムフックはセクション<span className="page-jump" onClick={allData[6].children[2].func}>[ {allData[6].children[2].name} ]</span>で解説
-				</p>
-
 		</div>
 	);
 }
