@@ -14,50 +14,17 @@ const ReactSelect = ({title}) => {
 	];
 
 	const tableData = [
-		{
-			propsName: "autoFocus",
-			roll: "描画時テキストエリアをFocusさせる",
-		},
-		{
-			propsName: "className",
-			roll: "className指定",
-		},
-		{
-			propsName: "classNamePrefix",
-			roll: "指定した接頭辞を持つclassNameを適用",
-		},
-		{
-			propsName: "isDisabled",
-			roll: "disableのコントール",
-		},
-		{
-			propsName: "isMulti",
-			roll: "複数選択可能か指定",
-		},
-		{
-			propsName: "isSearchable",
-			roll: "検索機能を付けられる。一致するoptionの絞り込み機能",
-		},
-		{
-			propsName: "name",
-			roll: "name",
-		},
-		{
-			propsName: "onChange",
-			roll: "onChangeイベント",
-		},
-		{
-			propsName: "options",
-			roll: "Selectの選択肢（option配列）",
-		},
-		{
-			propsName: "placeholder",
-			roll: "プレースホルダー",
-		},
-		{
-			propsName: "value",
-			roll: "value",
-		},
+		{propsName: "autoFocus", roll: "描画時テキストエリアをFocusさせる"},
+		{propsName: "className", roll: "className指定"},
+		{propsName: "classNamePrefix", roll: "指定した接頭辞を持つclassNameを適用"},
+		{propsName: "isDisabled", roll: "disableのコントール"},
+		{propsName: "isMulti", roll: "複数選択可能か指定"},
+		{propsName: "isSearchable", roll: "検索機能を付けられる。一致するoptionの絞り込み機能"},
+		{propsName: "name", roll: "name"},
+		{propsName: "onChange", roll: "入力データ変化時のonChangeイベント"},
+		{propsName: "options", roll: "Selectの選択肢（option配列）"},
+		{propsName: "placeholder", roll: "プレースホルダー"},
+		{propsName: "value", roll: "value"},
 	];
 
 	return (
@@ -137,36 +104,7 @@ const ReactSelect = ({title}) => {
 				<p className="p">
 					以下のPropsが設定可能である
 				</p>
-				<div className="table-box">
-					<table>
-						<thead>
-							<tr>
-								<th>
-									Props名
-								</th>
-								<th>
-									役割
-								</th>
-							</tr>
-						</thead>
-						{
-							tableData.map(item => {
-								return (
-									<tbody key={item.propsName}>
-										<tr>
-											<td>
-												{item.propsName}
-											</td>
-											<td>
-												{item.roll}
-											</td>
-										</tr>
-									</tbody>
-								);
-							})
-						}
-					</table>
-				</div>
+				<Parts.TableForProps tableData={tableData} />
 
 			<h2 className="h2">
 				4. Propsを利用した場合

@@ -6,42 +6,15 @@ import Draggable from 'react-draggable';
 
 const ReactDraggable = ({title}) => {
 	const tableData = [
-		{
-			propsName: "axis",
-			roll: "ドラッグする方向を設定 / x: 水平方向, y: 垂直方向, both: xy両方向",
-		},
-		{
-			propsName: "handle",
-			roll: "ドラッグさせたい要素のクラス名、id名を指定する",
-		},
-		{
-			propsName: "grid",
-			roll: "ドラッグ時の移動幅の設定",
-		},
-		{
-			propsName: "scale",
-			roll: "ドラッグ時のカーソルに対する、要素の追跡速度の設定",
-		},
-		{
-			propsName: "defaultPosition",
-			roll: "positionが指定されていない場合のデフォルトの位置設定",
-		},
-		{
-			propsName: "position",
-			roll: "要素の配置を設定",
-		},
-		{
-			propsName: "onStart",
-			roll: "ドラッグ開始時に行いたい処理を設定できる",
-		},
-		{
-			propsName: "onDrag",
-			roll: "ドラッグ中に行いたい処理を設定できる",
-		},
-		{
-			propsName: "onStop",
-			roll: "ドラッグ停止時に行いたい処理を設定できる",
-		},
+		{propsName: "axis", roll: "ドラッグする方向を設定 / x: 水平方向, y: 垂直方向, both: xy両方向"},
+		{propsName: "handle", roll: "ドラッグさせたい要素のクラス名、id名を指定する"},
+		{propsName: "grid", roll: "ドラッグ時の移動幅の設定"},
+		{propsName: "scale", roll: "ドラッグ時のカーソルに対する、要素の追跡速度の設定"},
+		{propsName: "defaultPosition", roll: "positionが指定されていない場合のデフォルトの位置設定"},
+		{propsName: "position", roll: "要素の配置を設定"},
+		{propsName: "onStart", roll: "ドラッグ開始時に行いたい処理を設定できる"},
+		{propsName: "onDrag", roll: "ドラッグ中に行いたい処理を設定できる"},
+		{propsName: "onStop", roll: "ドラッグ停止時に行いたい処理を設定できる"},
 	];
 	return (
 		<div className="page-layout">
@@ -143,37 +116,7 @@ const ReactDraggable = ({title}) => {
 				<p className="p">
 					以下のPropsが設定可能である
 				</p>
-				<div className="table-box">
-					<table>
-						<thead>
-							<tr>
-								<th>
-									Props名
-								</th>
-								<th>
-									役割
-								</th>
-							</tr>
-						</thead>
-						{
-							tableData.map(item => {
-								return (
-									<tbody key={item.propsName}>
-										<tr>
-											<td>
-												{item.propsName}
-											</td>
-											<td>
-												{item.roll}
-											</td>
-										</tr>
-									</tbody>
-								);
-							})
-						}
-					</table>
-				</div>
-
+				<Parts.TableForProps tableData={tableData} />
 		</div>
 	);
 }

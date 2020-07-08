@@ -6,6 +6,7 @@ import CodeHighlighter from '../view/parts/syntaxHighlighter';
 import SelectBox from '../view/parts/selectBox';
 import DropZone from '../view/parts/dropzone';
 import OnClickOutside from '../view/parts/onclickoutside';
+import TableForProps from '../view/parts/tableForProps';
 
 // Parts Component設定
 export default {
@@ -17,4 +18,5 @@ export default {
 	"Select": SelectBox,
 	"DropZone": DropZone,
 	"OnClickOutside": OnClickOutside,
+	"TableForProps": TableForProps,
 };

@@ -5,14 +5,8 @@ import Parts from './../../../config/parts';
 const ReactDropzone = ({title}) => {
 
 	const tableData = [
-		{
-			propsName: "onDrop",
-			roll: "ドロップ時の処理",
-		},
-		{
-			propsName: "accept",
-			roll: "許容するファイルのMIME",
-		},
+		{propsName: "onDrop", roll: "ドロップ時の処理"},
+		{propsName: "accept", roll: "許容するファイルのMIME"},
 	];
 
 	return (
@@ -135,37 +129,7 @@ const ReactDropzone = ({title}) => {
 				<p className="p">
 					以下のPropsが設定可能である
 				</p>
-				<div className="table-box">
-					<table>
-						<thead>
-							<tr>
-								<th>
-									Props名
-								</th>
-								<th>
-									役割
-								</th>
-							</tr>
-						</thead>
-						{
-							tableData.map(item => {
-								return (
-									<tbody key={item.propsName}>
-										<tr>
-											<td>
-												{item.propsName}
-											</td>
-											<td>
-												{item.roll}
-											</td>
-										</tr>
-									</tbody>
-								);
-							})
-						}
-					</table>
-				</div>
-
+				<Parts.TableForProps tableData={tableData} />
 		</div>
 	);
 }
