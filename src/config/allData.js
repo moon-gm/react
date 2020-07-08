@@ -154,7 +154,7 @@ function AllData(funcs) {
 					"list": States.list.list4,
 				},
 				"children": [
-					// 4-1. ライブラリ等を使用
+					// 4-1. URLを付与する場合
 					{
 						"name": Pages.Page4.Section1.Name,
 						"Component": Pages.Page4.Section1.Maintenance,
@@ -164,7 +164,7 @@ function AllData(funcs) {
 							"list": States.list.list4,
 						},
 					},
-					// 4-2. 自前で作成
+					// 4-2. SPAの場合
 					{
 						"name": Pages.Page4.Section2.Name,
 						"Component": Pages.Page4.Section2.RoutingManual,

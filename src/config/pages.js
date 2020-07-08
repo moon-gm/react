@@ -103,11 +103,11 @@ export default {
 	Page4: {
 		Name: "4. ルーティング",
 		Section1: {
-			Name: "4-1. ライブラリ等を使用",
+			Name: "4-1. URLを付与する場合",
 			Maintenance: Maintenance,
 		},
 		Section2: {
-			Name: "4-2. 自前で作成",
+			Name: "4-2. SPAの場合",
 			RoutingManual: RoutingManual,
 		},
 	},
