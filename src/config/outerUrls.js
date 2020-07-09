@@ -12,6 +12,10 @@ export default {
 	PWA: "https://www.seohacks.net/basic/terms/pwa/",
 	ReactSelect: "https://react-select.com/home",
 	ReactRedux: "https://react-redux.js.org/",
+	Gatsby: "https://qiita.com/hppRC/items/00739eaf9ae7fc95c1ca",
+	GatsbyOfficial: "https://www.gatsbyjs.org/",
+	Next: "https://qiita.com/tetsutaroendo/items/0dad3150ecb4c9ad0d54",
+	NextOfficial: "https://nextjs.org/",
 
 	// npm公式サイト
 	npm: {

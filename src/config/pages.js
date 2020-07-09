@@ -15,6 +15,7 @@ import AboutState from '../view/pages/page3/s3AboutState';
 import AboutProps from '../view/pages/page3/s4AboutProps';
 // Page4
 import RoutingManual from '../view/pages/page4/s2RoutingManual';
+import UseLibrary from '../view/pages/page4/s1UseLibrary';
 // Page5
 import LibaryList from '../view/pages/page5/s1LibaryList';
 import ReactSyntaxHighlighter from '../view/pages/page5/s2ReactSyntaxHighlighter';
@@ -104,7 +105,7 @@ export default {
 		Name: "4. ルーティング",
 		Section1: {
 			Name: "4-1. URLを付与する場合",
-			Maintenance: Maintenance,
+			UseLibrary: UseLibrary,
 		},
 		Section2: {
 			Name: "4-2. SPAの場合",

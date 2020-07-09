@@ -157,7 +157,7 @@ function AllData(funcs) {
 					// 4-1. URLを付与する場合
 					{
 						"name": Pages.Page4.Section1.Name,
-						"Component": Pages.Page4.Section1.Maintenance,
+						"Component": Pages.Page4.Section1.UseLibrary,
 						"func": funcs[4].Page4.S1,
 						"state": {
 							"page": States.page.Page4.S1,
