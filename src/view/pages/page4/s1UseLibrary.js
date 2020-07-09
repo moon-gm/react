@@ -1,5 +1,4 @@
 import React from 'react';
-import codes from './../../../config/codes';
 import urls from './../../../config/outerUrls';
 import Parts from './../../../config/parts';
 
