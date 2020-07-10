@@ -12,6 +12,15 @@
 		}
 	}
 }
+// 表示設定
+.inline-block {
+	display: inline-block;
+}
+
+// ヘッダー固定分の高さ分のスペーサー
+.spacer-for-header {
+	height: $header-height+10px;
+}
 
 // ページ設定
 .page-layout {

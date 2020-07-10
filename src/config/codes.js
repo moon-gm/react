@@ -121,6 +121,18 @@ export default {
 			Section1:{
 				code1: "import React, { useState } from 'react';\n\nfunction Example() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={() => setCount(count + 1)}>\n        Click me\n      </button>\n    </div>\n  );\n}",
 			},
+			Section4:{
+				code1: "const [state, setState] = useState(initialState);",
+				code2: "setState(newState);",
+				code3: "function Counter({initialCount}) {\n  const [count, setCount] = useState(initialCount);\n  return (\n    <>\n      Count: {count}\n      <button onClick={() => setCount(initialCount)}>Reset</button>\n      <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button>\n      <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>\n    </>\n  );\n}",
+				code4: "",
+				code5: "",
+				code6: "",
+				code7: "",
+				code8: "",
+				code9: "",
+				code10: "",
+			},
 		},
 	},
 	languages: {
