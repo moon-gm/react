@@ -7,6 +7,7 @@ export default {
 		Fragment: "https://ja.reactjs.org/docs/fragments.html",
 		StrictMode: "https://ja.reactjs.org/docs/strict-mode.html",
 		HooksAPI: "https://ja.reactjs.org/docs/hooks-reference.html",
+		Context: "https://ja.reactjs.org/docs/context.html",
 	},
 
 	// 外部参考サイト
