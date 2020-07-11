@@ -121,6 +121,10 @@ export default {
 			Section1:{
 				code1: "import React, { useState } from 'react';\n\nfunction Example() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={() => setCount(count + 1)}>\n        Click me\n      </button>\n    </div>\n  );\n}",
 			},
+			Section3:{
+				code1: "function useSample() {\n    return (\n        ...処理を記載...\n    );\n}",
+				code2: "import { useSample } from './component/sample'",
+			},
 			Section4:{
 				code1: "const [state, setState] = useState(initialState);",
 				code2: "setState(newState);",
@@ -129,9 +133,6 @@ export default {
 				code5: "useEffect(\n  () => {\n    const subscription = props.source.subscribe();\n    return () => {\n      subscription.unsubscribe();\n    };\n  },\n  [props.source],\n);",
 				code6: "const value = useContext(MyContext);",
 				code7: "const themes = {\n  light: {\n    foreground: \"#000000\",\n    background: \"#eeeeee\"\n  },\n  dark: {\n    foreground: \"#ffffff\",\n    background: \"#222222\"\n  }\n};\n\nconst ThemeContext = React.createContext(themes.light);\n\nfunction App() {\n  return (\n    <ThemeContext.Provider value={themes.dark}>\n      <Toolbar />\n    </ThemeContext.Provider>\n  );\n}\n\nfunction Toolbar(props) {\n  return (\n    <div>\n      <ThemedButton />\n    </div>\n  );\n}\n\nfunction ThemedButton() {\n  const theme = useContext(ThemeContext);\n  return (\n    <button style={{ background: theme.background, color: theme.foreground }}>\n      I am styled by theme context!\n    </button>\n  );\n}",
-				code8: "",
-				code9: "",
-				code10: "",
 			},
 		},
 	},

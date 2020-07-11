@@ -10,25 +10,53 @@ const CustomHook = ({title, allData}) => {
 				1. カスタムフックの作成方法
 			</h2>
 				<p className="p">
-					React 16.8 で追加された新機能で、「state」などのReactの機能が、クラスコンポーネントとして書かずに使えるようになる
-				</p>
-				<p className="p">
-					フックとは、関連する機能に基づいて、1つのコンポーネントを複数の小さな関数に分割することを可能にする。<br/>
-					React 16.8以前では、クラスコンポーネントでしか利用できなかった「state」などの機能が関数コンポーネント（function/constで作成）でも利用できるようになり、
-					「React」のコンポーネントから切り出した機能の一部として、「useState」「useEffect」が代表的な「フック(Hook)」である
-				</p>
-				<h3 className="h3">
-					サンプルコード
-				</h3>
-				<p className="p">
-					「state」を扱う「useState」のサンプルコードである<br/>
-					内容については次セクション<span className="page-jump" onClick={allData[6].children[1].func}>[ {allData[6].children[1].name} ]</span>で解説
+					カスタムフックとは、独自にフックを作成することで、コンポーネントからロジックを抽出して再利用可能な関数を作ることが可能になる<br/>
+					コンポーネント内で定義したfunctionを外部から使用できるようにすることで、カスタムフックと呼べる機能が実現する。
 				</p>
 				<Parts.CodeHighlighter
 					language={codes.languages.jsx}
-					codeString={codes.pages.Page6.Section1.code1}
+					codeString={codes.pages.Page6.Section3.code1}
 					codeColor={codes.styles.tomorrow}
 				/>
+				<p className="p">
+					 このfunction名は必ず「use」から始まるように命名。
+					 以下のように、インポートすることでReactのフック同様に使用可能となる。
+				</p>
+				<Parts.CodeHighlighter
+					language={codes.languages.jsx}
+					codeString={codes.pages.Page6.Section3.code2}
+					codeColor={codes.styles.tomorrow}
+				/>
+
+			<h2 className="h2">
+				1. カスタムフックのルール
+			</h2>
+				<h3 className="h3">
+					◆ コードは元のコードと同等か
+				</h3>
+				<p className="p">
+					全く同じように動作
+				</p>
+				<h3 className="h3">
+					◆ 名前は「use」から始める
+				</h3>
+				<p className="p">
+					「eslint-plugin-react-hooks」でフックのルールを強制することができるが、
+					その管理外とならないように「use」から始めるべきである。<br/>
+					※useからはじめなくても機能はする
+				</p>
+				<h3 className="h3">
+					◆ 同じフックを使うコンポーネントは「state」を共有するのか
+				</h3>
+				<p className="p">
+					カスタムフックを使う場所ごとで、内部の「state」や副作用は完全に分離
+				</p>
+				<h3 className="h3">
+					◆ フックは独立している
+				</h3>
+				<p className="p">
+					「useState」や「useEffect」のReactフックを含め、ひとつのコンポーネント内で複数回呼ぶことができ、それらは完全に独立する
+				</p>
 
 		</div>
 	);
