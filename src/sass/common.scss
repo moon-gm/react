@@ -19,7 +19,12 @@
 
 // ヘッダー固定分の高さ分のスペーサー
 .spacer-for-header {
-	height: $header-height+10px;
+	height: $header-height+15px;
+	padding: 5px;
+	margin: 0 $m-side;
+		@media screen and (max-width: $sp-max-width) {
+			margin: 0;
+		}
 }
 
 // ページ設定
