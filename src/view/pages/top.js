@@ -3,6 +3,7 @@ import logo from './../../images/logo.svg';
 import Styles from './../../sass/pages/top.module.scss';
 import Parts from './../../config/parts';
 import urls from './../../config/outerUrls';
+import Draggable from 'react-draggable';
 
 const Top = ({title}) => {
 
@@ -11,11 +12,19 @@ const Top = ({title}) => {
 			<p className={Styles.mainTitle}>
 				{title}
 			</p>
-			<img
-				src={logo}
-				className={Styles.AppLogo}
-				alt="logo"
-			/>
+			<Draggable
+				axis="both"
+				handle=".handle"
+				defaultPosition={{x:0,y:0}}
+				grid={[1, 1]}
+				scale={1}
+			>
+				<img
+					src={logo}
+					className={`handle ${Styles.AppLogo}`}
+					alt="logo"
+				/>
+			</Draggable>
 			<Parts.Link
 				url={urls.ReactOfficial.Support}
 				linkText="> Go to Support"

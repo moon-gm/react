@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 import codes from './../../../config/codes';
 import Parts from './../../../config/parts';
 import Styles from './../../../sass/parts/draggable.module.scss';
@@ -16,6 +16,23 @@ const ReactDraggable = ({title}) => {
 		{propsName: "onDrag", roll: "ドラッグ中に行いたい処理を設定できる"},
 		{propsName: "onStop", roll: "ドラッグ停止時に行いたい処理を設定できる"},
 	];
+	const [dragPosition, setDragPosition] = useState({
+		x: (sessionStorage.getItem("positionX") ? sessionStorage.getItem("positionX") : 0),
+		y: (sessionStorage.getItem("positionY") ? sessionStorage.getItem("positionY") : 0),
+	});
+
+	// function onDrag(e, position) {
+	// 	const {x, y} = position;
+	// 	setDragPosition({x:x, y:y});
+	// }
+
+	function onStop(e, position) {
+		const {x, y} = position;
+		sessionStorage.setItem("positionX", x);
+		sessionStorage.setItem("positionY", y);
+		setDragPosition({x:x, y:y});
+	}
+
 	return (
 		<div className="page-layout">
 
@@ -32,10 +49,12 @@ const ReactDraggable = ({title}) => {
 				<Draggable
 					axis="both"
 					handle=".handle"
-					defaultPosition={{x: 0, y: 0}}
-					position={null}
+					defaultPosition={{x:0,y:0}}
+					position={dragPosition}
 					grid={[1, 1]}
 					scale={1}
+					// onDrag={onDrag}
+					onStop={onStop}
 				>
 					<div className="p handle">
 						<div className={Styles.container}>
