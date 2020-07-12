@@ -40,24 +40,55 @@ const Header = ({allData, states, func}) => {
 				{/* ヘッダータイトル - end - */}
 
 				{/* メニューボタンPC - start - */}
-					<li
-						className={Styles.menuBtnPC}
-						onClick={func[0].Menu}
-						id="menuBtnPC"
-					>
-						{states.menu === "show" && "Close Menu ▲"}
-						{states.menu === "hide" && "Open Menu ▼"}
-					</li>
+					{
+						states.menu === "show" && (
+							<li
+								className={Styles.menuBtnPC}
+								onClick={func[0].Menu}
+								id="menuBtnPC"
+								disabled
+							>
+								Close Menu ▲
+							</li>
+						)
+					}
+					{
+						states.menu === "hide" && (
+							<li
+								className={Styles.menuBtnPC}
+								onClick={func[0].Menu}
+								id="menuBtnPC"
+							>
+								Open Menu ▼
+							</li>
+						)
+					}
 				{/* メニューボタン - end - */}
 
 				{/* メニューボタンSP - start - */}
-					<li
-						className={Styles.menuBtnSP}
-						onClick={func[0].Menu}
-						id="menuBtnSP"
-					>
-						≡
-					</li>
+					{
+						states.menu === "show" && (
+							<li
+								className={Styles.menuBtnSP}
+								onClick={func[0].Menu}
+								id="menuBtnSP"
+								disabled
+							>
+								≡
+							</li>
+						)
+					}
+					{
+						states.menu === "hide" && (
+							<li
+								className={Styles.menuBtnSP}
+								onClick={func[0].Menu}
+								id="menuBtnSP"
+							>
+								≡
+							</li>
+						)
+					}
 				{/* メニューボタンSP - end - */}
 
 			</ul>
