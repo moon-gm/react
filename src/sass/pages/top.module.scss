@@ -24,8 +24,16 @@
 .mainTitle {
 	color: $light-blue;
 	font-size: 50px;
+	text-align: center;
 	@media screen and (max-width: $sp-max-width) {
 		font-size: 30px;
+	}
+
+	.subTitle {
+		font-size: 25px;
+		@media screen and (max-width: $sp-max-width) {
+			font-size: 20px;
+		}
 	}
 }
 

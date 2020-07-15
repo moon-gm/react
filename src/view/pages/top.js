@@ -4,14 +4,35 @@ import Styles from './../../sass/pages/top.module.scss';
 import Parts from './../../config/parts';
 import urls from './../../config/outerUrls';
 import Draggable from 'react-draggable';
+import SwipeableViews from 'react-swipeable-views';
 
 const Top = ({title}) => {
 
 	return (
 		<div className={Styles.AppHeader}>
-			<p className={Styles.mainTitle}>
-				{title}
-			</p>
+			<SwipeableViews enableMouseEvents>
+				<p className={Styles.mainTitle}>
+					{title}<br/>
+					<p className={Styles.subTitle}>
+						〜 First Step 〜<br/>
+						◀︎ Swipe
+					</p>
+				</p>
+				<p className={Styles.mainTitle}>
+					React User<br/>
+					<p className={Styles.subTitle}>
+						〜 Second Step 〜<br/>
+						◀︎ Swipe ▶︎
+					</p>
+				</p>
+				<p className={Styles.mainTitle}>
+					React Master<br/>
+					<p className={Styles.subTitle}>
+						〜 Last Step 〜<br/>
+						Swipe ▶︎
+					</p>
+				</p>
+			</SwipeableViews>
 			<Draggable
 				axis="both"
 				handle=".handle"
