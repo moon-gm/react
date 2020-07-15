@@ -59,8 +59,10 @@ const ReactSyntaxHighlighter = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					③ 以下のようにコンポーネントを作成し、外からソースコード(codeString)、使用する言語(language)を渡して使用できるように設定<br/>
-					※「language」propsで指定した言語でソースコードを判断し、文字をハイライトする<br/>
+					③ 以下のようにコンポーネントを作成し、外からソースコード(codeString)、使用する言語(language)を渡して使用できるように設定
+					<p className="p">
+						※「language」propsで指定した言語でソースコードを判断し、文字をハイライトする
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section2.code3}

@@ -30,7 +30,7 @@ import ReactDatepicker from '../view/pages/page5/s10ReactDatepicker';
 import StyledComponents from '../view/pages/page5/s11StyledComponents';
 import ReactRedux from '../view/pages/page5/s12ReactRedux';
 import PropTypes from '../view/pages/page5/s13PropTypes';
-import ReactRouter from '../view/pages/page5/s14ReactRouter';
+import ReactRouterDOM from '../view/pages/page5/s14ReactRouterDOM';
 import ReactHelmet from '../view/pages/page5/s15ReactHelmet';
 import Classnames from '../view/pages/page5/s16Classnames';
 import ReactOnclickoutside from '../view/pages/page5/s17ReactOnclickoutside';
@@ -193,9 +193,9 @@ export default {
 			PropTypes: PropTypes,
 		},
 		Section14: {
-			Name: "5-14. React Router / React RouterDOM",
-			Path: "/page5/s14ReactRouter",
-			ReactRouter: ReactRouter,
+			Name: "5-14. React RouterDOM",
+			Path: "/page5/s14ReactRouterDOM",
+			ReactRouterDOM: ReactRouterDOM,
 		},
 		Section15: {
 			Name: "5-15. React Helmet",

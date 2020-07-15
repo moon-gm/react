@@ -340,11 +340,11 @@ function AllData(funcs) {
 							"list": States.list.list5,
 						},
 					},
-					// 5-14. React Router / React RouterDOM
+					// 5-14. React RouterDOM
 					{
 						"name": Pages.Page5.Section14.Name,
 						"path": Pages.Page5.Section14.Path,
-						"Component": Pages.Page5.Section14.ReactRouter,
+						"Component": Pages.Page5.Section14.ReactRouterDOM,
 						"func": funcs[5].Page5.S14,
 						"state": {
 							"page": States.page.Page5.S14,

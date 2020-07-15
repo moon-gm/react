@@ -67,22 +67,24 @@ const ReactSelect = ({title}) => {
 					3-1. コンポーネントを作成
 				</h3>
 				<div className="p">
-					① 以下のようにインポートし、「Select」をコンポーネントとして使用できるようにする<br/>
+					① 以下のようにインポートし、「Select」をコンポーネントとして使用できるようにする
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section3.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 以下のように「options」を定義する<br/>
-					※「options」は配列にして渡し、各選択肢には「value」と「label」の設定が必要である<br/>
+					② 以下のように「options」を定義する
+					<p className="p">
+						※「options」は配列にして渡し、各選択肢には「value」と「label」の設定が必要である
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section3.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					③ 以下のようにコンポーネントを作成し、Propsに上記で定義した選択肢情報(options)を渡して使用できるように設定<br/><br/>
+					③ 以下のようにコンポーネントを作成し、Propsに上記で定義した選択肢情報(options)を渡して使用できるように設定
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section3.code3}
@@ -90,7 +92,7 @@ const ReactSelect = ({title}) => {
 					/>
 				</div>
 				<div className="p">
-					上記設定のサンプルコード<br/>
+					上記設定のサンプルコード
 					<Parts.CodeHighlighter
 							language={codes.languages.jsx}
 							codeString={codes.pages.Page5.Section3.code4}

@@ -105,8 +105,10 @@ const ReactDraggable = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 以下のようにPropsを指定して、ドラッグさせたい要素をコンポーネントで囲む<br/>
-					※Propsの詳細は「3-2のPropsの種類」を参照
+					② 以下のようにPropsを指定して、ドラッグさせたい要素をコンポーネントで囲む
+					<p className="p">
+						※Propsの詳細は「3-2のPropsの種類」を参照
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section7.code2}

@@ -21,11 +21,11 @@ const ReactRouter = ({title}) => {
 		<div className="page-layout">
 
 			<h2 className="h2">
-				1. react-router-dom / react-routerとは
+				1. react-router-domとは
 			</h2>
 				<p className="p">
 					URLにパスを付与してルーティングできるようにするライブラリ<br/>
-					※現在、基本的にreact-router-domのみの使用でルーティングできる
+					※現在、基本的にreact-router-domのみの使用でルーティングできる(react-routerライブラリもある)
 				</p>
 				<div className="p">
 					リンクを押下するとパス名が変わり、以下にページを表示するのサンプル
@@ -42,12 +42,11 @@ const ReactRouter = ({title}) => {
 							/Page1/Section2
 						</Link>
 						<Switch>
-							<Route path="/Top" component={Pages.Top.Top} />
+							<Route path="/Top" render={() => <Pages.Top.Top title="React Learning"/>} />
 							<Route path="/Page1/Section1" component={Pages.Page1.Section1.Environment} />
 							<Route path="/Page1/Section2" component={Pages.Page1.Section2.EnvironmentM} />
 						</Switch>
 					</BrowserRouter>
-
 
 				</div>
 
@@ -59,7 +58,7 @@ const ReactRouter = ({title}) => {
 				</p>
 				<p className="p">
 					<span className="command">
-						$ npm install react-router-dom --save / $ npm install react-router --save
+						$ npm install react-router-dom --save
 					</span>
 				</p>
 				<p className="p">
@@ -82,10 +81,12 @@ const ReactRouter = ({title}) => {
 					/>
 					<br/>
 					② 以下のようにコンポーネントを使用する<br/>
-					・「BrowerRouter」で囲った内部でルーティングを設定(basenameでホスト名以下につける固定パスを指定)<br/>
-					・「Switch」で囲ったエリア内がルーティングで切替わるエリア<br/>
-					・「Route」でルーティングの個別設定(pathでパスをcomponentで表示するコンポーネントを指定)<br/>
-					・「Link」は押下時にアクセスするパスを設定(toでリンクするパスを指定)
+					<p className="p">
+						・「BrowerRouter」で囲った内部でルーティングを設定(basenameでホスト名以下につける固定パスを指定)<br/>
+						・「Switch」で囲ったエリア内がルーティングで切替わるエリア<br/>
+						・「Route」でルーティングの個別設定(pathでパスをcomponentで表示するコンポーネントを指定)<br/>
+						・「Link」は押下時にアクセスするパスを設定(toでリンクするパスを指定)
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section14.code2}
@@ -105,11 +106,11 @@ const ReactRouter = ({title}) => {
 					3-2. Propsの種類
 				</h3>
 				<p className="p">
-					○BrowserRouter
+					○ BrowserRouter
 				</p>
 				<Parts.TableForProps tableData={tableDataBrowserRouter}/>
 				<p className="p">
-					○Route
+					○ Route
 				</p>
 				<Parts.TableForProps tableData={tableDataRoute}/>
 

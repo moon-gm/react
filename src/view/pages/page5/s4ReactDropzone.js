@@ -39,7 +39,6 @@ const ReactDropzone = ({title}) => {
 					「--save」と付けることで、package.jsonに「react-dropzone」が追加
 				</p>
 
-
 			<h2 className="h2">
 				3. 使用方法
 			</h2>
@@ -47,24 +46,29 @@ const ReactDropzone = ({title}) => {
 					3-1. コンポーネントとして使用の場合
 				</h3>
 				<div className="p">
-					① 以下のようにインポートし、「Dropzone」をコンポーネントとして使用できるようにする<br/>
+					① 以下のようにインポートし、「Dropzone」をコンポーネントとして使用できるようにする
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section4.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 以下のようにファイルドロップ時の処理を「onDrop」で設定<br/>
-					※今回は取得したファイルをコンソールログで確認するのみ<br/>
+					② 以下のようにファイルドロップ時の処理を「onDrop」で設定
+					<p className="p">
+						※今回は取得したファイルをコンソールログで確認するのみ
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section4.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					③ 以下のようにコンポーネントを作成し、「onDrop」Propsに前述のメソッドを指定し、<br/>
-					「getRootProps」を渡してドロップをさせる領域を指定し、<br/>
-					「getInputProps」を渡してファイルのinput領域（非表示となる）を指定<br/>
+					③ 以下のようにコンポーネントを作成
+					<p className="p">
+						・「onDrop」Propsに前述のメソッドを指定
+						・「getRootProps」を渡してドロップをさせる領域を指定
+						・「getInputProps」を渡してファイルのinput領域（非表示となる）を指定
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section4.code3}
@@ -91,9 +95,11 @@ const ReactDropzone = ({title}) => {
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 「useDropzone」で使用する機能を定義し、③の自前のコンポーネントで使用する<br/>
-					また、Propsを使用する場合は定義して、「useDropzone」に渡す<br/>
-					※今回は許容するファイルを設定している
+					② 「useDropzone」で使用する機能を定義し、③の自前のコンポーネントで使用
+					<p className="p">
+						また、Propsを使用する場合は定義して、「useDropzone」に渡す<br/>
+						※今回は許容するファイルを設定している
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section4.code6}
@@ -133,5 +139,4 @@ const ReactDropzone = ({title}) => {
 		</div>
 	);
 }
-
 export default ReactDropzone;

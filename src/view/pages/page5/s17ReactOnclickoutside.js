@@ -42,22 +42,24 @@ const ReactOnclickoutside = ({title}) => {
 					3-1. 任意のコンポーネントに機能を適用
 				</h3>
 				<div className="p">
-					① 以下のようにインポートし、「onClickOutside」をfunctionとして使用できるようにする<br/>
+					① 以下のようにインポートし、「onClickOutside」をfunctionとして使用できるようにする
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section17.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 以下のようにコンポーネント外を押した時の処理を設定<br/>
-					※「handleClickOutside」というメソッド名にすることで、自動で実行してくれる
+					② 以下のようにコンポーネント外を押した時の処理を設定
+					<p className="p">
+						※「handleClickOutside」というメソッド名にすることで、自動で実行してくれる
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section17.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					③ 以下のようにコンポーネントを①のfunctionの引数に入れ、エクスポート<br/>
+					③ 以下のようにコンポーネントを①のfunctionの引数に入れ、エクスポート
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
 						codeString={codes.pages.Page5.Section17.code3}
@@ -65,7 +67,7 @@ const ReactOnclickoutside = ({title}) => {
 					/>
 				</div>
 				<div className="p">
-					上記設定のサンプルコード<br/>
+					上記設定のサンプルコード
 					<Parts.CodeHighlighter
 							language={codes.languages.jsx}
 							codeString={codes.pages.Page5.Section17.code4}
