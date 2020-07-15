@@ -16,6 +16,7 @@ function AllData(funcs) {
 			// Topページ
 			{
 				"name": Pages.Top.Name,
+				"path": Pages.Top.Path,
 				"Component": Pages.Top.Top,
 				"func": funcs[0].Top,
 				"state": {
@@ -34,6 +35,7 @@ function AllData(funcs) {
 					// 1-1. React.js
 					{
 						"name": Pages.Page1.Section1.Name,
+						"path": Pages.Page1.Section1.Path,
 						"Component": Pages.Page1.Section1.Environment,
 						"func": funcs[1].Page1.S1,
 						"state": {
@@ -44,6 +46,7 @@ function AllData(funcs) {
 					// 1-2. 手動で設定
 					{
 						"name": Pages.Page1.Section2.Name,
+						"path": Pages.Page1.Section2.Path,
 						"Component": Pages.Page1.Section2.EnvironmentM,
 						"func": funcs[1].Page1.S2,
 						"state": {
@@ -54,6 +57,7 @@ function AllData(funcs) {
 					// 1-3. Envの設定
 					{
 						"name": Pages.Page1.Section3.Name,
+						"path": Pages.Page1.Section3.Path,
 						"Component": Pages.Page1.Section3.AboutEnv,
 						"func": funcs[1].Page1.S3,
 						"state": {
@@ -75,6 +79,7 @@ function AllData(funcs) {
 					// 2-1. ディレクトリ構成
 					{
 						"name": Pages.Page2.Section1.Name,
+						"path": Pages.Page2.Section1.Path,
 						"Component": Pages.Page2.Section1.DirCheck,
 						"func": funcs[2].Page2.S1,
 						"state": {
@@ -85,6 +90,7 @@ function AllData(funcs) {
 					// 2-2. ファイル構成
 					{
 						"name": Pages.Page2.Section2.Name,
+						"path": Pages.Page2.Section2.Path,
 						"Component": Pages.Page2.Section2.FileConst,
 						"func": funcs[2].Page2.S2,
 						"state": {
@@ -106,6 +112,7 @@ function AllData(funcs) {
 					// 3-1. 作成方法
 					{
 						"name": Pages.Page3.Section1.Name,
+						"path": Pages.Page3.Section1.Path,
 						"Component": Pages.Page3.Section1.HowToCreateComponent,
 						"func": funcs[3].Page3.S1,
 						"state": {
@@ -116,6 +123,7 @@ function AllData(funcs) {
 					// 3-2. 役割ごとに作成
 					{
 						"name": Pages.Page3.Section2.Name,
+						"path": Pages.Page3.Section2.Path,
 						"Component": Pages.Page3.Section2.CreateRolls,
 						"func": funcs[3].Page3.S2,
 						"state": {
@@ -126,6 +134,7 @@ function AllData(funcs) {
 					// 3-3. Stateの使い方
 					{
 						"name": Pages.Page3.Section3.Name,
+						"path": Pages.Page3.Section3.Path,
 						"Component": Pages.Page3.Section3.AboutState,
 						"func": funcs[3].Page3.S3,
 						"state": {
@@ -136,6 +145,7 @@ function AllData(funcs) {
 					// 3-4. Propsの使い方
 					{
 						"name": Pages.Page3.Section4.Name,
+						"path": Pages.Page3.Section4.Path,
 						"Component": Pages.Page3.Section4.AboutProps,
 						"func": funcs[3].Page3.S4,
 						"state": {
@@ -157,6 +167,7 @@ function AllData(funcs) {
 					// 4-1. URLを付与する場合
 					{
 						"name": Pages.Page4.Section1.Name,
+						"path": Pages.Page4.Section1.Path,
 						"Component": Pages.Page4.Section1.UseLibrary,
 						"func": funcs[4].Page4.S1,
 						"state": {
@@ -167,6 +178,7 @@ function AllData(funcs) {
 					// 4-2. SPAの場合
 					{
 						"name": Pages.Page4.Section2.Name,
+						"path": Pages.Page4.Section2.Path,
 						"Component": Pages.Page4.Section2.RoutingManual,
 						"func": funcs[4].Page4.S2,
 						"state": {
@@ -188,6 +200,7 @@ function AllData(funcs) {
 					// 5-1. ライブラリ一覧
 					{
 						"name": Pages.Page5.Section1.Name,
+						"path": Pages.Page5.Section1.Path,
 						"Component": Pages.Page5.Section1.LibaryList,
 						"func": funcs[5].Page5.S1,
 						"state": {
@@ -198,6 +211,7 @@ function AllData(funcs) {
 					// 5-2. React Syntax Highlighter
 					{
 						"name": Pages.Page5.Section2.Name,
+						"path": Pages.Page5.Section2.Path,
 						"Component": Pages.Page5.Section2.ReactSyntaxHighlighter,
 						"func": funcs[5].Page5.S2,
 						"state": {
@@ -208,6 +222,7 @@ function AllData(funcs) {
 					// 5-3. React Select
 					{
 						"name": Pages.Page5.Section3.Name,
+						"path": Pages.Page5.Section3.Path,
 						"Component": Pages.Page5.Section3.ReactSelect,
 						"func": funcs[5].Page5.S3,
 						"state": {
@@ -218,6 +233,7 @@ function AllData(funcs) {
 					// 5-4. React Dropzone
 					{
 						"name": Pages.Page5.Section4.Name,
+						"path": Pages.Page5.Section4.Path,
 						"Component": Pages.Page5.Section4.ReactDropzone,
 						"func": funcs[5].Page5.S4,
 						"state": {
@@ -228,6 +244,7 @@ function AllData(funcs) {
 					// 5-5. React Color
 					{
 						"name": Pages.Page5.Section5.Name,
+						"path": Pages.Page5.Section5.Path,
 						"Component": Pages.Page5.Section5.ReactColor,
 						"func": funcs[5].Page5.S5,
 						"state": {
@@ -238,6 +255,7 @@ function AllData(funcs) {
 					// 5-6. React Table
 					{
 						"name": Pages.Page5.Section6.Name,
+						"path": Pages.Page5.Section6.Path,
 						"Component": Pages.Page5.Section6.ReactTable,
 						"func": funcs[5].Page5.S6,
 						"state": {
@@ -248,6 +266,7 @@ function AllData(funcs) {
 					// 5-7. React Draggable
 					{
 						"name": Pages.Page5.Section7.Name,
+						"path": Pages.Page5.Section7.Path,
 						"Component": Pages.Page5.Section7.ReactDraggable,
 						"func": funcs[5].Page5.S7,
 						"state": {
@@ -258,6 +277,7 @@ function AllData(funcs) {
 					// 5-8. React Swipeable Views
 					{
 						"name": Pages.Page5.Section8.Name,
+						"path": Pages.Page5.Section8.Path,
 						"Component": Pages.Page5.Section8.ReactSwipeableViews,
 						"func": funcs[5].Page5.S8,
 						"state": {
@@ -268,6 +288,7 @@ function AllData(funcs) {
 					// 5-9. React Modal
 					{
 						"name": Pages.Page5.Section9.Name,
+						"path": Pages.Page5.Section9.Path,
 						"Component": Pages.Page5.Section9.ReactModal,
 						"func": funcs[5].Page5.S9,
 						"state": {
@@ -278,6 +299,7 @@ function AllData(funcs) {
 					// 5-10. React Datepicker
 					{
 						"name": Pages.Page5.Section10.Name,
+						"path": Pages.Page5.Section10.Path,
 						"Component": Pages.Page5.Section10.ReactDatepicker,
 						"func": funcs[5].Page5.S10,
 						"state": {
@@ -288,6 +310,7 @@ function AllData(funcs) {
 					// 5-11. Styled Components
 					{
 						"name": Pages.Page5.Section11.Name,
+						"path": Pages.Page5.Section11.Path,
 						"Component": Pages.Page5.Section11.StyledComponents,
 						"func": funcs[5].Page5.S11,
 						"state": {
@@ -298,6 +321,7 @@ function AllData(funcs) {
 					// 5-12. React Redux
 					{
 						"name": Pages.Page5.Section12.Name,
+						"path": Pages.Page5.Section12.Path,
 						"Component": Pages.Page5.Section12.ReactRedux,
 						"func": funcs[5].Page5.S12,
 						"state": {
@@ -308,6 +332,7 @@ function AllData(funcs) {
 					// 5-13. Prop Types
 					{
 						"name": Pages.Page5.Section13.Name,
+						"path": Pages.Page5.Section13.Path,
 						"Component": Pages.Page5.Section13.PropTypes,
 						"func": funcs[5].Page5.S13,
 						"state": {
@@ -318,6 +343,7 @@ function AllData(funcs) {
 					// 5-14. React Router / React RouterDOM
 					{
 						"name": Pages.Page5.Section14.Name,
+						"path": Pages.Page5.Section14.Path,
 						"Component": Pages.Page5.Section14.ReactRouter,
 						"func": funcs[5].Page5.S14,
 						"state": {
@@ -328,6 +354,7 @@ function AllData(funcs) {
 					// 5-15. React Helmet
 					{
 						"name": Pages.Page5.Section15.Name,
+						"path": Pages.Page5.Section15.Path,
 						"Component": Pages.Page5.Section15.ReactHelmet,
 						"func": funcs[5].Page5.S15,
 						"state": {
@@ -338,6 +365,7 @@ function AllData(funcs) {
 					// 5-16. Classnames
 					{
 						"name": Pages.Page5.Section16.Name,
+						"path": Pages.Page5.Section16.Path,
 						"Component": Pages.Page5.Section16.Classnames,
 						"func": funcs[5].Page5.S16,
 						"state": {
@@ -348,6 +376,7 @@ function AllData(funcs) {
 					// 5-17. React Onclickoutside
 					{
 						"name": Pages.Page5.Section17.Name,
+						"path": Pages.Page5.Section17.Path,
 						"Component": Pages.Page5.Section17.ReactOnclickoutside,
 						"func": funcs[5].Page5.S17,
 						"state": {
@@ -358,6 +387,7 @@ function AllData(funcs) {
 					// 5-18. React Markdown
 					{
 						"name": Pages.Page5.Section18.Name,
+						"path": Pages.Page5.Section18.Path,
 						"Component": Pages.Page5.Section18.ReactMarkdown,
 						"func": funcs[5].Page5.S18,
 						"state": {
@@ -368,6 +398,7 @@ function AllData(funcs) {
 					// 5-19. React Scripts
 					{
 						"name": Pages.Page5.Section19.Name,
+						"path": Pages.Page5.Section19.Path,
 						"Component": Pages.Page5.Section19.ReactScripts,
 						"func": funcs[5].Page5.S19,
 						"state": {
@@ -378,6 +409,7 @@ function AllData(funcs) {
 					// 5-20. React Hot Loader
 					{
 						"name": Pages.Page5.Section20.Name,
+						"path": Pages.Page5.Section20.Path,
 						"Component": Pages.Page5.Section20.ReactHotLoader,
 						"func": funcs[5].Page5.S20,
 						"state": {
@@ -399,6 +431,7 @@ function AllData(funcs) {
 					// 6-1. フックとは
 					{
 						"name": Pages.Page6.Section1.Name,
+						"path": Pages.Page6.Section1.Path,
 						"Component": Pages.Page6.Section1.AboutHook,
 						"func": funcs[6].Page6.S1,
 						"state": {
@@ -409,6 +442,7 @@ function AllData(funcs) {
 					// 6-2. フックの使い方
 					{
 						"name": Pages.Page6.Section2.Name,
+						"path": Pages.Page6.Section2.Path,
 						"Component": Pages.Page6.Section2.HowToUseHook,
 						"func": funcs[6].Page6.S2,
 						"state": {
@@ -419,6 +453,7 @@ function AllData(funcs) {
 					// 6-3. カスタムフック
 					{
 						"name": Pages.Page6.Section3.Name,
+						"path": Pages.Page6.Section3.Path,
 						"Component": Pages.Page6.Section3.CustomHook,
 						"func": funcs[6].Page6.S3,
 						"state": {
@@ -429,6 +464,7 @@ function AllData(funcs) {
 					// 6-4. フックAPI
 					{
 						"name": Pages.Page6.Section4.Name,
+						"path": Pages.Page6.Section4.Path,
 						"Component": Pages.Page6.Section4.HookAPI,
 						"func": funcs[6].Page6.S4,
 						"state": {
@@ -450,6 +486,7 @@ function AllData(funcs) {
 					// 7-1. ---追加予定---
 					{
 						"name": Pages.Page7.Section1.Name,
+						"path": Pages.Page7.Section1.Path,
 						"Component": Pages.Page7.Section1.Maintenance,
 						"func": funcs[7].Page7.S1,
 						"state": {
@@ -460,6 +497,7 @@ function AllData(funcs) {
 					// 7-2. ---追加予定---
 					{
 						"name": Pages.Page7.Section2.Name,
+						"path": Pages.Page7.Section2.Path,
 						"Component": Pages.Page7.Section2.Maintenance,
 						"func": funcs[7].Page7.S2,
 						"state": {
@@ -481,6 +519,7 @@ function AllData(funcs) {
 					// 8-1. ---追加予定---
 					{
 						"name": Pages.Page8.Section1.Name,
+						"path": Pages.Page8.Section1.Path,
 						"Component": Pages.Page8.Section1.Maintenance,
 						"func": funcs[8].Page8.S1,
 						"state": {
@@ -491,6 +530,7 @@ function AllData(funcs) {
 					// 8-2. ---追加予定---
 					{
 						"name": Pages.Page8.Section2.Name,
+						"path": Pages.Page8.Section2.Path,
 						"Component": Pages.Page8.Section2.Maintenance,
 						"func": funcs[8].Page8.S2,
 						"state": {
@@ -512,6 +552,7 @@ function AllData(funcs) {
 					// 9-1. ---追加予定---
 					{
 						"name": Pages.Page9.Section1.Name,
+						"path": Pages.Page9.Section1.Path,
 						"Component": Pages.Page9.Section1.Maintenance,
 						"func": funcs[9].Page9.S1,
 						"state": {
@@ -522,6 +563,7 @@ function AllData(funcs) {
 					// 9-2. ---追加予定---
 					{
 						"name": Pages.Page9.Section2.Name,
+						"path": Pages.Page9.Section2.Path,
 						"Component": Pages.Page9.Section2.Maintenance,
 						"func": funcs[9].Page9.S2,
 						"state": {
@@ -543,6 +585,7 @@ function AllData(funcs) {
 					// 10-1. ---追加予定---
 					{
 						"name": Pages.Page10.Section1.Name,
+						"path": Pages.Page10.Section1.Path,
 						"Component": Pages.Page10.Section1.Maintenance,
 						"func": funcs[10].Page10.S1,
 						"state": {
@@ -553,6 +596,7 @@ function AllData(funcs) {
 					// 10-2. ---追加予定---
 					{
 						"name": Pages.Page10.Section2.Name,
+						"path": Pages.Page10.Section2.Path,
 						"Component": Pages.Page10.Section2.Maintenance,
 						"func": funcs[10].Page10.S2,
 						"state": {
