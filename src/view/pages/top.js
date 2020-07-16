@@ -11,27 +11,27 @@ const Top = ({title}) => {
 	return (
 		<div className={Styles.AppHeader}>
 			<SwipeableViews enableMouseEvents>
-				<p className={Styles.mainTitle}>
+				<div className={Styles.mainTitle}>
 					{title}<br/>
 					<p className={Styles.subTitle}>
 						〜 First Step 〜<br/>
 						◀︎ Swipe
 					</p>
-				</p>
-				<p className={Styles.mainTitle}>
+				</div>
+				<div className={Styles.mainTitle}>
 					React User<br/>
 					<p className={Styles.subTitle}>
 						〜 Second Step 〜<br/>
 						◀︎ Swipe ▶︎
 					</p>
-				</p>
-				<p className={Styles.mainTitle}>
+				</div>
+				<div className={Styles.mainTitle}>
 					React Master<br/>
 					<p className={Styles.subTitle}>
 						〜 Last Step 〜<br/>
 						Swipe ▶︎
 					</p>
-				</p>
+				</div>
 			</SwipeableViews>
 			<Draggable
 				axis="both"
