@@ -129,6 +129,12 @@ const LibaryList = ({title, allData}) => {
 						url={urls.npm.ReactSwipeableViews}
 						linkText="? React Swipeable Views"
 					/>
+					<br/>
+					オフィシャルHP：
+					<Parts.Link
+						url={urls.ReactSwipeableViews}
+						linkText="? React Swipeable Views公式サイト"
+					/>
 				</p>
 
 				<h3 className="h3">
