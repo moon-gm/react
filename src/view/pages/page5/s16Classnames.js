@@ -1,21 +1,38 @@
 
 import React from 'react';
+
+// 通常の複数クラス設定
+import classNames from 'classnames';
+// Objectでクラスに別名をつけて設定
+import classBind from 'classnames/bind';
+// 重複するクラス名は無視する設定
+import classDedupe from 'classnames/dedupe';
+
 import codes from './../../../config/codes';
 import Parts from './../../../config/parts';
 
 const Classnames = ({title}) => {
+
+	var styles = {
+		a: 'h2',
+		b: 'h3',
+		c: 'p',
+	}
+
+	var classNameBind = classBind.bind(styles);
+
 	return (
 		<div className="page-layout">
 
-			<h2 className="h2">
+			<h2 className={classNames('h2')}>
 				1. classnamesとは
 			</h2>
-				<p className="p">
+				<p className={classDedupe('p')}>
 					classNameにクラスを複数付与できるようにするライブラリ <br/>
 					クラス名をObjectにして値にtrue/falseを入れると表示非表示の設定ができる
 				</p>
 
-			<h2 className="h2">
+			<h2 className={classNameBind('a')}>
 				2. インストール方法
 			</h2>
 				<p className="p">
@@ -38,44 +55,34 @@ const Classnames = ({title}) => {
 					3-1. コンポーネントを作成
 				</h3>
 				<div className="p">
-					① 以下のようにインポートし、「SyntaxHighlighter」をコンポーネントとして使用できるようにする<br/>
+					① 以下からどれか使用したいパターンをインポートし、「classNames」をfunctionとして使用できるようにする
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code1}
+						codeString={codes.pages.Page5.Section16.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 以下のようにスタイルをインポートし、コンポーネントの「style」propsで使用できるように設定<br/>
+					② 「className」propsに以下を設定すると、=>の右側のように認識する
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code2}
+						codeString={codes.pages.Page5.Section16.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					③ 以下のようにコンポーネントを作成し、外からソースコード(codeString)、使用する言語(language)を渡して使用できるように設定<br/>
-					※「language」propsで指定した言語でソースコードを判断し、文字をハイライトする<br/>
+					※ classnames/dedupeをインポートして使用した場合、重複するクラス名は一番右側の記述で上書きとなる
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code3}
+						codeString={codes.pages.Page5.Section16.code3}
+						codeColor={codes.styles.tomorrow}
+					/>
+					<br/>
+					※ classnames/bindをインポートして使用した場合、関数内でObjectのKey名で指定できる
+					<Parts.CodeHighlighter
+						language={codes.languages.jsx}
+						codeString={codes.pages.Page5.Section16.code4}
 						codeColor={codes.styles.tomorrow}
 					/>
 				</div>
-				<div className="p">
-					上記設定のサンプルコード<br/>
-					<Parts.CodeHighlighter
-							language={codes.languages.jsx}
-							codeString={codes.pages.Page5.Section2.code4}
-							codeColor={codes.styles.tomorrow}
-					/>
-				</div>
-				<h3 className="h3">
-					3-2. 呼び出し側の設定
-				</h3>
-				<p className="p">
-					① 3-1で作成したコンポーネントを使いたい場所でインポート<br/>
-					② 「codeString」propsに表示させたいソースコードを渡す<br/>
-					③ 「language」propsに読ませたい言語を渡す<br/>
-				</p>
 
 		</div>
 	);
