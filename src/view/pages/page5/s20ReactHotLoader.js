@@ -1,6 +1,6 @@
 
 import React from 'react';
-import codes from './../../../config/codes';
+import urls from './../../../config/outerUrls';
 import Parts from './../../../config/parts';
 
 const ReactHotLoader = ({title}) => {
@@ -11,7 +11,7 @@ const ReactHotLoader = ({title}) => {
 				1. react-hot-loaderとは
 			</h2>
 				<p className="p">
-					ファイルを監視して変更があれば、ブラウザのリロードをせずに画面を更新するライブラリ<br/>
+					ファイルを監視して変更があれば、Stateを保持したままブラウザのリロードをせずに画面を更新するライブラリ<br/>
 					開発環境にて、ファイルの変更を即座に確認して作業の効率化ができる
 				</p>
 
@@ -34,47 +34,13 @@ const ReactHotLoader = ({title}) => {
 			<h2 className="h2">
 				3. 使用方法
 			</h2>
-				<h3 className="h3">
-					3-1. コンポーネントを作成
-				</h3>
-				<div className="p">
-					① 以下のようにインポートし、「SyntaxHighlighter」をコンポーネントとして使用できるようにする<br/>
-					<Parts.CodeHighlighter
-						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code1}
-						codeColor={codes.styles.tomorrow}
-					/>
-					<br/>
-					② 以下のようにスタイルをインポートし、コンポーネントの「style」propsで使用できるように設定<br/>
-					<Parts.CodeHighlighter
-						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code2}
-						codeColor={codes.styles.tomorrow}
-					/>
-					<br/>
-					③ 以下のようにコンポーネントを作成し、外からソースコード(codeString)、使用する言語(language)を渡して使用できるように設定<br/>
-					※「language」propsで指定した言語でソースコードを判断し、文字をハイライトする<br/>
-					<Parts.CodeHighlighter
-						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code3}
-						codeColor={codes.styles.tomorrow}
-					/>
-				</div>
-				<div className="p">
-					上記設定のサンプルコード<br/>
-					<Parts.CodeHighlighter
-							language={codes.languages.jsx}
-							codeString={codes.pages.Page5.Section2.code4}
-							codeColor={codes.styles.tomorrow}
-					/>
-				</div>
-				<h3 className="h3">
-					3-2. 呼び出し側の設定
-				</h3>
 				<p className="p">
-					① 3-1で作成したコンポーネントを使いたい場所でインポート<br/>
-					② 「codeString」propsに表示させたいソースコードを渡す<br/>
-					③ 「language」propsに読ませたい言語を渡す<br/>
+					gulpやWebpack、BrowserSyncなどと合わせて使用する<br/>
+					詳細は以下で確認<br/>
+					<Parts.Link
+						url={urls.ReactHotLoader}
+						linkText="? React Hot Loader"
+					/>
 				</p>
 
 		</div>
