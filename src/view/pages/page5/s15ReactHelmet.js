@@ -4,6 +4,19 @@ import codes from './../../../config/codes';
 import Parts from './../../../config/parts';
 
 const ReactHelmet = ({title}) => {
+
+	const tableData =[
+		{propsName: "base", roll: "baseタグの指定内容を渡せる",},
+		{propsName: "bodyAttributes", roll: "bodyタグの属性を追加できる",},
+		{propsName: "htmlAttributes", roll: "htmlタグの属性を追加できる",},
+		{propsName: "link", roll: "linkタグの指定内容を渡せる",},
+		{propsName: "meta", roll: "metaタグの指定内容を渡せる",},
+		{propsName: "noscript", roll: "noscriptタグの指定内容を渡せる",},
+		{propsName: "script", roll: "scriptタグの指定内容を渡せる",},
+		{propsName: "style", roll: "styleタグの指定内容を渡せる",},
+		{propsName: "title", roll: "titleタグの指定内容を渡せる",},
+	];
+
 	return (
 		<div className="page-layout">
 
@@ -37,47 +50,37 @@ const ReactHelmet = ({title}) => {
 					3-1. コンポーネントを作成
 				</h3>
 				<div className="p">
-					① 以下のようにインポートし、「SyntaxHighlighter」をコンポーネントとして使用できるようにする<br/>
+					① 以下のようにインポートし、「Helmet」をコンポーネントとして使用できるようにする
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code1}
+						codeString={codes.pages.Page5.Section15.code1}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					② 以下のようにスタイルをインポートし、コンポーネントの「style」propsで使用できるように設定<br/>
+					② 以下のようにHeadタグに指定したい内容を「Helmet」タグで囲って設定
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code2}
+						codeString={codes.pages.Page5.Section15.code2}
 						codeColor={codes.styles.tomorrow}
 					/>
 					<br/>
-					③ 以下のようにコンポーネントを作成し、外からソースコード(codeString)、使用する言語(language)を渡して使用できるように設定<br/>
-					※「language」propsで指定した言語でソースコードを判断し、文字をハイライトする<br/>
+					③ Propsで渡すことも可能である
+					<p className="p">
+						※以下の項目で解説
+					</p>
 					<Parts.CodeHighlighter
 						language={codes.languages.jsx}
-						codeString={codes.pages.Page5.Section2.code3}
+						codeString={codes.pages.Page5.Section15.code3}
 						codeColor={codes.styles.tomorrow}
 					/>
 				</div>
-				<div className="p">
-					上記設定のサンプルコード<br/>
-					<Parts.CodeHighlighter
-							language={codes.languages.jsx}
-							codeString={codes.pages.Page5.Section2.code4}
-							codeColor={codes.styles.tomorrow}
-					/>
-				</div>
+
 				<h3 className="h3">
-					3-2. 呼び出し側の設定
+					3-2. Propsの種類
 				</h3>
-				<p className="p">
-					① 3-1で作成したコンポーネントを使いたい場所でインポート<br/>
-					② 「codeString」propsに表示させたいソースコードを渡す<br/>
-					③ 「language」propsに読ませたい言語を渡す<br/>
-				</p>
+				<Parts.TableForProps tableData={tableData} />
 
 		</div>
 	);
 }
-
 export default ReactHelmet;
