@@ -151,6 +151,12 @@ export default {
 				code3: "export default onClickOutside(DropDownMenu)",
 				code4: "import React from 'react'\nimport onClickOutside from 'react-onclickoutside'\n \nconst DropDownMenu = () => {\n\n    handleClickOutside() {\n        this.setState({\n            areaOpen: false,\n        });\n    }\n \n    return (\n        <div>\n            ドロップダウンメニュー\n        </div>\n    );\n}\nexport default onClickOutside(DropDownMenu)\n",
 			},
+			Section18: {
+				code1: "import Markdown from 'react-markdown';",
+				code2: "const markdown = (\n    '# 見出し 1\\n' +\n    '## 見出し 2\\n' +\n    '### 見出し 3\\n' +\n    '#### 見出し 4\\n' +\n    '---\\n' +\n    '- リスト 1\\n' +\n    '- リスト 2\\n' +\n    '- リスト 2-1\\n' +\n    '1. 番号付きリスト 1\\n' +\n    '2. 番号付きリスト 2\\n' +\n    '3. 番号付きリスト 3\\n' +\n    '[リンク](http://...)\\n' +\n    '**強調**\\n' +\n    '```ruby:filename.rb\\n' +\n    'コード\\n' +\n    '```'\n);",
+				code3: "<Markdown\n    source={markdown}\n    escapeHtml={false}\n    linkTarget=\"_blank\"\n/>",
+				code4: "import React from 'react';\nimport Markdown from 'react-markdown';\n\nconst ReactMarkdown = () => {\n\n	const markdown = (\n		'# 見出し 1\\n' +\n		'## 見出し 2\\n' +\n		'### 見出し 3\\n' +\n		'#### 見出し 4\\n' +\n		'---\\n' +\n		'- リスト 1\\n' +\n		'- リスト 2\\n' +\n		'- リスト 2-1\\n' +\n		'1. 番号付きリスト 1\\n' +\n		'2. 番号付きリスト 2\\n' +\n		'3. 番号付きリスト 3\\n' +\n		'[リンク](http://...)\\n' +\n		'**強調**\\n' +\n		'```ruby:filename.rb\\n' +\n		'コード\\n' +\n		'```'\n	);\n\n	return (\n		<div>\n            <Markdown\n                source={markdown}\n                escapeHtml={false}\n                linkTarget=\"_blank\"\n            />\n		</div>\n	);\n}\nexport default ReactMarkdown;\n",
+			},
 		},
 		Page6: {
 			Section1:{
