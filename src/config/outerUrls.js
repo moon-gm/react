@@ -10,6 +10,12 @@ export default {
 		Context: "https://ja.reactjs.org/docs/context.html",
 	},
 
+	MySite: {
+		ReactLearning: "https://moon-gm.github.io/react-learning/",
+		NextLearning: "https://next-learning-teal.vercel.app/",
+		GatsbyLearning: "https://gatsby-learning-teal.vercel.app/",
+	},
+
 	// 外部参考サイト
 	PWA: "https://www.seohacks.net/basic/terms/pwa/",
 	ReactSelect: "https://react-select.com/home",

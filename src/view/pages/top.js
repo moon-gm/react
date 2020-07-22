@@ -14,22 +14,26 @@ const Top = ({title}) => {
 				<div className={Styles.mainTitle}>
 					{title}<br/>
 					<p className={Styles.subTitle}>
-						〜 First Step 〜<br/>
-						◀︎ Swipe
+						〜 This site 〜<br/>
+						◀︎ Swipe here
 					</p>
 				</div>
 				<div className={Styles.mainTitle}>
-					React User<br/>
+					<p onClick={() => window.location.href=urls.MySite.NextLearning}>
+						Next Learning
+					</p>
 					<p className={Styles.subTitle}>
-						〜 Second Step 〜<br/>
-						◀︎ Swipe ▶︎
+						〜 ↑ Click to Next.js site ↑ 〜<br/>
+						◀︎ Swipe here ▶︎
 					</p>
 				</div>
 				<div className={Styles.mainTitle}>
-					React Master<br/>
+					<p onClick={() => window.location.href=urls.MySite.GatsbyLearning}>
+						Gatsby Learning
+					</p>
 					<p className={Styles.subTitle}>
-						〜 Last Step 〜<br/>
-						Swipe ▶︎
+						〜 ↑ Click to Gatsby.js site ↑ 〜<br/>
+						Swipe here ▶︎
 					</p>
 				</div>
 			</SwipeableViews>
