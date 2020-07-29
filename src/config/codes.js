@@ -65,6 +65,11 @@ export default {
 				code4: "const Sample = ({comment}) =>{\n    return(\n        <header className=\"header\">\n            <p>{comment}</p>\n        </header>\n    );\n}\nexport default Sample;",
 				code5: "function Sample(comment) {\n    return(\n        <header className=\"header\">\n            <p>{comment}</p>\n        </header>\n    );\n}\nexport default Sample;",
 			},
+			Section5: {
+				code1: "import React from 'react'\n\nconst Layout = ({children}) => {\n    return (\n        <>\n            <header />\n            <main>\n                {children}\n            </main>\n            <footer />\n        </>\n    );\n}\nexport default Layout",
+				code2: "import React from 'react'\nimport Layout from './layout'\n\nconst Page = () => {\n    return (\n        <Layout>\n            {/* 子要素として表示したい内容 */}\n        </Layout>\n    );\n}\nexport default Page",
+				code3: "/***** childrenの設定 *****/\n// childrenに渡すPropsの設定\nconst additionalProps = {\n    sample: \"sample\"\n}\n// 子要素を再生成してPropsを渡す設定\nconst newChildren = React.cloneElement(children, additionalProps);",
+			},
 		},
 		Page4: {
 			Section1: {

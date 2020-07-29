@@ -20,6 +20,7 @@ export default {
 			S2: "3S2",
 			S3: "3S3",
 			S4: "3S4",
+			S5: "3S5",
 		},
 		Page4: {
 			L4: "4",

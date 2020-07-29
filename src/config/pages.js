@@ -13,6 +13,7 @@ import HowToCreateComponent from '../view/pages/page3/s1HowToCreateComponent';
 import CreateRolls from '../view/pages/page3/s2CreateRolls';
 import AboutState from '../view/pages/page3/s3AboutState';
 import AboutProps from '../view/pages/page3/s4AboutProps';
+import ChildrenProps from '../view/pages/page3/s5ChildrenProps';
 // Page4
 import RoutingManual from '../view/pages/page4/s2RoutingManual';
 import UseLibrary from '../view/pages/page4/s1UseLibrary';
@@ -108,6 +109,11 @@ export default {
 			Name: "3-4. Propsの使い方",
 			Path: "/page3/s4AboutProps",
 			AboutProps: AboutProps,
+		},
+		Section5: {
+			Name: "3-5. Children Props",
+			Path: "/page3/s5ChildrenProps",
+			ChildrenProps: ChildrenProps,
 		},
 	},
 	// 4. ルーティング

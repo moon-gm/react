@@ -153,6 +153,17 @@ function AllData(funcs) {
 							"list": States.list.list3,
 						},
 					},
+					// 3-4. Children Props
+					{
+						"name": Pages.Page3.Section5.Name,
+						"path": Pages.Page3.Section5.Path,
+						"Component": Pages.Page3.Section5.ChildrenProps,
+						"func": funcs[3].Page3.S5,
+						"state": {
+							"page": States.page.Page3.S5,
+							"list": States.list.list3,
+						},
+					},
 				],
 			},
 			// 4. ルーティング

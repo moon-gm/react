@@ -26,6 +26,7 @@ export default {
 	GatsbyOfficial: "https://www.gatsbyjs.org/",
 	Next: "https://qiita.com/tetsutaroendo/items/0dad3150ecb4c9ad0d54",
 	NextOfficial: "https://nextjs.org/",
+	ChildrenProps: "https://qiita.com/NeGI1009/items/e6ad87320391c836bcf9",
 
 	// npm公式サイト
 	npm: {
