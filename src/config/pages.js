@@ -260,7 +260,7 @@ export default {
 	},
 	// 7. ---追加予定---
 	Page7: {
-		Name: "7. ---追加予定---",
+		Name: "",
 		Section1: {
 			Name: "7-1. ---追加予定---",
 			Path: "/page7/s1",
@@ -274,7 +274,7 @@ export default {
 	},
 	// 8. ---追加予定---
 	Page8: {
-		Name: "8. ---追加予定---",
+		Name: "",
 		Section1: {
 			Name: "8-1. ---追加予定---",
 			Path: "/page8/s1",
@@ -288,7 +288,7 @@ export default {
 	},
 	// 9. ---追加予定---
 	Page9: {
-		Name: "9. ---追加予定---",
+		Name: "",
 		Section1: {
 			Name: "9-1. ---追加予定---",
 			Path: "/page9/s1",
@@ -302,7 +302,7 @@ export default {
 	},
 	// 10. ---追加予定---
 	Page10: {
-		Name: "10. ---追加予定---",
+		Name: "",
 		Section1: {
 			Name: "10-1. ---追加予定---",
 			Path: "/page10/s1",
